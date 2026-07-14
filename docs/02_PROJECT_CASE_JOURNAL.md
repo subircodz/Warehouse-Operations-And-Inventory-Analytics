@@ -19,18 +19,7 @@ This journal documents the complete development of a project /case, beginning wi
 
 ----------------------------------------
 
-## Client Statement
-
-Recently, we've noticed several operational issues:
-
-- Some products frequently go out of stock.
-- Other products remain in the warehouse for months.
-- Our storage space feels insufficient.
-- Orders are sometimes delayed.
-- Customers have started complaining.
-- Management believes we're spending too much on inventory.
-
-----------------------------------------
+## Business Understanding
 
 Question 1
 
