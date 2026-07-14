@@ -1,18 +1,6 @@
-# PROJECT_CASE_JOURNAL
-
-> **Case Study:** Warehouse Operations & Inventory Analytics
-> **Status:** 🟢 In Progress
-> **Methodology:** Data Analytics Project Methodology (DAPM)
-
----
-
 # Purpose of this Journal
 
-This journal documents the complete development of the **Warehouse Operations & Inventory Analytics** case study, beginning with business understanding and continuing through solution design, implementation, analysis, and reporting.
-
-Unlike the README, which presents the final outcome of the project, this journal serves as a chronological record of the project's evolution. It captures business observations, assumptions, design decisions, investigations, challenges, lessons learned, and the reasoning behind both business and technical choices.
-
-The purpose of maintaining this journal is to document not only *what* was built, but also *why* specific decisions were made throughout the project. This provides evidence of the analytical thinking, problem-solving approach, and decision-making process followed during the case study.
+This journal documents the complete development of a project /case, beginning with business understanding and continuing through solution design, implementation, analysis, and reporting.
 
 ---
 
@@ -20,270 +8,115 @@ The purpose of maintaining this journal is to document not only *what* was built
 
 | Phase                                    | Status        |
 | ---------------------------------------- | ------------- |
-| Phase 0 – Project Vision                 | ✅ Completed   |
 | Phase 1 – Business Understanding         | ✅ Completed   |
-| Phase 2 – Business Modelling             | ✅ Completed   |
-| Phase 3 – Business Requirements Analysis | ⏳ In Progress |
-| Phase 4 – Data Discovery                 | ⏳ Pending     |
-| Phase 5 – Solution Architecture          | ⏳ Pending     |
-| Phase 6 – Spreadsheet Design             | ⏳ Pending     |
-| Phase 7 – Database Design                | ⏳ Pending     |
-| Phase 8 – Implementation                 | ⏳ Pending     |
-| Phase 9 – Data Validation                | ⏳ Pending     |
-| Phase 10 – Data Preparation              | ⏳ Pending     |
-| Phase 11 – Feature Engineering           | ⏳ Pending     |
-| Phase 12 – Exploratory Data Analysis     | ⏳ Pending     |
-| Phase 13 – Business Analysis             | ⏳ Pending     |
-| Phase 14 – Investigation                 | ⏳ Pending     |
-| Phase 15 – Visualization                 | ⏳ Pending     |
-| Phase 16 – Business Reporting            | ⏳ Pending     |
-| Phase 17 – Portfolio Review              | ⏳ Pending     |
 
-# Phase 0 — Project Vision
+# Phase 1 — Business Understanding Journal
 
-## Business Problem
+**Date:** 13 July 2026  
+**Session:** 001  
+**Client:** SwiftMart Distribution Pvt. Ltd (Warehouse)  
+**Consultant:** Subir Sutradhar  
 
-Warehouses generate large volumes of operational data every day. Without proper analysis, organizations struggle to monitor inventory movement, supplier performance, stock shortages, product returns, defects, and overall operational efficiency.
+----------------------------------------
 
-The objective of this case study is to model a realistic warehouse environment and transform operational data into meaningful business insights that support informed decision-making.
+## Client Statement
 
----
+Recently, we've noticed several operational issues:
 
-## Objectives
+- Some products frequently go out of stock.
+- Other products remain in the warehouse for months.
+- Our storage space feels insufficient.
+- Orders are sometimes delayed.
+- Customers have started complaining.
+- Management believes we're spending too much on inventory.
 
-The primary objectives of this case study are to:
+----------------------------------------
 
-* Understand warehouse operations from a business perspective.
-* Develop a structured business analysis methodology before implementation.
-* Design a relational database using MariaDB.
-* Integrate Spreadsheet, SQL, Python, Pandas, Matplotlib, and Seaborn into a single analytical workflow.
-* Apply business-first thinking throughout the project lifecycle.
-* Build a portfolio-quality end-to-end analytics solution.
+Question 1
 
----
+Consultant:
+Can you describe how your warehouse operates from receiving goods to dispatch?
 
-## Expected Outcome
+Client:
+We receive goods from suppliers, inspect them for quantity and quality, store them in designated locations, pick products based on customer orders, pack them, and dispatch them through logistics partners.
 
-The expected outcome of this project is a complete warehouse analytics solution that demonstrates both business understanding and technical implementation while following professional software engineering and data analytics practices.
+----------------------------------------
 
----
+Question 2
 
-# Phase 1 — Business Understanding
+Consultant:
+What types of products do you store in the warehouse? 
 
-## Initial Business Exploration
+Client:
+We store fast-moving consumer goods such as packaged foods, beverages, personal care products, and household items from multiple brands.
 
-Before designing the solution, I conducted an initial exploration of warehouse operations to understand how products move through the business, identify the stakeholders involved, and establish the operational processes that the analytics solution must support.
+----------------------------------------
 
----
+Question 3
 
-## Business Observations
+Consultant:
+What are the customers complaining about?
 
-### Inventory Procurement
+Client:
+The main complaints are delayed deliveries, incomplete orders, and occasionally receiving incorrect products.
 
-* Inventory purchasing decisions are initiated by the retail store.
-* Purchase orders are created by the retail store based on business demand.
+----------------------------------------
 
----
+Question 4
 
-### Product Supply
+Consultant:
+Do you have multiple locations? 
 
-* Products are supplied by the warehouse.
-* The purchaser is responsible for receiving the delivered products.
+Client:
+Yes. We operate one central warehouse and three regional warehouses.
 
----
+----------------------------------------
 
-### Quality Verification
+Question 5
 
-* Product quantity and quality are verified jointly by both the supplier and the purchaser to ensure that deliveries match the purchase order.
+Consultant:
+Who are the customers?
 
----
+Client:
+Our customers are retail stores, supermarkets, wholesalers, and a few online retailers.
 
-### Inventory Storage
+----------------------------------------
 
-Inventory follows two primary storage stages:
+Question 7
 
-* Before delivery, products remain in the warehouse.
-* After delivery, products become part of the retailer's inventory.
+Consultant:
+What problems occur most often?
 
----
+Client:
+Goods arrive from suppliers, our warehouse staff verify the shipment against purchase orders, inspect for visible damage, and then store products based on product category and available storage space.
 
-### Inventory Replenishment
+----------------------------------------
 
-Inventory replenishment decisions are influenced by several operational factors, including:
+Question 8
 
-* Historical sales trends.
-* Inventory movement.
-* Manufacturing output.
-* Demand from retail stores.
+Consultant:
+What operational problems occur most often?
 
----
+Client:
+Stockouts of fast-moving products, excess stock of slow-moving products, delayed order processing during peak demand, and occasional inventory count mismatches.
 
-### Customer Order Fulfilment
+----------------------------------------
 
-When a customer places an order:
+Question 8
 
-* Warehouse employees prepare the requested products.
-* Inventory is dispatched.
-* Available stock decreases accordingly.
+Consultant:
+What business improvement is expected on priority?
 
----
+Client:
+Our highest priority is improving inventory availability while reducing excess inventory and ensuring customer orders are delivered on time.
 
-### Stock Unavailability
+----------------------------------------
 
-If requested inventory is unavailable, the retail store must wait until stock is replenished.
+Question 9
 
-This highlights the importance of maintaining appropriate inventory levels.
+Consultant:
+How do you currently record and manage warehouse information?
 
----
+Client:
+We use a Warehouse Management System (WMS) integrated with our ERP system. Some operational reports are also maintained in Excel.
 
-### Short Deliveries
-
-If fewer products are delivered than originally ordered:
-
-* Customer satisfaction decreases.
-* Trust between the supplier and retailer is negatively affected.
-* Operational delays may occur while shortages are resolved.
-
----
-
-## Analyst Reflection
-
-This initial exploration helped establish a clear understanding of how inventory flows through the warehouse environment before any technical design decisions were considered.
-
-Rather than focusing immediately on database tables or code, I first identified the operational processes that the analytics solution must represent. This approach ensures that future technical decisions remain aligned with real business requirements.
-
-# Phase 2 — Business Modelling
-
-## Objective
-
-Identify the core business entities before database design.
-
-## Outcome
-
-Identified candidate entities:
-
-- Product
-- Supplier
-- Customer
-- Purchase Order
-- Employee
-- Warehouse
-
-## Key Decisions
-
-- Database design postponed until business requirements are understood.
-- Candidate entities identified but not finalized.
-
-## Key Learnings
-
-- Business entities are not necessarily database tables.
-- Business modelling should precede database design.
-
-## Status
-
-✅ Completed
-
-# Phase 3 — Business Requirements Analysis
-
-## Objective
-
-Identify the business decisions made by key stakeholders and determine the information required to support those decisions before designing the database or developing analytical solutions.
-
-## Stakeholder
-
-**Warehouse Manager**
-
-## Outcome
-
-The Warehouse Manager's responsibilities, decision-making process, and information requirements were identified.
-
-### Primary Responsibilities
-
-* Manage day-to-day warehouse operations.
-* Receive inventory from suppliers.
-* Monitor inventory movement.
-* Coordinate warehouse staff.
-* Ensure timely order dispatch.
-
-### Business Decisions
-
-* Can new orders be fulfilled with the available inventory?
-* Is additional inventory required?
-* Are enough employees available for today's workload?
-* Which orders should be prioritized?
-
-### Information Required
-
-* Product-wise current stock.
-* Stock by warehouse location.
-* Products below the safety stock level.
-* Employee attendance.
-* Orders scheduled for dispatch.
-* Incoming purchase orders.
-
-## Key Decisions
-
-* Business requirements will drive the database design.
-* Each stakeholder will be analyzed independently before implementation.
-* Technical implementation will begin only after stakeholder requirements are documented.
-
-## Key Learnings
-
-* Stakeholders make business decisions, not technical decisions.
-* Business questions determine the information that must be collected.
-* Information requirements should be identified before designing the database.
-
-## Status
-
-✅ Phase 3 (Warehouse Manager) Completed
-
-# Phase 4 — Data Discovery
-
-## Objective
-
-Identify the data required to answer the business questions identified during the Business Requirements Analysis phase.
-
-## Outcome
-
-The core datasets required for the warehouse analytics solution were identified.
-
-### Required Business Data
-
-* Product master data
-* Supplier information
-* Customer information
-* Employee information
-* Warehouse information
-* Purchase orders
-* Customer orders
-* Inventory transactions
-* Stock levels
-* Returns
-* Defects
-
-### Data Sources
-
-* Warehouse Management System (WMS)
-* Enterprise Resource Planning (ERP) System
-* Spreadsheet records
-* Purchase and sales documents
-
-## Key Decisions
-
-* Master data and transactional data will be stored separately.
-* Data collection requirements will be finalized before database design.
-* The identified datasets will form the basis of the relational database schema.
-
-## Key Learnings
-
-* Business questions determine what data needs to be collected.
-* Collecting unnecessary data increases complexity without adding business value.
-* Data should be identified based on business requirements rather than technical convenience.
-
-## Deliverable
-
-* Initial data requirements documented.
-
-## Status
-
-✅ Phase 4 Completed
