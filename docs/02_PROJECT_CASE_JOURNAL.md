@@ -120,3 +120,86 @@ Based on this understanding, initial analytical thinking has been documented to 
 These analytical ideas are preliminary and will be validated during the subsequent DAPM phases before any implementation or business conclusions are made.
 
 The project is now ready to proceed to the next phase.
+
+# Phase 2 — Stakeholder Analysis Journal
+
+**Date:** 15 July 2026
+**Session:** 002
+**Client:** SwiftMart Distribution Pvt. Ltd. (Warehouse)
+**Consultant:** Subir Sutradhar
+
+---
+
+## Client Statement
+
+Warehouse operations involve multiple departments working together. Inventory management requires coordination between procurement, warehouse operations, sales, logistics, finance, customer support, and IT.
+
+---
+
+### Question 1
+
+**Consultant:**
+Who is responsible for managing inventory in the warehouse?
+
+**Client:**
+The Inventory Manager monitors inventory levels, stock movements, stock availability, and coordinates with procurement and warehouse teams.
+
+---
+
+### Question 2
+
+**Consultant:**
+Who is responsible for managing customer orders, dispatch, and deliveries?
+
+**Client:**
+The Order Fulfillment Team manages customer orders and dispatch, while the Logistics Team handles deliveries.
+
+---
+
+### Question 3
+
+**Consultant:**
+Which department communicates with customers and handles complaints?
+
+**Client:**
+The Sales Team manages customer relationships, while the Customer Support Team handles complaints and service requests.
+
+---
+
+### Question 4
+
+**Consultant:**
+Who is responsible for creating purchase orders, and what factors are considered before placing an order?
+
+**Client:**
+The Procurement Team creates purchase orders based on inventory levels, reorder levels, supplier lead times, and expected demand.
+
+---
+
+### Question 5
+
+**Consultant:**
+Who is responsible for managing the overall warehouse operations?
+
+**Client:**
+The Warehouse Manager oversees receiving, storage, picking, packing, inventory movement, and dispatch activities.
+
+---
+
+### Question 6
+
+**Consultant:**
+Which department is responsible for monitoring inventory costs and financial performance?
+
+**Client:**
+The Finance Department monitors inventory valuation, procurement costs, storage costs, and inventory-related expenses.
+
+---
+
+### Question 7
+
+**Consultant:**
+Who is responsible for maintaining the Warehouse Management System (WMS) and warehouse data?
+
+**Client:**
+The IT Team maintains the WMS and ERP integration, while warehouse staff record operational data.

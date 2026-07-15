@@ -18,6 +18,21 @@
 * Customer
 * Date
 
+## Phase 2
+
+### Decision Makers
+
+| Stakeholder | Information Likely Needed |
+|--------------|--------------------------|
+| Inventory Manager | Current Stock, Stock Status, Reorder Alerts |
+| Procurement Team | Reorder Level, Supplier Lead Time, Demand |
+| Warehouse Manager | Storage Utilization, Inventory Movement |
+| Logistics Team | Dispatch Status, Delivery Performance |
+| Sales Team | Product Availability |
+| Customer Support | Delayed Orders, Incorrect Deliveries |
+| Finance | Inventory Value, Carrying Cost |
+
+
 ## Validation Reminder
 
 The metrics and data requirements above are initial thoughts only and must be validated during the subsequent DAPM phases before implementation.
