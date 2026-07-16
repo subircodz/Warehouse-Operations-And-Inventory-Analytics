@@ -9,10 +9,12 @@ A business-first Data Analytics case study focused on warehouse operations, inve
 This project follows the **[Data Analytics Project Methodology (DAPM Framework) v1.0](https://github.com/subircodz/data-analytics-project-methodology-framework)** and is being developed incrementally, with each phase completed and documented before moving to the next.
 
 ## Project Status
-
-✅ Phase 1 – Business Understanding   
-✅ Phase 2 - Stakeholder Analysis  
-**Current Phase:** 🟡 Phase 3 - Business Requirements  
+| Phase | Status |
+|--------|--------|
+| Phase 1 – Business Understanding | ✅ Completed |
+| Phase 2 – Stakeholder Analysis | ✅ Completed |
+| Phase 3 – Business Requirements | ✅ Completed |
+| Phase 4 –  | 🟡 Pending |
 
 The project is actively evolving. New documents, datasets, analyses, and reports will be added as required by the methodology.
 

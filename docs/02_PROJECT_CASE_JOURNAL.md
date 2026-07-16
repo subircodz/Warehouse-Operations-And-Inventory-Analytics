@@ -205,3 +205,140 @@ Who is responsible for maintaining the Warehouse Management System (WMS) and war
 
 **Client:**
 The IT Team maintains the WMS and ERP integration, while warehouse staff record operational data.
+
+---
+# Phase 3 — Business Requirements
+
+**Date:** 16 July 2026  
+**Session:** 003  
+**Client:** SwiftMart Distribution Pvt. Ltd. (Warehouse)  
+**Consultant:** Subir Sutradhar
+
+----------------------------------------
+
+## Client Statement
+
+The organization already captures operational data through its Warehouse Management System (WMS) and ERP. However, stakeholders require meaningful reports and dashboards to support daily operations and business decision-making.
+
+----------------------------------------
+
+### Question 1
+
+**Consultant:**
+What information does the Inventory Manager require on a daily basis?
+
+**Client:**
+
+- Current Stock
+- Available Stock
+- Low Stock Items
+- Out-of-Stock Products
+- Overstocked Products
+- Inventory Movement
+
+----------------------------------------
+
+### Question 2
+
+**Consultant:**
+What information helps the Procurement Team make purchasing decisions?
+
+**Client:**
+
+- Current Inventory Levels
+- Reorder Status
+- Supplier Lead Time
+- Average Product Demand
+- Pending Purchase Orders
+
+----------------------------------------
+
+### Question 3
+
+**Consultant:**
+What information is important for the Warehouse Manager?
+
+**Client:**
+
+- Warehouse Space Utilization
+- Goods Received
+- Goods Dispatched
+- Pending Orders
+- Inventory Accuracy
+- Order Processing Time
+
+----------------------------------------
+
+### Question 4
+
+**Consultant:**
+What information does the Logistics Team require?
+
+**Client:**
+
+- Orders Ready for Dispatch
+- Delivery Status
+- Delayed Deliveries
+- Vehicle Utilization
+- Delivery Performance
+
+----------------------------------------
+
+### Question 5
+
+**Consultant:**
+What inventory-related information does the Finance Department require?
+
+**Client:**
+
+- Inventory Value
+- Procurement Cost
+- Storage Cost
+- Holding Cost
+- Slow-Moving Inventory
+- Dead Stock
+
+----------------------------------------
+
+### Question 6
+
+**Consultant:**
+What information does the Sales and Customer Support team require?
+
+**Client:**
+
+- Product Availability
+- Delayed Orders
+- Customer Complaints
+- Returned Products
+- Incorrect Shipments
+
+----------------------------------------
+
+### Question 7
+
+**Consultant:**
+What type of dashboards does management expect?
+
+**Client:**
+
+- Inventory Health
+- Stock Availability
+- Order Fulfillment
+- Delivery Performance
+- Warehouse Utilization
+- Inventory Cost
+- Customer Service Performance
+
+----------------------------------------
+
+### Question 8
+
+**Consultant:**
+How frequently should reports be available?
+
+**Client:**
+
+- Daily operational dashboards
+- Weekly management reports
+- Monthly executive reports
