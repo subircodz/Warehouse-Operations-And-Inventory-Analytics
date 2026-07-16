@@ -1,8 +1,8 @@
 # Observations
 
-> **Case Study:** Warehouse Operations & Inventory Analytics
-> **Status:** 🟢 In Progress
-> **Methodology:** Data Analytics Project Methodology (DAPM Framework)
+> **Case Study:** Warehouse Operations & Inventory Analytics  
+> **Status:** 🟢 In Progress  
+> **Methodology:** Data Analytics Project Methodology (DAPM Framework)  
 
 ---
 

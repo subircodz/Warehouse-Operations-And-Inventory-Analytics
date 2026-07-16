@@ -9,6 +9,8 @@ This journal documents the complete development of a project /case, beginning wi
 | Phase                                    | Status        |
 | ---------------------------------------- | ------------- |
 | Phase 1 – Business Understanding         | ✅ Completed   |
+| Phase 2 – Stakeholder Analysis        | ✅ Completed   |
+| Phase 3 – Business Requirements        | 🟡 Pending   |
 
 # Phase 1 — Business Understanding Journal
 
