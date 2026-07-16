@@ -36,3 +36,17 @@
 ## Validation Reminder
 
 The metrics and data requirements above are initial thoughts only and must be validated during the subsequent DAPM phases before implementation.
+
+---
+
+---
+
+## Phase 3 – Business Requirements
+
+### Analytical Thinking
+
+- Stakeholders consume different business information but rely on a common operational dataset.
+- A shared analytics layer can generate reusable metrics for multiple stakeholders.
+- Dashboard design should be role-based rather than data-source-based.
+- Common metrics should be calculated once and reused across multiple reports and dashboards.
+- Data discovery should focus on identifying tables and columns required to satisfy stakeholder requirements.
