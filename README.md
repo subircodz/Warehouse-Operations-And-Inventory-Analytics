@@ -16,8 +16,8 @@ This project follows the **[Data Analytics Project Methodology (DAPM Framework) 
 | [BUSINESS UNDERSTANDING](docs/02_BUSINESS_UNDERSTANDING.md) | ✅ | Documents the business context, operational workflow, and initial understanding. |
 | [STAKEHOLDER ANALYSIS](docs/03_STAKEHOLDER_ANALYSIS.md) | ✅ | Identifies stakeholders, their roles, responsibilities, and information needs. |
 | [BUSINESS REQUIREMENTS](docs/04_BUSINESS_REQUIREMENTS.md) | ✅ | Defines validated business questions, KPIs, and analytical requirements. |
-| [DATA DISCOVERY](docs/05_DATA_DISCOVERY.md) | 🟡 | Identify and acquire the required data. |
-| DATA VALIDATION | ⬜ | Assess whether the acquired data is complete, accurate, and suitable for analysis. |
+| [DATA DISCOVERY](docs/05_DATA_DISCOVERY.md) | ✅ | Identify and acquire the required data. |
+| DATA VALIDATION | 🟡 | Assess whether the acquired data is complete, accurate, and suitable for analysis. |
 | DATA PREPARATION | ⬜ | Cleans, transforms, and prepares data for analysis. |
 | EDA REPORT | ⬜ | Documents exploratory analysis, patterns, anomalies, and relationships. |
 | BUSINESS INSIGHTS | ⬜ | Converts analytical findings into meaningful business insights. |
