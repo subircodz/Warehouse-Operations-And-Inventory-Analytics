@@ -53,6 +53,18 @@ The metrics and data requirements above are initial thoughts only and must be va
 
 ---
 
+## Phase 4 – Data Discovery
+
+### Initial Thoughts
+
+- The SQL database will serve as the primary source for analysis.
+- Excel reports can be used for business verification where required.
+- CSV exports provide an alternative source for Python and Spreadsheet analysis.
+- Preserve all original datasets without modification.
+- Begin Data Validation before any cleaning or transformation activities.
+
+---
+
 ### Navigating Documents
 
 | Document | Link |

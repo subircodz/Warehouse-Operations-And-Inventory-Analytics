@@ -12,21 +12,22 @@ This project follows the **[Data Analytics Project Methodology (DAPM Framework) 
 
 | Document | Status | Purpose |
 | ------------------------ | :----: | -------------------------------------------------------------------------------------------- |
-| [PROJECT_BRIEF](01_PROJECT_BRIEF.md) | ✅ | Defines the client's business problem, objectives, and engagement scope. |
-| [BUSINESS_UNDERSTANDING](docs/02_BUSINESS_UNDERSTANDING.md) | ✅ | Documents the business context, operational workflow, and initial understanding. |
-| [STAKEHOLDER_ANALYSIS](docs/03_STAKEHOLDER_ANALYSIS.md) | ✅ | Identifies stakeholders, their roles, responsibilities, and information needs. |
-| [BUSINESS_REQUIREMENTS](docs/04_BUSINESS_REQUIREMENTS.md) | ✅ | Defines validated business questions, KPIs, and analytical requirements. |
-| DATA_DISCOVERY | 🟡 | Identifies available datasets, sources, and ownership. |
-| DATA_VALIDATION | ⬜ | Assesses data quality, completeness, consistency, and reliability. |
-| DATA_PREPARATION | ⬜ | Cleans, transforms, and prepares data for analysis. |
-| EDA_REPORT | ⬜ | Documents exploratory analysis, patterns, anomalies, and relationships. |
-| BUSINESS_INSIGHTS | ⬜ | Converts analytical findings into meaningful business insights. |
+| [PROJECT BRIEF](01_PROJECT_BRIEF.md) | ✅ | Defines the client's business problem, objectives, and engagement scope. |
+| [BUSINESS UNDERSTANDING](docs/02_BUSINESS_UNDERSTANDING.md) | ✅ | Documents the business context, operational workflow, and initial understanding. |
+| [STAKEHOLDER ANALYSIS](docs/03_STAKEHOLDER_ANALYSIS.md) | ✅ | Identifies stakeholders, their roles, responsibilities, and information needs. |
+| [BUSINESS REQUIREMENTS](docs/04_BUSINESS_REQUIREMENTS.md) | ✅ | Defines validated business questions, KPIs, and analytical requirements. |
+| [DATA DISCOVERY](docs/05_DATA_DISCOVERY.md) | 🟡 | Identify and acquire the required data. |
+| DATA VALIDATION | ⬜ | Assess whether the acquired data is complete, accurate, and suitable for analysis. |
+| DATA PREPARATION | ⬜ | Cleans, transforms, and prepares data for analysis. |
+| EDA REPORT | ⬜ | Documents exploratory analysis, patterns, anomalies, and relationships. |
+| BUSINESS INSIGHTS | ⬜ | Converts analytical findings into meaningful business insights. |
 | RECOMMENDATIONS | ⬜ | Provides evidence-based recommendations and proposed business actions. |
-| EXECUTIVE_SUMMARY | ⬜ | Presents a concise business report for executive stakeholders and decision-makers. |
-| [PROJECT_SUMMARY](docs/PROJECT_SUMMARY.md) | 🟡 | Summarizes the overall consulting engagement, key milestones, and project outcome. |
+| EXECUTIVE SUMMARY | ⬜ | Presents a concise business report for executive stakeholders and decision-makers. |
+| [PROJECT SUMMARY](docs/PROJECT_SUMMARY.md) | 🟡 | Summarizes the overall consulting engagement, key milestones, and project outcome. |
 | [OBSERVATIONS](docs/13_OBSERVATIONS.md) | 🟡 | Maintains a centralized register of validated observations throughout the project lifecycle. |
-| [ANALYTICAL_THINKING](docs/14_ANALYTICAL_THINKING.md) | 🟡 | Records the evolution of analytical reasoning, hypotheses, and decision-making. |
-| [PHASE_CHECKLIST](docs/15_PHASE_CHECKLIST.md) | 🟡 | Tracks the completion criteria and progress of each DAPM phase. |
+| [ANALYTICAL THINKING](docs/14_ANALYTICAL_THINKING.md) | 🟡 | Records the evolution of analytical reasoning, hypotheses, and decision-making. |
+| [PHASE CHECKLIST](docs/15_PHASE_CHECKLIST.md) | 🟡 | Tracks the completion criteria and progress of each DAPM phase. |
+[PROJECT CASE JOURNAL](docs/PHASE_CASE_JOURNAL.md) | 🟡 | Summarizes the consulting engagement, meetings, and key decisions. |
 
 The project is actively evolving. New documents, datasets, analyses, and reports will be added as required by the methodology.
 

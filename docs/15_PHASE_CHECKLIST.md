@@ -46,6 +46,24 @@ Status: ✅ Completed
 
 ---
 
+## Phase 4 – Data Discovery
+
+### Objective
+
+Identify, acquire, and organize the datasets required for the project.
+
+### Checklist
+
+- ✅ Data sources identified
+- ✅ Technical stakeholder consulted
+- ✅ Required datasets acquired
+- ✅ Source data organized within the project repository
+- ✅ Phase documentation completed
+
+**Status:** ✅ Completed
+
+---
+
 ### Navigating Documents
 
 | Document | Link |
