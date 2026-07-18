@@ -1,19 +1,18 @@
-# Excel
+# Database
 
-This folder contains Microsoft Excel workbooks provided by the client during the **Data Discovery** phase.
+This folder contains the original database backups or database exports provided by the client during the **Data Discovery** phase.
 
-These files typically represent manually maintained business reports, operational summaries, or management reports.
+The files in this folder represent the primary source of operational data and should remain unchanged throughout the project.
 
 ## Typical Contents
 
-- Inventory reports
-- Warehouse reports
-- KPI reports
-- Monthly summaries
+- SQL dump files (`.sql`)
+- Database backup files
+- Database schema exports
 
 ## Example
 
-- `Warehouse_Reports.xlsx`
+- `swiftmart_db.sql`
 
 > These files are considered **read-only source data**.
 

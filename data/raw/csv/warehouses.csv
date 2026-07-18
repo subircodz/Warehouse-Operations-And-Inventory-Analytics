@@ -1,0 +1,5 @@
+warehouse_id,warehouse_code,warehouse_name,city,state,warehouse_type
+1,WH001,Central Warehouse, Kolkata,West Bengal,Central
+2,WH002,North Regional Warehouse  ,Siliguri,West Bengal,Regional
+3,WH003,South Regional Warehouse,Bhubaneswar,Odisha,regional
+4,WH004,East Regional Warehouse,Guwahati,,Regional
