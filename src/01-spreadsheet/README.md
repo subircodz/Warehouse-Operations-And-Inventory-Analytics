@@ -2,75 +2,109 @@
 
 ## Purpose
 
-The purpose of this phase is to perform an initial quality assessment of the raw warehouse dataset using spreadsheet software.
+This validation was performed to assess the quality of the raw warehouse dataset before it entered the SQL and Python validation stages.
 
-Spreadsheet validation provides a quick visual inspection of the data before moving to SQL- and Python-based validation. This step helps identify obvious data quality issues that can be detected through filtering, sorting, conditional formatting, and manual review.
+Spreadsheet software provides an efficient way to visually inspect the data and identify obvious quality issues that may affect downstream analysis.
 
----
-
-## Dataset
-
-**Source**
-
-[data/raw/excel/Warehouse_Reports.xlsx](../../data/raw/excel/Warehouse_Reports.xlsx)
-
-Worksheets validated:
-
-- Warehouses
-- Suppliers
-- Products
-- Inventory
+This phase focuses on discovering data quality problems rather than correcting them.
 
 ---
 
-## Validation Objectives
+## Dataset Used
 
-The spreadsheet validation focused on identifying common data quality issues, including:
+**Workbook**
 
-- Missing values
-- Duplicate records
-- Leading and trailing spaces
-- Mixed letter casing
-- Invalid identifiers
-- Negative numeric values
-- Blank strings
-- Overall worksheet health
+[../data/raw/excel/Warehouse_Reports.xlsx](../data/raw/excel/Warehouse_Reports.xlsx)
+
+The workbook contains the following worksheets:
+
+| Worksheet | Description |
+|-----------|-------------|
+| Warehouses | Warehouse master information |
+| Suppliers | Supplier master information |
+| Products | Product master information |
+| Inventory | Current warehouse inventory |
+
+---
+
+## Validation Approach
+
+Each worksheet was reviewed using standard spreadsheet capabilities.
+
+The validation process included:
+
+- Sorting and filtering records
+- Detecting duplicate values
+- Identifying missing data
+- Reviewing text consistency
+- Inspecting identifier fields
+- Verifying numeric values
+- Recording findings in a consolidated validation dashboard
+
+No modifications were made to the source dataset during this phase.
+
+---
+
+## Spreadsheet Features Used
+
+The following spreadsheet features were used during validation.
+
+| Feature | Purpose |
+|----------|---------|
+| Auto Filter | Review and isolate records |
+| Sort (Ascending / Descending) | Detect inconsistencies and ordering issues |
+| Conditional Formatting | Highlight duplicate values |
+| COUNTA() | Count populated cells |
+| COUNTBLANK() | Identify missing values |
+| COUNTIF() | Detect duplicate values |
+| SUM() | Verify numeric totals where applicable |
+| Freeze Panes | Improve worksheet navigation |
+| Multiple Worksheets | Cross-reference master data |
 
 ---
 
 ## Validation Dashboard
 
-A consolidated validation dashboard was created inside the workbook to summarize all findings.
+A consolidated Validation Dashboard was created inside the workbook.
 
-The dashboard provides:
+The dashboard summarizes:
 
-- Total records validated
-- Total columns validated
-- Validation status
-- Data quality issues by worksheet
-- Overall worksheet health
+- Worksheets validated
+- Records processed
+- Columns validated
+- Data quality observations
+- Worksheet health
 
-This approach provides a concise executive summary without requiring detailed inspection of every worksheet.
-
----
-
-## Validation Result
-
-The validation identified multiple data quality issues across the warehouse dataset.
-
-These issues were intentionally retained because the objective of this project is to demonstrate a complete data analytics workflow, including:
-
-- Data Validation
-- Data Cleaning
-- Data Preparation
-- Exploratory Data Analysis
-- Business Insights
-
-No records were modified during this phase.
+This approach provides a concise overview without requiring reviewers to inspect every worksheet individually.
 
 ---
 
-## Evidence
+## Findings
+
+The validation identified several data quality issues that were intentionally retained for subsequent project phases.
+
+Examples include:
+
+- Missing values
+- Duplicate records
+- Invalid identifiers
+- Mixed letter casing
+- Leading and trailing spaces
+- Negative numeric values
+- Blank strings
+
+These observations will be addressed during the Data Cleaning phase.
+
+---
+
+## Deliverables
+
+- Warehouse_Reports.xlsx
+- Validation Dashboard in the excel file
+- Supporting screenshots
+
+---
+
 
 ### Validation Dashboard
 
@@ -90,6 +124,11 @@ Proceed to SQL Validation to verify data integrity, uniqueness, and business rul
 
 | Document | Link |
 |----------|------|
-| Data Validation | [CLICK](../README.md) |
-| SQL Validation | [CLICK](../02-sql/README.md) |
-| Python Validation | [CLICK](../03-python/README.md) |
+| Data Validation | [CLICK](../../docs/06_DATA_VALIDATION.md) |
+| SQL Validation | ⏳ [CLICK](../02-sql/README.md) |
+| Python Validation | ⏳ [CLICK](../03-python/README.md) |
+| Data Discovery | [CLICK](../../docs/05_DATA_DISCOVERY.md) |
+
+---
+
+
