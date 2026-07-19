@@ -39,8 +39,6 @@ The metrics and data requirements above are initial thoughts only and must be va
 
 ---
 
----
-
 ## Phase 3 – Business Requirements
 
 ### Analytical Thinking

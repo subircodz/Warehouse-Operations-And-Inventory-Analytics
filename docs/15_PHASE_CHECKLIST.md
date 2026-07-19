@@ -6,9 +6,11 @@
 
 ✅ Phase 2 - Stakeholder Analysis
 
-🟡 Phase 3 - Business Requirements
+✅ Phase 3 - Business Requirements
 
-⏳ Phase 4 - Data Discovery
+✅ Phase 4 - Data Discovery
+
+🟡 Phase 5 - Data Validation
 
 ## Phase 1 – Business Understanding
 

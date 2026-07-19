@@ -27,7 +27,7 @@ This project follows the **[Data Analytics Project Methodology (DAPM Framework) 
 | [OBSERVATIONS](docs/13_OBSERVATIONS.md) | 🟡 | Maintains a centralized register of validated observations throughout the project lifecycle. |
 | [ANALYTICAL THINKING](docs/14_ANALYTICAL_THINKING.md) | 🟡 | Records the evolution of analytical reasoning, hypotheses, and decision-making. |
 | [PHASE CHECKLIST](docs/15_PHASE_CHECKLIST.md) | 🟡 | Tracks the completion criteria and progress of each DAPM phase. |
-[PROJECT CASE JOURNAL](docs/PHASE_CASE_JOURNAL.md) | 🟡 | Summarizes the consulting engagement, meetings, and key decisions. |
+[PROJECT CASE JOURNAL](docs/PROJECT_CASE_JOURNAL.md) | 🟡 | Summarizes the consulting engagement, meetings, and key decisions. |
 
 The project is actively evolving. New documents, datasets, analyses, and reports will be added as required by the methodology.
 

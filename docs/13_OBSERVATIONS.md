@@ -153,32 +153,32 @@
 <tbody>
 
 <tr>
-<td>OBS-23</td>
+<td>OBS-023</td>
 <td>The primary operational data is maintained within the Warehouse Management System (WMS).</td>
 </tr>
 
 <tr>
-<td>OBS-023</td>
+<td>OBS-024</td>
 <td>Additional business reports are available as Microsoft Excel workbooks.</td>
 </tr>
 
 <tr>
-<td>OBS-024</td>
+<td>OBS-025</td>
 <td>CSV exports are available for data analysis without direct database access.</td>
 </tr>
 
 <tr>
-<td>OBS-025</td>
+<td>OBS-026</td>
 <td>The required datasets have been successfully identified and acquired for analysis.</td>
 </tr>
 
 <tr>
-<td>OBS-026</td>
+<td>OBS-027</td>
 <td>Client-provided datasets have been organized under the <code>data/raw/</code> directory to preserve the original source data.</td>
 </tr>
 
 <tr>
-<td>OBS-027</td>
+<td>OBS-028</td>
 <td>The project is ready to proceed to Data Validation.</td>
 </tr>
 
