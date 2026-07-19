@@ -59,7 +59,7 @@ Each stage validates the same source dataset using techniques appropriate to the
 | Validation Stage | Status |
 |------------------|:------:|
 | Spreadsheet Validation | ✅ Completed |
-| SQL Validation | ⏳ Pending |
+| SQL Validation | ✅ Completed |
 | Python Validation | ⏳ Pending |
 
 ---

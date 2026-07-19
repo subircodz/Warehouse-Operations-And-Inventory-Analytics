@@ -8,6 +8,21 @@ A business-first Data Analytics case study focused on warehouse operations, inve
 
 This project follows the **[Data Analytics Project Methodology (DAPM Framework) v0.1.1](https://github.com/subircodz/data-analytics-project-methodology-framework)** and is being developed incrementally, with each phase completed and documented before moving to the next.
 
+---
+
+## Project Status Legend
+
+Throughout this project, the following symbols are used to indicate the status of each phase, document and deliverable.
+
+| Symbol | Meaning                                            |
+| :----: | -------------------------------------------------- |
+|    ✅   | Finalized - No further changes planned.            |
+|   🟢   | Completed (subject to Refinement) as the project evolves. |
+|   🟡   | Work in progress.                                  |
+|    ⏳   | Planned but not started.                           |
+
+---
+
 ## Project Documentation
 
 | Document | Status | Purpose |
@@ -17,7 +32,7 @@ This project follows the **[Data Analytics Project Methodology (DAPM Framework) 
 | [STAKEHOLDER ANALYSIS](docs/03_STAKEHOLDER_ANALYSIS.md) | ✅ | Identifies stakeholders, their roles, responsibilities, and information needs. |
 | [BUSINESS REQUIREMENTS](docs/04_BUSINESS_REQUIREMENTS.md) | ✅ | Defines validated business questions, KPIs, and analytical requirements. |
 | [DATA DISCOVERY](docs/05_DATA_DISCOVERY.md) | ✅ | Identify and acquire the required data. |
-| DATA VALIDATION | 🟡 | Assess whether the acquired data is complete, accurate, and suitable for analysis. |
+| [DATA VALIDATION](docs/05_DATA_VALIDATION.md) | 🟡 | Assess whether the acquired data is complete, accurate, and suitable for analysis. |
 | DATA PREPARATION | ⬜ | Cleans, transforms, and prepares data for analysis. |
 | EDA REPORT | ⬜ | Documents exploratory analysis, patterns, anomalies, and relationships. |
 | BUSINESS INSIGHTS | ⬜ | Converts analytical findings into meaningful business insights. |
