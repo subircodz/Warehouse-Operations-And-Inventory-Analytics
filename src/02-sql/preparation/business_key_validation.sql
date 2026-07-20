@@ -63,4 +63,5 @@ GROUP BY
 	warehouse_type 
 HAVING 
 	COUNT(*) > 1;
+
 DESC warehouses;
