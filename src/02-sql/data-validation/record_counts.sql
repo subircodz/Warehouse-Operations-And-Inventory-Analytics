@@ -1,3 +1,8 @@
+
+-- ======================================================================
+-- Source: find_total_records.sql
+-- ======================================================================
+
 -- ---------------------------------------
 -- FIND TOTAL RECORDS IN EACH TABLE
 -- AUTHOR: SUBIR SUTRADHAR
@@ -24,4 +29,6 @@ UNION ALL
 SELECT 'Products', COUNT(*) FROM products
 UNION ALL
 SELECT 'Inventory', COUNT(*) FROM inventory;
+
+
 

@@ -1,3 +1,8 @@
+
+-- ======================================================================
+-- Source: understanding_schema.sql
+-- ======================================================================
+
 -- ---------------------------------------
 -- UNDERSTANDING THE SCHEMA 
 -- AUTHOR: SUBIR SUTRADHAR
@@ -17,4 +22,6 @@ DESC suppliers;
 DESC warehouses;
 
 SHOW CREATE TABLE products;
+
+
 

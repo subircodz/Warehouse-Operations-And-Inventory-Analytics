@@ -1,3 +1,8 @@
+
+-- ======================================================================
+-- Source: business_rule_validation.sql
+-- ======================================================================
+
 -- ======================================================
 -- BUSINESS RULE VALIDATION
 -- PROJECT : SwiftMove Logistics Analytics
@@ -54,6 +59,8 @@ GROUP BY
     product_id,
     batch_number
 HAVING COUNT(*) > 1;
+
+
 
 
 

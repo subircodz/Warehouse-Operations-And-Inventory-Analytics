@@ -21,7 +21,7 @@ def load_data(source: str):
     """
    
     
-    if Path(source).suffix not in SUPPORTED_EXTENSIONS.keys():
+    if Path(source).suffix not in SUPPORTED_EXTENSIONS:
         raise ValueError(f"Unsupported file type: {source}")
     
     if not Path(source).exists():

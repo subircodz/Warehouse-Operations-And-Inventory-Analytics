@@ -1,3 +1,8 @@
+
+-- ======================================================================
+-- Source: referential_integrity_validation.sql
+-- ======================================================================
+
 -- ======================================================
 -- REFERENTIAL INTEGRITY VALIDATION
 -- PROJECT : SwiftMove Logistics Analytics
@@ -156,3 +161,4 @@ ON
     w.warehouse_id = i.warehouse_id
 WHERE
     i.inventory_id IS NULL;
+
