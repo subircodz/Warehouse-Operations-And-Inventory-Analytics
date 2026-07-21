@@ -1,7 +1,9 @@
 from pathlib import Path
 
-
-def load_data(source: src): # type: ignore
+SUPPORTED_EXTENSIONS = {
+    ".xlsx" : "read_excel"
+}
+def load_data(source: str):
     """
     Load a dataset from the given source.
 
@@ -12,9 +14,15 @@ def load_data(source: src): # type: ignore
 
     Raises
     ------
+    ValueError
+        If invalid file type passed.
     FileNotFoundError
         If the source file does not exist.
     """
-
+   
+    
+    if Path(source).suffix not in SUPPORTED_EXTENSIONS.keys():
+        raise ValueError(f"Unsupported file type: {source}")
+    
     if not Path(source).exists():
         raise FileNotFoundError(f"Source file not found: {source}")
