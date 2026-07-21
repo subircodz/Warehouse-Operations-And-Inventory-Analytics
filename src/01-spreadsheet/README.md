@@ -109,7 +109,7 @@ These observations will be addressed during the Data Cleaning phase.
 ### Validation Dashboard
 
 <p align="center">
-    <img src='screenshots/spreadsheet_validation.png' width="100%">
+    <img src='screenshots/warehouse.png' width="100%">
 </>
 
 ---
