@@ -143,8 +143,6 @@ The validation queries use the following SQL concepts.
 
 ![Referential Integrity](screenshots/referential.png)
 
-*(Remove this section if referential validation has not been implemented.)*
-
 ---
 
 # Next Phase

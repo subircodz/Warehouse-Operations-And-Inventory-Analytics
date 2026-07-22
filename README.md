@@ -41,11 +41,12 @@ The following symbols indicate the current status of each project artifact.
 | [OBSERVATIONS](docs/13_OBSERVATIONS.md) | 🚧 | Maintains a register of verified observations throughout the project. |
 | [ANALYTICAL_THINKING](docs/14_ANALYTICAL_THINKING.md) | 🚧 | Records analytical ideas, assumptions, and design decisions. |
 | [PHASE_CHECKLIST](docs/15_PHASE_CHECKLIST.md) | 🚧 | Tracks the completion status of each DAPM phase. |
-| [PROJECT_JOURNAL](docs/PROJECT_JOURNAL.md) *(or PROJECT_CASE_JOURNAL.md)* | 🚧 | Records the activities, decisions, and outcomes for each project phase. |
+| [PROJECT_JOURNAL](docs/PROJECT_JOURNAL.md)  | 🚧 | Records the activities, decisions, and outcomes for each project phase. |
 
 ---
 
 The repository is developed incrementally following the DAPM workflow. Each phase is completed and documented before progressing to the next stage.
+
 ---
 
 # License
