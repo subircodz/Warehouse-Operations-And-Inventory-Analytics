@@ -1,95 +1,108 @@
-# Client Meeting
+# PROJECT BRIEF
 
-> Client: Apex Warehouse & Distribution Pvt. Ltd.
+## Project Overview
 
-Good morning, Mr. Subir.
+This project analyses warehouse operations to identify operational inefficiencies, evaluate data quality, and generate business insights that support better inventory and distribution decisions.
 
-Thank you for taking the time to meet with us.
-
-My name is **Anil Sharma**, and I'm the General Manager of Apex Warehouse & Distribution Pvt. Ltd.
-
-We are a third-party warehouse and distribution company. We receive products from multiple suppliers, store them in our warehouses, and dispatch them to retailers and business customers across different regions.
-
-Over the past few years, our business has grown considerably. While that's good news, it has also made managing our warehouse operations much more challenging.
+The project is developed as a business case study to validate the Data Analytics Project Methodology (DAPM). It simulates a real warehouse environment using operational datasets commonly maintained by warehouse and distribution companies.
 
 ---
 
-## Why we've approached you
+## Business Context
 
-To be honest, we feel like we're constantly reacting to problems instead of preventing them.
+Apex Warehouse & Distribution Pvt. Ltd. is a third-party warehouse and distribution company responsible for receiving products from multiple suppliers, storing inventory, and dispatching goods to retailers and business customers across different regions.
 
-Some days, we run out of products that customers need.
-
-Other products stay in the warehouse for months without moving.
-
-We've also noticed an increase in returned and damaged items, but we don't know whether the issue lies with our handling, the suppliers, or something else.
-
-Our warehouse supervisors work hard, but each department maintains its own reports, and every manager seems to have a different view of what's happening.
-
-When our leadership team asks simple questions like:
-
-- "Which suppliers are performing well?"
-- "Which products should we reorder?"
-- "What is occupying most of our warehouse space?"
-- "Which products are causing operational problems?"
-
-...we spend hours gathering reports from different teams, and even then, we're not always confident in the answers.
+As business operations have expanded, managing inventory and warehouse activities has become increasingly challenging. Operational data is available across multiple systems and departmental reports, making it difficult to obtain a consistent view of warehouse performance.
 
 ---
 
-## What we need from you
+## Business Challenges
 
-We're not looking for someone to build us a new warehouse system.
+The following operational issues have been identified for further analysis.
 
-We already have operational software.
-
-What we need is someone who can make sense of the information we already have.
-
-We want to understand:
-
-- What is actually happening inside our warehouse?
-- Where are the inefficiencies?
-- Which areas require immediate attention?
-- What should management focus on?
-- How can we make better business decisions using our data?
-
-If there are issues with our data, we'd also like you to tell us that. We'd rather know the truth than make decisions based on unreliable information.
+- Frequent stockouts of high-demand products.
+- Slow-moving inventory occupying warehouse space.
+- Increasing number of returned and damaged products.
+- Limited visibility into supplier performance.
+- Delays in identifying products requiring replenishment.
+- Operational reports maintained independently by different departments.
+- Management decisions relying on manual report consolidation.
 
 ---
 
-## About our data
+## Business Objectives
 
-Our data exists in several places.
+The primary objective is to understand the current warehouse operations and identify opportunities to improve operational efficiency through data analysis.
 
-Some comes from our warehouse management system.
+Key objectives include:
 
-Some reports are exported into Excel.
-
-Supplier information is maintained separately.
-
-Purchase records, inventory transactions, returns, and employee information are managed by different departments.
-
-We don't know which datasets you'll need, but we're willing to work with you to provide whatever is necessary.
-
----
-
-## Timeline
-
-Our management team would like an initial assessment within the next month.
-
-If your findings help us improve our operations, we're open to investing further in analytics and reporting.
-
-## Final Question
-
-Mr. Subir...
-
-From your experience as a Data Analytics Consultant...
-
-**Where would you like to begin, and what information do you need from us first?**
+- Understand inventory movement across the warehouse.
+- Identify operational bottlenecks.
+- Analyse inventory availability and storage utilisation.
+- Evaluate supplier performance.
+- Identify products requiring immediate management attention.
+- Assess overall data quality before performing detailed analysis.
+- Build reliable analytical reports to support business decision-making.
 
 ---
 
-### Navigating Documents
+## Available Data Sources
+
+Business information is available from multiple operational systems.
+
+Potential data sources include:
+
+- Warehouse Management System (WMS)
+- Inventory reports
+- Purchase records
+- Supplier information
+- Inventory transactions
+- Goods received records
+- Goods dispatched records
+- Return records
+- Employee information
+- Excel reports exported from operational systems
+
+Additional datasets may be incorporated during the Data Discovery phase if required.
+
+---
+
+## Project Scope
+
+The project focuses on analysing existing operational data.
+
+The objective is not to replace or redesign the warehouse management system. Instead, the project aims to transform existing operational data into meaningful business information that supports day-to-day and strategic decision-making.
+
+---
+
+## Expected Deliverables
+
+- Business understanding
+- Stakeholder analysis
+- Business requirements
+- Data discovery
+- Data validation
+- Data preparation
+- Exploratory data analysis
+- Business insights
+- Recommendations
+- Executive summary
+
+---
+
+## Success Criteria
+
+The project will be considered successful if it:
+
+- Identifies major operational issues within warehouse operations.
+- Produces reliable and validated datasets for analysis.
+- Generates actionable business insights.
+- Supports management with meaningful analytical reports.
+- Demonstrates the DAPM workflow through a complete end-to-end analytics project.
+
+---
+
+## Navigating Documents
 
 | Document | Link |
 |----------|------|

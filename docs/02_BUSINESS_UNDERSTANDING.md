@@ -6,141 +6,129 @@
 
 ---
 
-## Session Information
+## Project Information
 
 | Field | Details |
 |--------|---------|
 | Date | 13 July 2026 |
-| Session | 001 |
-| Client | SwiftMart Distribution Pvt. Ltd. (Warehouse) |
-| Consultant | Subir Sutradhar |
+| Phase | Business Understanding |
+| Version | 1.0 |
+| Status | Completed |
 
 ---
 
-## Business Understanding
+## Business Overview
 
-### Question 1
-
-**Consultant:**
-
-Can you describe how your warehouse operates from receiving goods to dispatch?
-
-**Client:**
-
-We receive goods from suppliers, inspect them for quantity and quality, store them in designated locations, pick products based on customer orders, pack them, and dispatch them through logistics partners.
+The warehouse receives products from multiple suppliers, stores inventory across warehouse locations, and dispatches customer orders to retailers, wholesalers, supermarkets, and online businesses. Warehouse operations are supported by a Warehouse Management System (WMS) integrated with an ERP system, while some operational reports are maintained in Microsoft Excel.
 
 ---
 
-### Question 2
+## Warehouse Operations
 
-**Consultant:**
+The operational workflow consists of the following activities:
 
-What types of products do you store in the warehouse?
+1. Receive goods from suppliers.
+2. Verify quantity and quality of incoming shipments.
+3. Store products in designated warehouse locations.
+4. Pick products based on customer orders.
+5. Pack customer orders.
+6. Dispatch shipments through logistics partners.
 
-**Client:**
-
-We store fast-moving consumer goods such as packaged foods, beverages, personal care products, and household items from multiple brands.
-
----
-
-### Question 3
-
-**Consultant:**
-
-What are the customers complaining about?
-
-**Client:**
-
-The main complaints are delayed deliveries, incomplete orders, and occasionally receiving incorrect products.
+This workflow forms the foundation for analysing inventory movement, warehouse efficiency, and order fulfilment.
 
 ---
 
-### Question 4
+## Products Managed
 
-**Consultant:**
+The warehouse primarily stores fast-moving consumer goods (FMCG), including:
 
-Do you have multiple locations?
+- Packaged foods
+- Beverages
+- Personal care products
+- Household items
 
-**Client:**
-
-Yes. We operate one central warehouse and three regional warehouses.
-
----
-
-### Question 5
-
-**Consultant:**
-
-Who are the customers?
-
-**Client:**
-
-Our customers are retail stores, supermarkets, wholesalers, and a few online retailers.
+Products are sourced from multiple suppliers and distributed to different customer segments.
 
 ---
 
-### Question 6
+## Customer Segments
 
-**Consultant:**
+The warehouse serves the following customers:
 
-Describe the overall warehouse workflow.
-
-**Client:**
-
-Goods arrive from suppliers, warehouse staff verify shipments against purchase orders, inspect for visible damage, and then store products based on product category and available storage space.
-
----
-
-### Question 7
-
-**Consultant:**
-
-What operational problems occur most often?
-
-**Client:**
-
-Stockouts of fast-moving products, excess stock of slow-moving products, delayed order processing during peak demand, and occasional inventory count mismatches.
+- Retail stores
+- Supermarkets
+- Wholesalers
+- Online retailers
 
 ---
 
-### Question 8
+## Current Operational Challenges
 
-**Consultant:**
+The following business challenges were identified during the Business Understanding phase.
 
-What business improvement is expected as the highest priority?
+- Stockouts of fast-moving products.
+- Excess inventory of slow-moving products.
+- Delayed order processing during peak demand.
+- Inventory count mismatches.
+- Delayed deliveries.
+- Incomplete customer orders.
+- Incorrect product dispatches.
 
-**Client:**
-
-Our highest priority is improving inventory availability while reducing excess inventory and ensuring customer orders are delivered on time.
+These challenges directly affect customer satisfaction, warehouse efficiency, and inventory management.
 
 ---
 
-### Question 9
+## Business Priorities
 
-**Consultant:**
+The organisation aims to improve operational performance by focusing on the following objectives.
 
-How do you currently record and manage warehouse information?
+- Improve inventory availability.
+- Reduce excess inventory.
+- Improve order fulfilment.
+- Deliver customer orders on time.
+- Improve visibility into warehouse operations.
+- Support business decisions using reliable operational data.
 
-**Client:**
+---
 
-We use a Warehouse Management System (WMS) integrated with our ERP system. Some operational reports are also maintained in Excel.
+## Existing Systems
+
+Warehouse operations are currently supported by:
+
+- Warehouse Management System (WMS)
+- Enterprise Resource Planning (ERP) system
+- Microsoft Excel operational reports
+
+These systems will serve as the primary data sources during the Data Discovery and Data Validation phases.
+
+---
+
+## Key Findings
+
+The Business Understanding phase established the following:
+
+- Warehouse operations follow a structured receiving-to-dispatch workflow.
+- Inventory management is the primary operational focus.
+- Multiple customer segments depend on timely order fulfilment.
+- Operational data exists across multiple systems.
+- Inventory availability and warehouse efficiency are the highest business priorities.
+- Existing reporting processes require analytical support for better decision-making.
 
 ---
 
 ## Phase Summary
 
-Business context, operational workflow, customer types, key operational challenges, and project objectives have been established.
+The business context, warehouse workflow, customer segments, operational challenges, existing systems, and business priorities have been documented.
 
-The information collected during this phase provides the foundation for stakeholder identification, business requirements gathering, and subsequent analytical activities.
+This information provides the foundation for Stakeholder Analysis, Business Requirements, Data Discovery, and subsequent analytical phases of the project.
 
 ---
 
-### Navigating Documents
+## Navigating Documents
 
 | Document | Link |
 |----------|------|
 | PROJECT_BRIEF | [01_PROJECT_BRIEF.md](01_PROJECT_BRIEF.md) |
-| BUSINESS_UNDERSTANDING | [02_BUSINESS_UNDERSTANDING.md](02_BUSINESS_UNDERSTANDING.md) |
 | STAKEHOLDER_ANALYSIS | [03_STAKEHOLDER_ANALYSIS.md](03_STAKEHOLDER_ANALYSIS.md) |
 | BUSINESS_REQUIREMENTS | [04_BUSINESS_REQUIREMENTS.md](04_BUSINESS_REQUIREMENTS.md) |
 | DATA_DISCOVERY | [05_DATA_DISCOVERY.md](05_DATA_DISCOVERY.md) |

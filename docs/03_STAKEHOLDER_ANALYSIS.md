@@ -6,116 +6,78 @@
 
 ---
 
-## Session Information
+## Project Information
 
 | Field | Details |
 |--------|---------|
 | Date | 15 July 2026 |
-| Session | 002 |
-| Client | SwiftMart Distribution Pvt. Ltd. (Warehouse) |
-| Consultant | Subir Sutradhar |
+| Phase | Stakeholder Analysis |
+| Version | 1.0 |
+| Status | Completed |
 
 ---
 
-## Client Statement
+## Purpose
 
-Warehouse operations involve multiple departments working together. Inventory management requires coordination between procurement, warehouse operations, sales, logistics, finance, customer support, and IT.
-
----
-
-### Question 1
-
-**Consultant:**
-
-Who is responsible for managing inventory in the warehouse?
-
-**Client:**
-
-The Inventory Manager monitors inventory levels, stock movements, stock availability, and coordinates with procurement and warehouse teams.
+Warehouse operations involve multiple business functions working together to manage inventory, fulfil customer orders, and maintain day-to-day operations. Identifying the key stakeholders helps define business requirements, reporting needs, and analytical priorities for the project.
 
 ---
 
-### Question 2
+## Stakeholder Overview
 
-**Consultant:**
-
-Who manages customer orders, dispatch, and deliveries?
-
-**Client:**
-
-The Order Fulfillment Team manages customer orders and dispatch, while the Logistics Team handles deliveries.
-
----
-
-### Question 3
-
-**Consultant:**
-
-Which department communicates with customers and handles complaints?
-
-**Client:**
-
-The Sales Team manages customer relationships, while the Customer Support Team handles complaints and service requests.
+| Stakeholder | Primary Responsibility |
+|-------------|------------------------|
+| Inventory Manager | Monitor inventory levels, stock movements, stock availability, and coordinate with procurement and warehouse teams. |
+| Warehouse Manager | Manage receiving, storage, picking, packing, inventory movement, and dispatch operations. |
+| Procurement Team | Create purchase orders based on inventory levels, reorder points, supplier lead times, and expected demand. |
+| Order Fulfilment Team | Process customer orders and coordinate dispatch activities. |
+| Logistics Team | Manage product deliveries and monitor delivery performance. |
+| Sales Team | Maintain customer relationships and communicate product availability. |
+| Customer Support Team | Handle customer complaints, returns, and service requests. |
+| Finance Department | Monitor inventory valuation, procurement costs, storage costs, and inventory-related expenses. |
+| IT Team | Maintain the Warehouse Management System (WMS), ERP integration, and operational data availability. |
 
 ---
 
-### Question 4
+## Stakeholder Information Requirements
 
-**Consultant:**
+Each stakeholder relies on different business information to perform daily operations.
 
-Who creates purchase orders?
-
-**Client:**
-
-The Procurement Team creates purchase orders based on inventory levels, reorder levels, supplier lead times, and expected demand.
-
----
-
-### Question 5
-
-**Consultant:**
-
-Who manages warehouse operations?
-
-**Client:**
-
-The Warehouse Manager oversees receiving, storage, picking, packing, inventory movement, and dispatch activities.
+| Stakeholder | Information Required |
+|-------------|----------------------|
+| Inventory Manager | Current stock levels, stock movements, stock availability, reorder status |
+| Warehouse Manager | Inventory movement, warehouse capacity, receiving and dispatch performance |
+| Procurement Team | Reorder levels, supplier lead times, inventory demand |
+| Order Fulfilment Team | Pending orders, picking status, dispatch status |
+| Logistics Team | Shipment status, delivery performance, delayed deliveries |
+| Sales Team | Product availability, customer order status |
+| Customer Support Team | Customer complaints, return requests, delivery issues |
+| Finance Department | Inventory value, procurement costs, carrying costs |
+| IT Team | Data availability, system integration, operational data quality |
 
 ---
 
-### Question 6
+## Key Findings
 
-**Consultant:**
+The Stakeholder Analysis phase identified the following observations.
 
-Who monitors inventory costs and financial performance?
-
-**Client:**
-
-The Finance Department monitors inventory valuation, procurement costs, storage costs, and inventory-related expenses.
-
----
-
-### Question 7
-
-**Consultant:**
-
-Who maintains the Warehouse Management System?
-
-**Client:**
-
-The IT Team maintains the WMS and ERP integration, while warehouse staff record operational data.
+- Inventory management requires collaboration across multiple business functions.
+- Different stakeholders depend on the same operational data but require different business insights.
+- Warehouse operations, procurement, logistics, and sales are closely interconnected.
+- Reliable reporting requires consistent and accurate operational data across all departments.
+- Stakeholder requirements will guide the Business Requirements and Data Discovery phases.
 
 ---
 
 ## Phase Summary
 
-The primary business stakeholders and their responsibilities have been identified.
+The key stakeholders, their responsibilities, and their information requirements have been documented.
 
-Understanding stakeholder responsibilities provides the foundation for gathering business requirements and defining future analytical deliverables.
+This understanding provides the foundation for defining business requirements, identifying required datasets, and designing role-based analytical reports during the subsequent DAPM phases.
 
 ---
 
-### Navigating Documents
+## Navigating Documents
 
 | Document | Link |
 |----------|------|

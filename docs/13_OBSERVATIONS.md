@@ -1,193 +1,98 @@
-# Observations
+# OBSERVATIONS
 
 > **Case Study:** Warehouse Operations & Inventory Analytics  
-> **Status:** 🟢 In Progress  
-> **Methodology:** Data Analytics Project Methodology (DAPM Framework)
+> **Document:** Observation Register  
+> **Status:** 🚧 In Progress
 
 ---
 
-## Phase 1 – Business Understanding
+## Purpose
 
-<table>
-  <thead>
-    <tr>
-      <th width="120">ID</th>
-      <th>Observation</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>OBS-001</td>
-      <td>The warehouse stores multiple categories of consumer goods, including foods, beverages, personal care products, and household products.</td>
-    </tr>
-    <tr>
-      <td>OBS-002</td>
-      <td>The warehouse serves as a central facility for receiving, storing, and dispatching inventory.</td>
-    </tr>
-    <tr>
-      <td>OBS-003</td>
-      <td>Inventory movement follows a standard workflow: Goods Received → Storage → Order Picking → Dispatch.</td>
-    </tr>
-    <tr>
-      <td>OBS-004</td>
-      <td>The client is experiencing stock-related challenges, including stockouts, overstock, and inventory mismatches.</td>
-    </tr>
-    <tr>
-      <td>OBS-005</td>
-      <td>Delayed deliveries and customer complaints indicate operational inefficiencies that require investigation.</td>
-    </tr>
-    <tr>
-      <td>OBS-006</td>
-      <td>Inventory accuracy and inventory visibility are important concerns for warehouse operations.</td>
-    </tr>
-    <tr>
-      <td>OBS-007</td>
-      <td>Management requires data-driven insights to improve inventory control and operational efficiency.</td>
-    </tr>
-    <tr>
-      <td>OBS-008</td>
-      <td>The root causes of the identified business problems are currently unknown and will be investigated in later DAPM phases.</td>
-    </tr>
-  </tbody>
-</table>
+This document records important observations identified throughout the Data Analytics Project Methodology (DAPM).
+
+Observations are documented as the project progresses and represent facts identified during each phase. They are intentionally descriptive and do not include assumptions, root-cause analysis, or recommendations.
+
+The observation register serves as a central reference for analytical thinking, business insights, and project conclusions developed in later phases.
 
 ---
 
-## Phase 2 – Stakeholder Analysis
+# Phase 1 – Business Understanding
 
-<table>
-  <thead>
-    <tr>
-      <th width="120">ID</th>
-      <th>Observation</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>OBS-009</td>
-      <td>The Inventory Manager is responsible for monitoring inventory levels and maintaining stock availability.</td>
-    </tr>
-    <tr>
-      <td>OBS-010</td>
-      <td>The Procurement Team manages purchase orders and replenishment decisions based on inventory demand.</td>
-    </tr>
-    <tr>
-      <td>OBS-011</td>
-      <td>The Warehouse Manager oversees warehouse operations, including receiving, storage, order fulfillment, and dispatch.</td>
-    </tr>
-    <tr>
-      <td>OBS-012</td>
-      <td>The Logistics Team is responsible for shipment planning, dispatch, and delivery performance.</td>
-    </tr>
-    <tr>
-      <td>OBS-013</td>
-      <td>The Finance Department monitors inventory valuation and inventory-related operational costs.</td>
-    </tr>
-    <tr>
-      <td>OBS-014</td>
-      <td>Different stakeholders are responsible for different business functions and therefore require different analytical views of the same operational data.</td>
-    </tr>
-  </tbody>
-</table>
+| ID | Observation |
+|----|-------------|
+| OBS-001 | The warehouse stores multiple categories of consumer goods, including food, beverages, personal care products, and household products. |
+| OBS-002 | Warehouse operations include receiving, storage, order picking, packing, and dispatch activities. |
+| OBS-003 | Inventory movement follows a structured workflow from goods receipt to customer dispatch. |
+| OBS-004 | Stockouts, overstock, and inventory mismatches have been identified as recurring operational challenges. |
+| OBS-005 | Delivery delays and customer complaints indicate potential process inefficiencies requiring further investigation. |
+| OBS-006 | Inventory accuracy and inventory visibility are important operational priorities. |
+| OBS-007 | Management requires reliable operational reporting to support business decisions. |
+| OBS-008 | The underlying causes of the identified business issues have not yet been determined and will be investigated during subsequent analytical phases. |
 
 ---
 
-## Phase 3 – Business Requirements
+# Phase 2 – Stakeholder Analysis
 
-<table>
-  <thead>
-    <tr>
-      <th width="120">ID</th>
-      <th>Observation</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>OBS-015</td>
-      <td>Different stakeholders require different business information to support their daily operational decisions.</td>
-    </tr>
-    <tr>
-      <td>OBS-016</td>
-      <td>The Inventory Manager requires stock visibility, inventory movement, and stock status metrics.</td>
-    </tr>
-    <tr>
-      <td>OBS-017</td>
-      <td>The Procurement Team requires inventory levels, reorder status, supplier lead time, and demand trends.</td>
-    </tr>
-    <tr>
-      <td>OBS-018</td>
-      <td>The Warehouse Manager requires warehouse utilization, inventory accuracy, goods movement, and order processing metrics.</td>
-    </tr>
-    <tr>
-      <td>OBS-019</td>
-      <td>The Logistics Team requires dispatch readiness, delivery status, delayed deliveries, and vehicle utilization metrics.</td>
-    </tr>
-    <tr>
-      <td>OBS-020</td>
-      <td>The Finance Department requires inventory valuation, procurement costs, storage costs, holding costs, and dead stock analysis.</td>
-    </tr>
-    <tr>
-      <td>OBS-021</td>
-      <td>Sales and Customer Support require product availability, delayed orders, customer complaints, returns, and incorrect shipment information.</td>
-    </tr>
-    <tr>
-      <td>OBS-022</td>
-      <td>Although stakeholders require different reports, they all rely on the same warehouse operational data.</td>
-    </tr>
-  </tbody>
-</table>
-
+| ID | Observation |
+|----|-------------|
+| OBS-009 | Inventory management responsibilities are distributed across multiple business functions. |
+| OBS-010 | Procurement activities depend on inventory availability, demand, and supplier performance. |
+| OBS-011 | Warehouse operations include receiving, storage, order fulfilment, and dispatch management. |
+| OBS-012 | Logistics operations are responsible for shipment planning and delivery performance. |
+| OBS-013 | Finance monitors inventory valuation and inventory-related operational costs. |
+| OBS-014 | Different stakeholders require different analytical views of the same operational data. |
 
 ---
 
-## Phase 4 – Data Discovery
+# Phase 3 – Business Requirements
 
-<table>
-<thead>
-<tr>
-<th width="120">ID</th>
-<th>Observation</th>
-</tr>
-</thead>
-
-<tbody>
-
-<tr>
-<td>OBS-023</td>
-<td>The primary operational data is maintained within the Warehouse Management System (WMS).</td>
-</tr>
-
-<tr>
-<td>OBS-024</td>
-<td>Additional business reports are available as Microsoft Excel workbooks.</td>
-</tr>
-
-<tr>
-<td>OBS-025</td>
-<td>CSV exports are available for data analysis without direct database access.</td>
-</tr>
-
-<tr>
-<td>OBS-026</td>
-<td>The required datasets have been successfully identified and acquired for analysis.</td>
-</tr>
-
-<tr>
-<td>OBS-027</td>
-<td>Client-provided datasets have been organized under the <code>data/raw/</code> directory to preserve the original source data.</td>
-</tr>
-
-<tr>
-<td>OBS-028</td>
-<td>The project is ready to proceed to Data Validation.</td>
-</tr>
-
-</tbody>
-</table>
+| ID | Observation |
+|----|-------------|
+| OBS-015 | Business reporting requirements differ across departments based on operational responsibilities. |
+| OBS-016 | Inventory management requires visibility into stock levels, stock movement, and inventory status. |
+| OBS-017 | Procurement decisions depend on inventory levels, reorder status, supplier lead time, and demand trends. |
+| OBS-018 | Warehouse management requires operational metrics related to warehouse utilisation and inventory accuracy. |
+| OBS-019 | Logistics requires dispatch readiness and delivery performance metrics. |
+| OBS-020 | Finance requires inventory valuation and inventory cost analysis. |
+| OBS-021 | Sales and Customer Support depend on product availability and customer service information. |
+| OBS-022 | Multiple business functions rely on the same operational dataset to support decision-making. |
 
 ---
 
-### Navigating Documents
+# Phase 4 – Data Discovery
+
+| ID | Observation |
+|----|-------------|
+| OBS-023 | The Warehouse Management System (WMS) is the primary source of operational data. |
+| OBS-024 | Additional business information is available through Microsoft Excel reports. |
+| OBS-025 | CSV exports provide an additional source for analytical processing. |
+| OBS-026 | All required datasets have been identified and acquired. |
+| OBS-027 | Original datasets have been preserved within the `data/raw/` directory. |
+| OBS-028 | The project is ready to proceed to the Data Validation phase. |
+
+---
+
+## Observation Guidelines
+
+Each observation recorded in this document should satisfy the following principles.
+
+- Based on evidence collected during the project.
+- Written as a factual statement.
+- Independent of assumptions or recommendations.
+- Traceable to a specific DAPM phase.
+- Useful for supporting analytical findings in later phases.
+
+---
+
+## Phase Summary
+
+The observation register provides a chronological record of business understanding, stakeholder insights, business requirements, and data discovery findings.
+
+Future DAPM phases will continue extending this register as additional observations emerge during validation, data preparation, exploratory analysis, and business insight generation.
+
+---
+
+## Navigating Documents
 
 | Document | Link |
 |----------|------|

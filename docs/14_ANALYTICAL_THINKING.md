@@ -1,69 +1,126 @@
-# ANALYTICAL_THINKING
+# ANALYTICAL THINKING
 
-> **Purpose:** Quick analytical notes captured after Business Understanding. These ideas are preliminary and will be validated in later DAPM phases.
+> **Case Study:** Warehouse Operations & Inventory Analytics  
+> **Document:** Analytical Thinking Register  
+> **Status:** 🚧 In Progress
 
-| Business Problem    | Think About                       | Possible Data Required              |
-| ------------------- | --------------------------------- | ----------------------------------- |
-| Stockouts           | Current Stock, Stock Status       | Goods Received, Goods Dispatched    |
-| Overstock           | Inventory Age, Inventory Turnover | Inventory Records, Dispatch Records |
-| Delayed Deliveries  | Delivery Delay, On-Time Delivery  | Orders, Dispatch, Delivery          |
-| Inventory Mismatch  | Stock Difference                  | Physical Count, System Stock        |
-| Customer Complaints | Complaint Count, Return Rate      | Complaints, Returns                 |
+---
 
-## Possible Dimensions
+## Purpose
 
-* Product
-* Category
-* Warehouse
-* Customer
-* Date
+This document captures analytical ideas, working hypotheses, and engineering decisions throughout the Data Analytics Project Methodology (DAPM).
 
-## Phase 2
+The entries recorded here represent the current understanding of the business and help guide subsequent analytical activities. They are exploratory in nature and should not be interpreted as validated findings.
 
-### Decision Makers
+Every assumption documented in this register must be verified using evidence collected during the later phases of the project.
 
-| Stakeholder | Information Likely Needed |
-|--------------|--------------------------|
+---
+
+# Phase 1 – Business Understanding
+
+## Initial Analytical Focus
+
+| Business Problem | Analytical Focus | Potential Data Sources |
+|------------------|------------------|------------------------|
+| Stockouts | Current Stock, Stock Status | Goods Received, Goods Dispatched |
+| Overstock | Inventory Age, Inventory Turnover | Inventory Records, Dispatch Records |
+| Delayed Deliveries | Delivery Delay, On-Time Delivery | Orders, Dispatch, Delivery |
+| Inventory Mismatch | Stock Difference | Physical Count, System Stock |
+| Customer Complaints | Complaint Count, Return Rate | Complaints, Returns |
+
+---
+
+## Potential Business Dimensions
+
+The following business dimensions are expected to support filtering, grouping, and summarising business information during analysis.
+
+- Product
+- Category
+- Warehouse
+- Customer
+- Date
+
+---
+
+# Phase 2 – Stakeholder Analysis
+
+## Stakeholder Information Requirements
+
+| Stakeholder | Information Required |
+|--------------|----------------------|
 | Inventory Manager | Current Stock, Stock Status, Reorder Alerts |
-| Procurement Team | Reorder Level, Supplier Lead Time, Demand |
-| Warehouse Manager | Storage Utilization, Inventory Movement |
+| Procurement Team | Reorder Level, Supplier Lead Time, Demand Trends |
+| Warehouse Manager | Storage Utilisation, Inventory Movement |
 | Logistics Team | Dispatch Status, Delivery Performance |
 | Sales Team | Product Availability |
 | Customer Support | Delayed Orders, Incorrect Deliveries |
 | Finance | Inventory Value, Carrying Cost |
 
+---
+
+## Engineering Decisions
+
+- Different stakeholders require different business views of the same operational data.
+- Business metrics should be calculated once and reused across multiple reports and dashboards.
+- Dashboards should be organised around business functions rather than individual datasets.
+- Business logic should remain independent of the reporting or visualisation layer.
+
+---
+
+# Phase 3 – Business Requirements
+
+## Engineering Decisions
+
+- A common analytics layer should generate reusable business metrics.
+- Shared calculations should minimise duplication across reports and dashboards.
+- Dataset discovery should prioritise the tables and columns required to satisfy business requirements.
+- Business metrics should be defined before dashboard development begins.
+- Reporting requirements should drive data modelling, not the other way around.
+
+---
+
+# Phase 4 – Data Discovery
+
+## Engineering Decisions
+
+- The SQL database will serve as the primary analytical data source whenever available.
+- Excel reports will be used to verify business calculations where required.
+- CSV exports provide an alternative data source for Spreadsheet and Python validation.
+- Original datasets must remain unchanged throughout the project.
+- Data Validation must be completed before any cleaning or transformation activities.
+
+---
+
+## Engineering Principles
+
+The following principles should be followed throughout the analytical lifecycle.
+
+- Record observations before forming conclusions.
+- Separate assumptions from verified facts.
+- Validate every hypothesis using evidence.
+- Design reusable business metrics.
+- Keep business logic independent of presentation layers.
+- Preserve raw data throughout the project lifecycle.
+
+---
 
 ## Validation Reminder
 
-The metrics and data requirements above are initial thoughts only and must be validated during the subsequent DAPM phases before implementation.
+Entries in this document represent analytical thinking rather than verified findings.
+
+Every hypothesis, assumption, and engineering decision should be validated using evidence collected during subsequent DAPM phases before being treated as a business insight or recommendation.
 
 ---
 
-## Phase 3 – Business Requirements
+## Phase Summary
 
-### Analytical Thinking
+The Analytical Thinking Register documents the reasoning process followed during the project.
 
-- Stakeholders consume different business information but rely on a common operational dataset.
-- A shared analytics layer can generate reusable metrics for multiple stakeholders.
-- Dashboard design should be role-based rather than data-source-based.
-- Common metrics should be calculated once and reused across multiple reports and dashboards.
-- Data discovery should focus on identifying tables and columns required to satisfy stakeholder requirements.
+Maintaining this document separately from the Observation Register helps distinguish verified facts from analytical assumptions, providing a transparent record of the decision-making process throughout the DAPM lifecycle.
 
 ---
 
-## Phase 4 – Data Discovery
-
-### Initial Thoughts
-
-- The SQL database will serve as the primary source for analysis.
-- Excel reports can be used for business verification where required.
-- CSV exports provide an alternative source for Python and Spreadsheet analysis.
-- Preserve all original datasets without modification.
-- Begin Data Validation before any cleaning or transformation activities.
-
----
-
-### Navigating Documents
+## Navigating Documents
 
 | Document | Link |
 |----------|------|

@@ -1,72 +1,135 @@
-# DAPM Phase Checklist
+# PHASE CHECKLIST
 
-## Project Progress
+> **Case Study:** Warehouse Operations & Inventory Analytics  
+> **Document:** DAPM Phase Checklist  
+> **Status:** 🚧 In Progress
 
-✅ Phase 1 - Business Understanding
+---
 
-✅ Phase 2 - Stakeholder Analysis
+## Purpose
 
-✅ Phase 3 - Business Requirements
+This checklist tracks the completion status of each phase in the Data Analytics Project Methodology (DAPM).
 
-✅ Phase 4 - Data Discovery
+A phase is considered complete only after all mandatory deliverables, documentation, and review activities have been finished.
 
-🟡 Phase 5 - Data Validation
+---
 
-## Phase 1 – Business Understanding
+# Project Progress
+
+| Phase | Status |
+|--------|:------:|
+| Phase 1 – Business Understanding | ✅ Completed |
+| Phase 2 – Stakeholder Analysis | ✅ Completed |
+| Phase 3 – Business Requirements | ✅ Completed |
+| Phase 4 – Data Discovery | ✅ Completed |
+| Phase 5 – Data Validation | 🚧 In Progress |
+| Phase 6 – Data Preparation | ⏳ Pending |
+| Phase 7 – Exploratory Data Analysis | ⏳ Pending |
+| Phase 8 – Business Insights | ⏳ Pending |
+| Phase 9 – Recommendations | ⏳ Pending |
+| Phase 10 – Executive Summary | ⏳ Pending |
+| Phase 11 – Project Summary | ⏳ Pending |
+
+---
+
+# Phase 1 – Business Understanding
+
+### Checklist
 
 - ✅ Business context understood
 - ✅ Business problems identified
 - ✅ Business objectives documented
 - ✅ Warehouse workflow understood
-- ✅ Initial observations documented
-- ✅ Analytical thinking captured
-
-Status: ✅ Complete
-
-## Phase 2 – Stakeholder Analysis
-
-Key stakeholders identified
-
-- ✅ Stakeholder responsibilities documented
-- ✅ Stakeholder involvement understood
-- ✅ Stakeholder observations documented
-
-Status: ✅ Completed
-
----
-
-## Phase 3 – Business Requirements
-
-- ✅ Business information requirements collected.
-- ✅ Stakeholder reporting needs identified.
-- ✅ Required business metrics documented.
-- ✅ Reporting frequency identified.
-- ✅ Analytical thinking updated.
-- ✅ Observations documented.
+- ✅ Initial observations recorded
+- ✅ Initial analytical thinking documented
 
 **Status:** ✅ Completed
 
 ---
 
-## Phase 4 – Data Discovery
+# Phase 2 – Stakeholder Analysis
 
-### Objective
+### Checklist
 
-Identify, acquire, and organize the datasets required for the project.
+- ✅ Primary stakeholders identified
+- ✅ Stakeholder responsibilities documented
+- ✅ Stakeholder information requirements understood
+- ✅ Stakeholder observations recorded
+- ✅ Analytical Thinking Register updated
+
+**Status:** ✅ Completed
+
+---
+
+# Phase 3 – Business Requirements
+
+### Checklist
+
+- ✅ Business information requirements gathered
+- ✅ Stakeholder reporting requirements identified
+- ✅ Required business metrics documented
+- ✅ Reporting frequency defined
+- ✅ Observation Register updated
+- ✅ Analytical Thinking Register updated
+
+**Status:** ✅ Completed
+
+---
+
+# Phase 4 – Data Discovery
 
 ### Checklist
 
 - ✅ Data sources identified
-- ✅ Technical stakeholder consulted
 - ✅ Required datasets acquired
-- ✅ Source data organized within the project repository
+- ✅ Source data preserved within the project repository
+- ✅ Data accessibility verified
+- ✅ Observation Register updated
+- ✅ Analytical Thinking Register updated
 - ✅ Phase documentation completed
 
 **Status:** ✅ Completed
 
 ---
 
-### Navigating Documents
+# Phase 5 – Data Validation
+
+### Checklist
+
+- ✅ Spreadsheet validation completed
+- ✅ SQL validation completed
+- 🚧 Python validation in progress
+- ⏳ Consolidated validation findings pending
+- ⏳ Observation Register update pending
+- ⏳ Analytical Thinking Register update pending
+- ⏳ Phase documentation pending
+
+**Status:** 🚧 In Progress
+
+---
+
+## Completion Criteria
+
+A DAPM phase is considered complete only when:
+
+- All planned activities have been completed.
+- Required project artefacts have been updated.
+- Observations have been recorded where applicable.
+- Analytical Thinking Register has been updated where applicable.
+- Phase documentation has been reviewed for consistency.
+- The project is ready to transition to the next phase.
+
+---
+
+## Phase Summary
+
+The Phase Checklist provides a consolidated view of project progress throughout the DAPM lifecycle.
+
+Maintaining this checklist helps ensure that every phase is completed consistently before moving to the next stage of the project.
+
+---
+
+## Navigating Documents
 
 | Document | Link |
 |----------|------|

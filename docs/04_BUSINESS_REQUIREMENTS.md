@@ -6,30 +6,34 @@
 
 ---
 
-## Session Information
+## Project Information
 
 | Field | Details |
 |--------|---------|
 | Date | 16 July 2026 |
-| Session | 003 |
-| Client | SwiftMart Distribution Pvt. Ltd. (Warehouse) |
-| Consultant | Subir Sutradhar |
+| Phase | Business Requirements |
+| Version | 1.0 |
+| Status | Completed |
 
 ---
 
-## Client Statement
+## Purpose
 
-The organization already captures operational data through its Warehouse Management System (WMS) and ERP. However, stakeholders require meaningful reports and dashboards to support daily operations and business decision-making.
+The organisation captures operational data through its Warehouse Management System (WMS) and ERP. The objective of this phase is to identify the business information required by different stakeholders and define the reporting requirements that will guide data discovery, validation, and analytics.
 
 ---
 
-### Question 1
+## Business Requirement Overview
 
-**Consultant:**
+Different business functions rely on the same operational data but require different information to support their day-to-day responsibilities. These requirements form the foundation for designing dashboards, reports, and analytical solutions.
 
-What information does the Inventory Manager require on a daily basis?
+---
 
-**Client:**
+## Stakeholder Requirements
+
+### Inventory Manager
+
+Required business information:
 
 - Current Stock
 - Available Stock
@@ -40,13 +44,9 @@ What information does the Inventory Manager require on a daily basis?
 
 ---
 
-### Question 2
+### Procurement Team
 
-**Consultant:**
-
-What information helps the Procurement Team make purchasing decisions?
-
-**Client:**
+Required business information:
 
 - Current Inventory Levels
 - Reorder Status
@@ -56,15 +56,11 @@ What information helps the Procurement Team make purchasing decisions?
 
 ---
 
-### Question 3
+### Warehouse Manager
 
-**Consultant:**
+Required business information:
 
-What information is important for the Warehouse Manager?
-
-**Client:**
-
-- Warehouse Space Utilization
+- Warehouse Space Utilisation
 - Goods Received
 - Goods Dispatched
 - Pending Orders
@@ -73,29 +69,21 @@ What information is important for the Warehouse Manager?
 
 ---
 
-### Question 4
+### Logistics Team
 
-**Consultant:**
-
-What information does the Logistics Team require?
-
-**Client:**
+Required business information:
 
 - Orders Ready for Dispatch
 - Delivery Status
 - Delayed Deliveries
-- Vehicle Utilization
+- Vehicle Utilisation
 - Delivery Performance
 
 ---
 
-### Question 5
+### Finance Department
 
-**Consultant:**
-
-What inventory-related information does the Finance Department require?
-
-**Client:**
+Required business information:
 
 - Inventory Value
 - Procurement Cost
@@ -106,13 +94,9 @@ What inventory-related information does the Finance Department require?
 
 ---
 
-### Question 6
+### Sales and Customer Support
 
-**Consultant:**
-
-What information does the Sales and Customer Support team require?
-
-**Client:**
+Required business information:
 
 - Product Availability
 - Delayed Orders
@@ -122,47 +106,55 @@ What information does the Sales and Customer Support team require?
 
 ---
 
-### Question 7
+## Management Reporting Requirements
 
-**Consultant:**
+Management requires dashboards that provide visibility into overall warehouse performance.
 
-What type of dashboards does management expect?
+The expected analytical reports include:
 
-**Client:**
-
-- Inventory Health
-- Stock Availability
-- Order Fulfillment
-- Delivery Performance
-- Warehouse Utilization
-- Inventory Cost
-- Customer Service Performance
+- Inventory Health Dashboard
+- Stock Availability Dashboard
+- Order Fulfilment Dashboard
+- Delivery Performance Dashboard
+- Warehouse Utilisation Dashboard
+- Inventory Cost Dashboard
+- Customer Service Performance Dashboard
 
 ---
 
-### Question 8
+## Reporting Frequency
 
-**Consultant:**
+The reporting schedule is expected to support different levels of business decision-making.
 
-How frequently should reports be available?
+| Report Type | Frequency |
+|-------------|-----------|
+| Operational Dashboard | Daily |
+| Management Report | Weekly |
+| Executive Report | Monthly |
 
-**Client:**
+---
 
-- Daily operational dashboards
-- Weekly management reports
-- Monthly executive reports
+## Key Findings
+
+The Business Requirements phase established the following:
+
+- Different stakeholders require role-specific business information.
+- Most reporting requirements depend on a shared operational dataset.
+- Inventory management is the central focus across multiple departments.
+- Dashboards should be designed around business functions rather than individual data sources.
+- Reporting frequency varies based on operational and management needs.
 
 ---
 
 ## Phase Summary
 
-Business requirements have been gathered from the primary stakeholders.
+Business requirements have been documented for the primary stakeholders.
 
-These requirements define the analytical objectives and reporting expectations that will guide dataset discovery, data validation, and subsequent analytical phases.
+These requirements define the analytical objectives, reporting expectations, and key business metrics that will guide the Data Discovery, Data Validation, and subsequent analytical phases of the project.
 
 ---
 
-### Navigating Documents
+## Navigating Documents
 
 | Document | Link |
 |----------|------|

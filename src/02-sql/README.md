@@ -1,54 +1,66 @@
 # SQL Data Validation
 
+> **Module:** Data Validation – SQL  
+> **Status:** ✅ Completed
+
+---
+
 ## Purpose
 
-After completing the spreadsheet-based data discovery, the next step was to validate the same dataset using SQL.
+SQL validation provides a database-level assessment of the warehouse dataset after it has been imported into MariaDB.
 
-The objective of this phase was not only to write SQL queries, but also to verify the quality, consistency and integrity of the warehouse data directly from the database.
+This phase verifies data quality using SQL queries and complements the Spreadsheet Validation by validating the same dataset in a relational database environment.
 
-This validation helped confirm whether the observations made during spreadsheet analysis still held true after the data was loaded into MariaDB.
-
----
-
-## Validation Objectives
-
-During this phase, the following checks were performed:
-
-- Verify successful database import
-- Verify table structure
-- Validate record counts
-- Check missing values
-- Validate business keys
-- Verify referential integrity
-- Validate business rules
-- Document observations
+No changes are made to the source data during this phase.
 
 ---
 
-## Validation Workflow
+# Dataset
 
-```
-Import Database
-        │
-        ▼
-Verify Schema
-        │
-        ▼
-Validate Record Counts
-        │
-        ▼
-Missing Value Analysis
-        │
-        ▼
-Business Key Validation
-        │
-        ▼
+The following tables were validated.
+
+| Table | Description |
+|--------|-------------|
+| Warehouses | Warehouse master data |
+| Suppliers | Supplier master data |
+| Products | Product master data |
+| Inventory | Inventory transactions |
+
+---
+
+# Validation Scope
+
+The following validation checks were performed.
+
+- Record count validation
+- Missing value validation
+- Duplicate record validation
+- Identifier validation
+- Referential integrity validation 
+
+---
+
+# Validation Workflow
+
+```text
+Import Dataset
+       │
+       ▼
+Record Count Validation
+       │
+       ▼
+Missing Value Validation
+       │
+       ▼
+Duplicate Validation
+       │
+       ▼
+Identifier Validation
+       │
+       ▼
 Referential Integrity Validation
-        │
-        ▼
-Business Rule Validation
-        │
-        ▼
+       │
+       ▼
 Document Findings
 ```
 
@@ -56,114 +68,47 @@ Document Findings
 
 # Validation Categories
 
-## 1. Schema Validation
+## Record Count Validation
 
-Verified that all expected tables were imported successfully and the table structures matched the generated dataset.
-
-Tables validated:
-
-- Warehouses
-- Suppliers
-- Products
-- Inventory
+Verified that all expected records were imported successfully into the database.
 
 ---
 
-## 2. Record Count Validation
+## Missing Value Validation
 
-The total number of records in each table was verified after database import.
-
-| Table | Records |
-|--------|--------:|
-| Warehouses | 4 |
-| Suppliers | 199 |
-| Products | 2,999 |
-| Inventory | 12,000 |
-
-**Total Records:** **15,202**
-
-This confirmed that all datasets were imported successfully without any record loss.
+Checked each table for missing values using SQL queries.
 
 ---
 
-## 3. Missing Value Validation
+## Duplicate Record Validation
 
-Missing values were identified directly from the database using SQL queries.
-
-Summary:
-
-| Table | Columns with Missing Values |
-|--------|-----------------------------|
-| Warehouses | state |
-| Suppliers | gst_number |
-| Products | supplier_id, product_name |
-| Inventory | warehouse_id, product_id, batch_number |
-
-Instead of correcting the data immediately, these records were retained intentionally for downstream validation and data cleaning exercises.
+Validated duplicate records across all tables using SQL.
 
 ---
 
-## 4. Business Key Validation
+## Identifier Validation
 
-Business identifiers were validated to ensure duplicate business records were not created.
-
-Validated Keys:
-
-- Product SKU
-- Supplier Code
-- Warehouse Code
-- Warehouse + Product + Batch combination
-
-No duplicate business keys were identified during validation.
+Verified identifier columns for invalid or duplicate values.
 
 ---
 
-## 5. Referential Integrity Validation
+## Referential Integrity Validation
 
-Relationships between master and transactional tables were validated.
-
-Relationships checked:
-
-- Inventory → Products
-- Products → Suppliers
-- Suppliers → Products
-- Warehouses → Inventory
-
-The objective was to identify orphan records and verify that business relationships remained consistent after import.
-
----
-
-## 6. Business Rule Validation
-
-Business rules were validated using SQL queries.
-
-Rules checked included:
-
-- Negative Quantity
-- Negative Unit Cost
-- Negative Product Price
-- Negative Reorder Level
-- Product Status
-- Supplier Status
-
-These checks helped identify records that could potentially impact reporting accuracy.
+Validated relationships between related tables to identify orphan records.
 
 ---
 
 # SQL Techniques Used
 
-During this validation phase the following SQL concepts were applied.
+The validation queries use the following SQL concepts.
 
 - SELECT
 - WHERE
 - COUNT()
-- DISTINCT
 - GROUP BY
 - HAVING
-- LEFT JOIN
+- JOIN
 - Aggregate Functions
-
-The focus of this phase was practical data validation rather than learning isolated SQL syntax.
 
 ---
 
@@ -171,39 +116,40 @@ The focus of this phase was practical data validation rather than learning isola
 
 | Validation | Status |
 |------------|:------:|
-| Database Import | ✅ |
-| Schema Validation | ✅ |
-| Record Count Validation | ✅ |
-| Missing Value Validation | ✅ |
+| Schema Understanding | ✅ |
+| Record Count | ✅ |
+| Missing Values | ✅ |
+| Duplicate Records | ✅ |
 | Business Key Validation | ✅ |
-| Referential Integrity Validation | ✅ |
 | Business Rule Validation | ✅ |
-
+| Referential Integrity | ✅ 
 ---
 
 # Evidence
 
-### SQL Validation Summary
+## Validation Summary
 
-![SUMMARY](screenshots/validation.png)
-
----
-
-### Duplicate Validation
-
-![BUSINESS KEY VALIDATION](screenshots/duplicates.png)
+![Validation Summary](screenshots/validation.png)
 
 ---
 
-### Referential Integrity Validation
+## Duplicate Validation
 
-![REFERENTIAL INTEGRITY](screenshots/referential.png)
+![Duplicate Validation](screenshots/duplicates.png)
 
 ---
 
-### Business Rule Validation
+## Referential Integrity Validation
 
-![BUSINESS RULE VALIDATION](screenshots/rule.png)
+![Referential Integrity](screenshots/referential.png)
+
+*(Remove this section if referential validation has not been implemented.)*
+
+---
+
+# Next Phase
+
+Proceed to Python Validation to automate the same validation checks using Pandas.
 
 ---
 
@@ -211,7 +157,7 @@ The focus of this phase was practical data validation rather than learning isola
 
 | Document | Link |
 |----------|------|
-| Data Validation | [CLICK](../../docs/06_DATA_VALIDATION.md) |
-| Spreadsheet Validation | [CLICK](../01-spreadsheet/README.md) |
-| Python Validation | [CLICK](../03-python/README.md) |
-| Data Discovery | [CLICK](../../docs/05_DATA_DISCOVERY.md) |
+| Data Validation | [06_DATA_VALIDATION.md](../../docs/06_DATA_VALIDATION.md) |
+| Spreadsheet Validation | [README.md](../01-spreadsheet/README.md) |
+| Python Validation | [README.md](../03-python/README.md) |
+| Data Discovery | [05_DATA_DISCOVERY.md](../../docs/05_DATA_DISCOVERY.md) |

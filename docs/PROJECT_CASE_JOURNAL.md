@@ -1,125 +1,197 @@
 # PROJECT CASE JOURNAL
 
+> **Case Study:** Warehouse Operations & Inventory Analytics  
+> **Document:** Project Case Journal  
+> **Status:** 🚧 In Progress
+
+---
+
 ## Purpose
 
-This journal records the key meetings, questions, decisions, and outcomes throughout the project. It provides a chronological summary of the consulting engagement rather than detailed technical documentation.
+The Project Case Journal provides a chronological record of the work completed throughout the Data Analytics Project Methodology (DAPM).
+
+Each journal entry summarises the activities performed, important decisions, and project outcomes for a specific phase. It serves as a high-level progress log rather than detailed technical documentation.
 
 ---
 
-# Case Study Timeline
+# Project Timeline
 
-| Phase                            | Status      |
-| -------------------------------- | ----------- |
+| Phase | Status |
+|--------|:------:|
 | Phase 1 – Business Understanding | ✅ Completed |
-| Phase 2 – Stakeholder Analysis   | ✅ Completed |
-| Phase 3 – Business Requirements  | ✅ Completed |
-| Phase 4 – Data Discovery         | ✅ Completed |
+| Phase 2 – Stakeholder Analysis | ✅ Completed |
+| Phase 3 – Business Requirements | ✅ Completed |
+| Phase 4 – Data Discovery | ✅ Completed |
+| Phase 5 – Data Validation | 🚧 In Progress |
 
 ---
 
-# Phase 1 — Business Understanding
+# Phase 1 – Business Understanding
 
 **Date:** 13 July 2026
 
-**Meeting With:** Business Representative
+## Objective
 
-### Objective
-
-Understand the client's business, operational workflow, and major business problems.
-
-### Key Discussion
-
-| Consultant Question                          | Client Response                                                                                |
-| -------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| How does the warehouse operate?              | Goods are received, stored, picked, and dispatched.                                            |
-| What products are handled?                   | Multiple consumer product categories.                                                          |
-| Who are your customers?                      | Retailers, supermarkets, wholesalers, and online retailers.                                    |
-| What problems occur most often?              | Stockouts, overstock, delayed orders, inventory mismatches, and customer complaints.           |
-| What is your primary objective?              | Improve inventory availability while reducing excess stock and improving delivery performance. |
-| Where is operational information maintained? | WMS integrated with ERP, with some Excel reporting.                                            |
-
-### Outcome
-
-Business context established and key operational problems identified.
+Develop an understanding of the warehouse business domain, operational workflow, and the primary business problems presented in the case study.
 
 ---
 
-# Phase 2 — Stakeholder Analysis
+## Activities Performed
+
+- Reviewed the business scenario.
+- Documented the warehouse workflow.
+- Identified the major business problems.
+- Recorded initial business observations.
+- Captured the first analytical thoughts.
+
+---
+
+## Key Decisions
+
+- Focus the project on warehouse operations and inventory analytics.
+- Continue with stakeholder identification before defining reporting requirements.
+
+---
+
+## Outcome
+
+- Business context established.
+- Primary operational challenges identified.
+- Project objectives documented.
+
+---
+
+# Phase 2 – Stakeholder Analysis
 
 **Date:** 15 July 2026
 
-**Meeting With:** Business Representative
+## Objective
 
-### Objective
-
-Identify the departments responsible for warehouse operations and understand their responsibilities.
-
-### Key Discussion
-
-| Consultant Question                      | Client Response               |
-| ---------------------------------------- | ----------------------------- |
-| Who manages inventory?                   | Inventory Manager.            |
-| Who manages purchasing?                  | Procurement Team.             |
-| Who manages warehouse operations?        | Warehouse Manager.            |
-| Who manages deliveries?                  | Logistics Team.               |
-| Who manages customer communication?      | Sales & Customer Support.     |
-| Who oversees finance?                    | Finance Department.           |
-| Who maintains business systems and data? | IT / WMS Administration Team. |
-
-### Outcome
-
-Business stakeholders and technical stakeholders identified for the project.
+Identify the business functions involved in warehouse operations and understand their responsibilities.
 
 ---
 
-# Phase 3 — Business Requirements
+## Activities Performed
+
+- Identified the primary business stakeholders.
+- Documented stakeholder responsibilities.
+- Mapped stakeholders to operational processes.
+- Updated the Observation Register.
+- Updated the Analytical Thinking Register.
+
+---
+
+## Key Decisions
+
+- Reporting requirements will be gathered separately for each stakeholder group.
+- Dashboard design should be driven by business responsibilities.
+
+---
+
+## Outcome
+
+- Business stakeholders identified.
+- Stakeholder responsibilities documented.
+- Project ready to proceed to Business Requirements.
+
+---
+
+# Phase 3 – Business Requirements
 
 **Date:** 16 July 2026
 
-**Meeting With:** Business Stakeholders
+## Objective
 
-### Objective
-
-Identify the information and reports required by each stakeholder.
-
-### Key Discussion
-
-| Stakeholder              | Primary Requirement                                     |
-| ------------------------ | ------------------------------------------------------- |
-| Inventory                | Stock visibility and inventory movement.                |
-| Procurement              | Reorder decisions and supplier performance.             |
-| Warehouse                | Space utilization and operational efficiency.           |
-| Logistics                | Delivery and dispatch performance.                      |
-| Finance                  | Inventory valuation and inventory costs.                |
-| Sales & Customer Support | Product availability, returns, and customer complaints. |
-| Management               | Executive dashboards and KPI reporting.                 |
-
-### Outcome
-
-Business reporting requirements documented for all stakeholders.
+Identify the information, metrics, and reports required to support operational and management decisions.
 
 ---
 
-# Phase 4 — Data Discovery
+## Activities Performed
+
+- Documented stakeholder reporting requirements.
+- Identified the required business metrics.
+- Defined reporting frequency.
+- Updated project observations.
+- Updated analytical thinking.
+
+---
+
+## Key Decisions
+
+- Shared business metrics should be reused across multiple dashboards.
+- Business requirements will guide dataset discovery.
+
+---
+
+## Outcome
+
+- Reporting requirements documented.
+- Business metrics identified.
+- Project ready to proceed to Data Discovery.
+
+---
+
+# Phase 4 – Data Discovery
 
 **Date:** 17 July 2026
 
-**Meeting With:** IT / WMS Administrator
+## Objective
 
-### Objective
+Identify, acquire, and organise the datasets required for analysis.
 
-Understand the available business data and obtain access for analysis.
+---
 
-### Key Discussion
+## Activities Performed
 
-| Consultant Question                    | Client Response                                                                 |
-| -------------------------------------- | ------------------------------------------------------------------------------- |
-| Which systems store operational data?  | WMS and ERP.                                                                    |
-| Can data be shared for analysis?       | Yes, through SQL access, CSV exports, and Excel reports.                        |
-| Is historical data available?          | Approximately five years.                                                       |
-| Are there known data quality issues?   | Missing values, duplicate Excel records, and some inconsistent historical data. |
-| Can the required datasets be accessed? | Yes.                                                                            |
+- Identified available business data sources.
+- Organised the collected datasets.
+- Preserved the original source files.
+- Verified dataset availability for analysis.
+- Updated project observations.
+- Updated analytical thinking.
 
-### Outcome
+---
 
-Available data sources identified, technical access confirmed, and the project is ready to proceed to Data Validation.
+## Key Decisions
+
+- Preserve all raw datasets without modification.
+- Perform Data Validation before any cleaning or transformation.
+
+---
+
+## Outcome
+
+- Required datasets identified.
+- Source data organised within the project repository.
+- Project ready to proceed to Data Validation.
+
+---
+
+## Journal Summary
+
+The Project Case Journal records the progression of the project from business understanding through data acquisition.
+
+Each entry captures the work completed, key decisions made, and outcomes achieved during the corresponding DAPM phase, providing a clear record of the project's evolution.
+
+---
+
+## Navigating Documents
+
+| Document | Link |
+|----------|------|
+| PROJECT_BRIEF | [01_PROJECT_BRIEF.md](01_PROJECT_BRIEF.md) |
+| BUSINESS_UNDERSTANDING | [02_BUSINESS_UNDERSTANDING.md](02_BUSINESS_UNDERSTANDING.md) |
+| STAKEHOLDER_ANALYSIS | [03_STAKEHOLDER_ANALYSIS.md](03_STAKEHOLDER_ANALYSIS.md) |
+| BUSINESS_REQUIREMENTS | [04_BUSINESS_REQUIREMENTS.md](04_BUSINESS_REQUIREMENTS.md) |
+| DATA_DISCOVERY | [05_DATA_DISCOVERY.md](05_DATA_DISCOVERY.md) |
+| DATA_VALIDATION | [06_DATA_VALIDATION.md](06_DATA_VALIDATION.md) |
+| DATA_PREPARATION | [07_DATA_PREPARATION.md](07_DATA_PREPARATION.md) |
+| EDA_REPORT | [08_EDA_REPORT.md](08_EDA_REPORT.md) |
+| BUSINESS_INSIGHTS | [09_BUSINESS_INSIGHTS.md](09_BUSINESS_INSIGHTS.md) |
+| RECOMMENDATIONS | [10_RECOMMENDATIONS.md](10_RECOMMENDATIONS.md) |
+| EXECUTIVE_SUMMARY | [11_EXECUTIVE_SUMMARY.md](11_EXECUTIVE_SUMMARY.md) |
+| PROJECT_SUMMARY | [12_PROJECT_SUMMARY.md](12_PROJECT_SUMMARY.md) |
+| OBSERVATIONS | [13_OBSERVATIONS.md](13_OBSERVATIONS.md) |
+| ANALYTICAL_THINKING | [14_ANALYTICAL_THINKING.md](14_ANALYTICAL_THINKING.md) |
+| PHASE_CHECKLIST | [15_PHASE_CHECKLIST.md](15_PHASE_CHECKLIST.md) |
+| PROJECT README | [PROJECT README](../README.md) |

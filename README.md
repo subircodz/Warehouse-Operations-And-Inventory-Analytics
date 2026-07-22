@@ -1,56 +1,53 @@
 # Warehouse Operations & Inventory Analytics
 
 <p align="center">
-  <img src="assets/banner.png" alt="Project Banner" width="100%">
+    <img src="assets/banner.png" alt="Project Banner" width="100%">
 </p>
 
 A business-first Data Analytics case study focused on warehouse operations, inventory management, and decision support.
 
-This project follows the **[Data Analytics Project Methodology (DAPM Framework) v0.1.1](https://github.com/subircodz/data-analytics-project-methodology-framework)** and is being developed incrementally, with each phase completed and documented before moving to the next.
+The project follows the **[Data Analytics Project Methodology (DAPM) v0.1.1](https://github.com/subircodz/data-analytics-project-methodology-framework)**. Each phase is completed and documented before progressing to the next stage of the analysis.
 
 ---
 
-## Project Status Legend
+# Project Status Legend
 
-Throughout this project, the following symbols are used to indicate the status of each phase, document and deliverable.
+The following symbols indicate the current status of each project artifact.
 
-| Symbol | Meaning                                            |
-| :----: | -------------------------------------------------- |
-|    ✅   | Finalized - No further changes planned.            |
-|   🟢   | Completed (subject to Refinement) as the project evolves. |
-|   🟡   | Work in progress.                                  |
-|    ⏳   | Planned but not started.                           |
+| Status | Meaning |
+|:------:|---------|
+| ✅ | Completed and finalized |
+| 🚧 | Currently in progress |
+| ⏳ | Planned but not started |
 
 ---
 
-## Project Documentation
+# Project Documentation
 
-| Document | Status | Purpose |
-| ------------------------ | :----: | -------------------------------------------------------------------------------------------- |
-| [PROJECT BRIEF](01_PROJECT_BRIEF.md) | ✅ | Defines the client's business problem, objectives, and engagement scope. |
-| [BUSINESS UNDERSTANDING](docs/02_BUSINESS_UNDERSTANDING.md) | ✅ | Documents the business context, operational workflow, and initial understanding. |
-| [STAKEHOLDER ANALYSIS](docs/03_STAKEHOLDER_ANALYSIS.md) | ✅ | Identifies stakeholders, their roles, responsibilities, and information needs. |
-| [BUSINESS REQUIREMENTS](docs/04_BUSINESS_REQUIREMENTS.md) | ✅ | Defines validated business questions, KPIs, and analytical requirements. |
-| [DATA DISCOVERY](docs/05_DATA_DISCOVERY.md) | ✅ | Identify and acquire the required data. |
-| [DATA VALIDATION](docs/05_DATA_VALIDATION.md) | 🟡 | Assess whether the acquired data is complete, accurate, and suitable for analysis. |
-| DATA PREPARATION | ⬜ | Cleans, transforms, and prepares data for analysis. |
-| EDA REPORT | ⬜ | Documents exploratory analysis, patterns, anomalies, and relationships. |
-| BUSINESS INSIGHTS | ⬜ | Converts analytical findings into meaningful business insights. |
-| RECOMMENDATIONS | ⬜ | Provides evidence-based recommendations and proposed business actions. |
-| EXECUTIVE SUMMARY | ⬜ | Presents a concise business report for executive stakeholders and decision-makers. |
-| [PROJECT SUMMARY](docs/PROJECT_SUMMARY.md) | 🟡 | Summarizes the overall consulting engagement, key milestones, and project outcome. |
-| [OBSERVATIONS](docs/13_OBSERVATIONS.md) | 🟡 | Maintains a centralized register of validated observations throughout the project lifecycle. |
-| [ANALYTICAL THINKING](docs/14_ANALYTICAL_THINKING.md) | 🟡 | Records the evolution of analytical reasoning, hypotheses, and decision-making. |
-| [PHASE CHECKLIST](docs/15_PHASE_CHECKLIST.md) | 🟡 | Tracks the completion criteria and progress of each DAPM phase. |
-[PROJECT CASE JOURNAL](docs/PROJECT_CASE_JOURNAL.md) | 🟡 | Summarizes the consulting engagement, meetings, and key decisions. |
+| Document | Status | Description |
+|----------|:------:|-------------|
+| [PROJECT_BRIEF](docs/01_PROJECT_BRIEF.md) | ✅ | Introduces the business scenario, objectives, and project scope. |
+| [BUSINESS_UNDERSTANDING](docs/02_BUSINESS_UNDERSTANDING.md) | ✅ | Documents the business domain, operational workflow, and business problems. |
+| [STAKEHOLDER_ANALYSIS](docs/03_STAKEHOLDER_ANALYSIS.md) | ✅ | Identifies stakeholders and their responsibilities. |
+| [BUSINESS_REQUIREMENTS](docs/04_BUSINESS_REQUIREMENTS.md) | ✅ | Documents stakeholder information requirements and reporting needs. |
+| [DATA_DISCOVERY](docs/05_DATA_DISCOVERY.md) | ✅ | Identifies and organises the datasets required for analysis. |
+| [DATA_VALIDATION](docs/06_DATA_VALIDATION.md) | 🚧 | Validates data quality using Spreadsheet, SQL, and Python. |
+| DATA_PREPARATION | ⏳ | Cleans and prepares the validated datasets for analysis. |
+| EDA_REPORT | ⏳ | Explores patterns, trends, and anomalies within the data. |
+| BUSINESS_INSIGHTS | ⏳ | Converts analytical findings into business insights. |
+| RECOMMENDATIONS | ⏳ | Provides evidence-based business recommendations. |
+| EXECUTIVE_SUMMARY | ⏳ | Summarises the project for business stakeholders. |
+| [PROJECT_SUMMARY](docs/12_PROJECT_SUMMARY.md) | 🚧 | Provides a high-level summary of the project and its current progress. |
+| [OBSERVATIONS](docs/13_OBSERVATIONS.md) | 🚧 | Maintains a register of verified observations throughout the project. |
+| [ANALYTICAL_THINKING](docs/14_ANALYTICAL_THINKING.md) | 🚧 | Records analytical ideas, assumptions, and design decisions. |
+| [PHASE_CHECKLIST](docs/15_PHASE_CHECKLIST.md) | 🚧 | Tracks the completion status of each DAPM phase. |
+| [PROJECT_JOURNAL](docs/PROJECT_JOURNAL.md) *(or PROJECT_CASE_JOURNAL.md)* | 🚧 | Records the activities, decisions, and outcomes for each project phase. |
 
-The project is actively evolving. New documents, datasets, analyses, and reports will be added as required by the methodology.
+---
 
+The repository is developed incrementally following the DAPM workflow. Each phase is completed and documented before progressing to the next stage.
+---
 
-
-
-For the complete project journey, refer to the above documents.
-
-## License
+# License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
