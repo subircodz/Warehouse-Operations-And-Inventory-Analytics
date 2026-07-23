@@ -11,20 +11,19 @@ from pandas import DataFrame
 from models.validation_result import ValidationResult
 
 
-def validate_record_count(workbook: dict[str, DataFrame]) -> dict[str, int]:
+def validate_record_count(workbook: dict[str, DataFrame]) -> ValidationResult:
     """
     Count the total number of records in each worksheet.
 
-    Parameters
-    ----------
+    Args:
     workbook : dict[str, DataFrame]
         Dictionary containing worksheet names and DataFrames.
 
-    Returns
-    -------
+    Returns:
     dict[str, int]
         Dictionary containing worksheet names
         and their respective record counts.
+
     """
 
     record_counts: dict[str, int] = {}
