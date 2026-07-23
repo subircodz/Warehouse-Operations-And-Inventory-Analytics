@@ -1,6 +1,8 @@
 """
-This module is responsible for loading
-supported data files.
+File Loader Validation
+
+This module validates and loads the dataset
+into the application.
 
 Author: Subir Sutradhar
 """

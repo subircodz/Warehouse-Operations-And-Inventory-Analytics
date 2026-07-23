@@ -7,6 +7,7 @@ for the Warehouse Analytics Validation Engine (WAVE).
 
 Author: Subir Sutradhar
 """
+from .icons import PACKAGE
 
 def display_banner():
     """
@@ -15,7 +16,7 @@ def display_banner():
     Returns:
         None
     """
-    banner = r"""
+    banner = fr"""
  /$$      /$$  /$$$$$$  /$$    /$$ /$$$$$$$$
 | $$  /$ | $$ /$$__  $$| $$   | $$| $$_____/
 | $$ /$$$| $$| $$  \ $$| $$   | $$| $$
@@ -26,7 +27,7 @@ def display_banner():
 |__/     \__/|__/  |__/    \_/    |________/
 
 ============================================================
-      Warehouse Analytics Validation Engine
+      {PACKAGE} Warehouse Analytics Validation Engine
 ============================================================
 
 Project      : Warehouse Operations & Inventory Analytics
@@ -35,6 +36,7 @@ Methodology  : DAPM Framework v0.1.1
 Environment  : Development
 Python       : 3.13.7
 Workbook     : Warehouse_Reports.xlsx
+Author       : Subir Sutradhar
 
 ============================================================
 """
