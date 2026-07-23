@@ -32,7 +32,7 @@ def validate_missing_values(workbook: dict[str, DataFrame]) -> ValidationResult:
         missing_count[worksheet_name] = int(total_missing)
 
     return ValidationResult(
-            validation_name="Missing Value Counts",
+            validation_name="Missing Value Validation",
             status="PASS",
             data=missing_count
         )

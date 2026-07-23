@@ -7,10 +7,13 @@ Inventory Analytics validation application.
 Author: Subir Sutradhar
 """
 from config import WORKBOOK_PATH
+from validators import (
+    validate_record_count,
+    validate_missing_values,
+    validate_duplicates
+)
 from utils.banner import display_banner
 from utils.file_loader import load_data
-from validators.record_count import validate_record_count
-from validators.missing_values import validate_missing_values
 from utils.icons import SUCCESS, INFO
 
 
@@ -62,6 +65,7 @@ def main() -> None:
     print(f"{SUCCESS} Record count validation completed.\n")
 
     print(record_count_result.validation_name)
+    print(record_count_result.status)
 
     for worksheet, count in record_count_result.data.items():
         print(f"  • {worksheet:<15} : {count:,}")
@@ -77,16 +81,26 @@ def main() -> None:
     print(f"{SUCCESS} Missing values count completed.\n")
 
     print(missing_values_count.validation_name)
-    print(missing_values_count.data)
+    print(missing_values_count.status)
+
     for worksheet_name, total in missing_values_count.data.items():
         print(f"  • {worksheet_name:<15} : {total:,}")
 
     validation_results.append(missing_values_count)
 
+    # =================================
+    # Validate missing values
+    # =================================
 
-
-    print(validation_results)
-
+    # validate_duplicates(workbook)
+    print(f"\n{INFO}  Validating duplicates counts...")
+    duplicates_count = validate_duplicates(workbook)
+    print(f"{SUCCESS} Duplicates count completed.\n")
+    print(duplicates_count.validation_name)
+    print(duplicates_count.status)
+    for worksheet_name, count in duplicates_count.data.items():
+        print(f"  • {worksheet_name:<15} : {count:,}")
+    validation_results.append(duplicates_count)
 
 
 if __name__ == "__main__":
