@@ -54,3 +54,28 @@ SCREENSHOTS = PYTHON_ROOT / "screenshots"
 # ENCODING
 
 ENVIRONMENT = "Development"
+
+# ====================================
+# BUSINESS Identifiers
+# ====================================
+
+
+IDENTIFIER_PATTERNS = {
+    "products": {
+        "column": "sku",
+        "prefix": "SKU",
+        "numeric_length": 5
+    },
+
+    "suppliers": {
+        "column": "supplier_code",
+        "prefix": "SUP",
+        "numeric_length": 4
+    },
+
+    "warehouses": {
+        "column": "warehouse_code",
+        "prefix": "WH",
+        "numeric_length": 3
+    }
+}

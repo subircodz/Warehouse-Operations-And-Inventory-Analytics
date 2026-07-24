@@ -10,7 +10,8 @@ from config import WORKBOOK_PATH
 from validators import (
     validate_record_count,
     validate_missing_values,
-    validate_duplicates
+    validate_duplicates,
+    validate_business_identifier
 )
 from utils.banner import display_banner
 from utils.file_loader import load_data
@@ -92,7 +93,6 @@ def main() -> None:
     # Validate missing values
     # =================================
 
-    # validate_duplicates(workbook)
     print(f"\n{INFO}  Validating duplicates counts...")
     duplicates_count = validate_duplicates(workbook)
     print(f"{SUCCESS} Duplicates count completed.\n")
@@ -101,6 +101,20 @@ def main() -> None:
     for worksheet_name, count in duplicates_count.data.items():
         print(f"  • {worksheet_name:<15} : {count:,}")
     validation_results.append(duplicates_count)
+
+    # =================================
+    # Business identifier validation
+    # =================================
+    print(f"\n{INFO}  Business identifier validation...")
+    business_identifier = validate_business_identifier(workbook)
+    print(f"{SUCCESS} Business identifier validation completed.\n")
+    print(business_identifier.validation_name)
+    print(business_identifier.status)
+    for worksheet_name, data in business_identifier.data.items():
+        print(f"  • {worksheet_name} :")
+        for status, result in data.items():
+            print(f"    - {status:<20} : {result}")
+    validation_results.append(business_identifier)
 
 
 if __name__ == "__main__":

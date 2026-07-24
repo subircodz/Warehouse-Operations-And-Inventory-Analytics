@@ -8,6 +8,7 @@ for the Warehouse Analytics Validation Engine (WAVE).
 Author: Subir Sutradhar
 """
 from .icons import PACKAGE
+from config import ENVIRONMENT
 
 def display_banner():
     """
@@ -33,7 +34,7 @@ def display_banner():
 Project      : Warehouse Operations & Inventory Analytics
 Version      : 0.1.0
 Methodology  : DAPM Framework v0.1.1
-Environment  : Development
+Environment  : {ENVIRONMENT}
 Python       : 3.13.7
 Workbook     : Warehouse_Reports.xlsx
 Author       : Subir Sutradhar
