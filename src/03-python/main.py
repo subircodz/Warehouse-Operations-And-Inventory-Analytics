@@ -11,7 +11,8 @@ from validators import (
     validate_record_count,
     validate_missing_values,
     validate_duplicates,
-    validate_business_identifier
+    validate_business_identifier,
+    validate_referential_identifier
 )
 from utils.banner import display_banner
 from utils.file_loader import load_data
@@ -115,6 +116,20 @@ def main() -> None:
         for status, result in data.items():
             print(f"    - {status:<20} : {result}")
     validation_results.append(business_identifier)
+
+    # =================================
+    # Referential identifier validation
+    # =================================
+    print(f"\n{INFO}  Referential identifier validation...")
+    referential_validation = validate_referential_identifier(workbook)
+    print(f"{SUCCESS} Referential identifier validation completed.")
+    print(referential_validation.validation_name)
+    print(referential_validation.status)
+    for worksheet_name, data in referential_validation.data.items():
+        print(f"  • {worksheet_name} :")
+        for status, result in data.items():
+            print(f"    - {status:<20} : {result}")
+    validation_results.append(referential_validation)
 
 
 if __name__ == "__main__":

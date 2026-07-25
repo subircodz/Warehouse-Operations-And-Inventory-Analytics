@@ -79,3 +79,28 @@ IDENTIFIER_PATTERNS = {
         "numeric_length": 3
     }
 }
+
+# ====================================
+# Refertila rules
+# ====================================
+
+REFERENTIAL_INTEGRITY_RULES = [
+    {
+        "parent_worksheet": "suppliers",
+        "parent_column": "supplier_id",
+        "child_worksheet": "products",
+        "child_column": "supplier_id",
+    },
+    {
+        "parent_worksheet": "products",
+        "parent_column": "product_id",
+        "child_worksheet": "inventory",
+        "child_column": "product_id",
+    },
+    {
+        "parent_worksheet": "warehouses",
+        "parent_column": "warehouse_id",
+        "child_worksheet": "inventory",
+        "child_column": "warehouse_id",
+    },
+]
