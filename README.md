@@ -242,14 +242,11 @@ The same business problem is solved using three different technologies.
 
 # Repository Structure
 
-```text
-Warehouse-Operations-And-Inventory-Analytics/
 
-# Repository Structure
 
 ```text
 Warehouse-Operations-And-Inventory-Analytics/
-
+│
 ├── assets/                    # Images used throughout the documentation
 │
 ├── data/
