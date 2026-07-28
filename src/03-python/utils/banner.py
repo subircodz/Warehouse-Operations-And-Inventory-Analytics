@@ -32,8 +32,8 @@ def display_banner():
 ============================================================
 
 Project      : Warehouse Operations & Inventory Analytics
-Version      : 0.1.0
-Methodology  : DAPM Framework v0.1.1
+Version      : 0.2.1
+Methodology  : DAPM Framework v0.2.1
 Environment  : {ENVIRONMENT}
 Python       : 3.13.7
 Workbook     : Warehouse_Reports.xlsx
