@@ -1,145 +1,155 @@
 # BUSINESS UNDERSTANDING
 
 > **Case Study:** Warehouse Operations & Inventory Analytics  
-> **Phase:** 1 – Business Understanding  
+> **Phase:** 02 – Business Understanding  
 > **Status:** ✅ Completed
 
 ---
 
-## Project Information
+# Project Information
 
 | Field | Details |
 |--------|---------|
 | Date | 13 July 2026 |
 | Phase | Business Understanding |
-| Version | 1.0 |
+| Version | 2.0 |
 | Status | Completed |
 
 ---
 
-## Business Overview
+# Business Overview
 
-The warehouse receives products from multiple suppliers, stores inventory across warehouse locations, and dispatches customer orders to retailers, wholesalers, supermarkets, and online businesses. Warehouse operations are supported by a Warehouse Management System (WMS) integrated with an ERP system, while some operational reports are maintained in Microsoft Excel.
+Apex Warehouse & Distribution Pvt. Ltd. is a third-party logistics and warehouse service provider responsible for receiving products from multiple suppliers, storing inventory and distributing products to customers across different regions.
 
----
+The organisation manages day-to-day warehouse operations using a Warehouse Management System (WMS) integrated with an Enterprise Resource Planning (ERP) system. In addition to these systems, several operational reports are maintained in Microsoft Excel for reporting and decision-making.
 
-## Warehouse Operations
-
-The operational workflow consists of the following activities:
-
-1. Receive goods from suppliers.
-2. Verify quantity and quality of incoming shipments.
-3. Store products in designated warehouse locations.
-4. Pick products based on customer orders.
-5. Pack customer orders.
-6. Dispatch shipments through logistics partners.
-
-This workflow forms the foundation for analysing inventory movement, warehouse efficiency, and order fulfilment.
+As business operations continue to grow, management requires better visibility into inventory movement, warehouse performance and operational efficiency.
 
 ---
 
-## Products Managed
+# Warehouse Operations Workflow
 
-The warehouse primarily stores fast-moving consumer goods (FMCG), including:
+The warehouse follows a structured operational process.
 
-- Packaged foods
+```text
+Suppliers
+     │
+     ▼
+Goods Receipt
+     │
+     ▼
+Quality & Quantity Verification
+     │
+     ▼
+Inventory Storage
+     │
+     ▼
+Customer Order Processing
+     │
+     ▼
+Picking & Packing
+     │
+     ▼
+Dispatch
+     │
+     ▼
+Customers
+```
+
+Understanding this workflow is essential because every dataset analysed during this project represents one or more stages of these business operations.
+
+---
+
+# Products Managed
+
+The warehouse primarily stores Fast Moving Consumer Goods (FMCG), including:
+
+- Packaged Foods
 - Beverages
-- Personal care products
-- Household items
+- Personal Care Products
+- Household Products
 
-Products are sourced from multiple suppliers and distributed to different customer segments.
+Products are supplied by multiple vendors and distributed to different customer segments.
 
 ---
 
-## Customer Segments
+# Customer Segments
 
-The warehouse serves the following customers:
+The warehouse serves several categories of business customers.
 
-- Retail stores
+- Retail Stores
 - Supermarkets
 - Wholesalers
-- Online retailers
+- Online Retailers
+
+Each customer segment has different ordering patterns, delivery expectations and inventory requirements.
 
 ---
 
-## Current Operational Challenges
+# Current Business Challenges
 
-The following business challenges were identified during the Business Understanding phase.
+Discussions with business stakeholders identified several operational challenges.
 
-- Stockouts of fast-moving products.
-- Excess inventory of slow-moving products.
-- Delayed order processing during peak demand.
+- Frequent stockouts of high-demand products.
+- Excess inventory occupying valuable warehouse space.
+- Slow-moving inventory affecting storage utilisation.
+- Delayed customer order processing.
 - Inventory count mismatches.
-- Delayed deliveries.
-- Incomplete customer orders.
 - Incorrect product dispatches.
+- Product returns and damaged inventory.
+- Delayed deliveries during peak demand.
+- Operational reports maintained independently by different departments.
+- Manual consolidation of reports before management review.
 
-These challenges directly affect customer satisfaction, warehouse efficiency, and inventory management.
+These issues reduce operational efficiency and affect customer satisfaction.
 
 ---
 
-## Business Priorities
+# Business Priorities
 
-The organisation aims to improve operational performance by focusing on the following objectives.
+The organisation aims to improve warehouse operations by focusing on the following business objectives.
 
 - Improve inventory availability.
 - Reduce excess inventory.
-- Improve order fulfilment.
-- Deliver customer orders on time.
-- Improve visibility into warehouse operations.
-- Support business decisions using reliable operational data.
+- Improve warehouse utilisation.
+- Improve order fulfilment efficiency.
+- Reduce delivery delays.
+- Improve supplier performance visibility.
+- Improve reporting accuracy.
+- Support faster and more reliable business decisions.
 
 ---
 
-## Existing Systems
+# Existing Business Systems
 
-Warehouse operations are currently supported by:
+Warehouse operations currently rely on multiple business systems.
 
 - Warehouse Management System (WMS)
-- Enterprise Resource Planning (ERP) system
-- Microsoft Excel operational reports
+- Enterprise Resource Planning (ERP)
+- Microsoft Excel Operational Reports
 
-These systems will serve as the primary data sources during the Data Discovery and Data Validation phases.
-
----
-
-## Key Findings
-
-The Business Understanding phase established the following:
-
-- Warehouse operations follow a structured receiving-to-dispatch workflow.
-- Inventory management is the primary operational focus.
-- Multiple customer segments depend on timely order fulfilment.
-- Operational data exists across multiple systems.
-- Inventory availability and warehouse efficiency are the highest business priorities.
-- Existing reporting processes require analytical support for better decision-making.
+These systems will become the primary data sources during the Data Discovery phase.
 
 ---
 
-## Phase Summary
+# Business Understanding Summary
 
-The business context, warehouse workflow, customer segments, operational challenges, existing systems, and business priorities have been documented.
+The Business Understanding phase established a clear understanding of:
 
-This information provides the foundation for Stakeholder Analysis, Business Requirements, Data Discovery, and subsequent analytical phases of the project.
+- Business operations.
+- Warehouse workflow.
+- Products managed by the organisation.
+- Customer segments.
+- Existing operational challenges.
+- Business priorities.
+- Current operational systems.
+
+This understanding provides the business foundation required before identifying stakeholders, gathering business requirements and analysing available datasets.
 
 ---
 
-## Navigating Documents
+# Next Phase
 
-| Document | Link |
-|----------|------|
-| PROJECT_BRIEF | [01_PROJECT_BRIEF.md](01_PROJECT_BRIEF.md) |
-| STAKEHOLDER_ANALYSIS | [03_STAKEHOLDER_ANALYSIS.md](03_STAKEHOLDER_ANALYSIS.md) |
-| BUSINESS_REQUIREMENTS | [04_BUSINESS_REQUIREMENTS.md](04_BUSINESS_REQUIREMENTS.md) |
-| DATA_DISCOVERY | [05_DATA_DISCOVERY.md](05_DATA_DISCOVERY.md) |
-| DATA_VALIDATION | [06_DATA_VALIDATION.md](06_DATA_VALIDATION.md) |
-| DATA_PREPARATION | [07_DATA_PREPARATION.md](07_DATA_PREPARATION.md) |
-| EDA_REPORT | [08_EDA_REPORT.md](08_EDA_REPORT.md) |
-| BUSINESS_INSIGHTS | [09_BUSINESS_INSIGHTS.md](09_BUSINESS_INSIGHTS.md) |
-| RECOMMENDATIONS | [10_RECOMMENDATIONS.md](10_RECOMMENDATIONS.md) |
-| EXECUTIVE_SUMMARY | [11_EXECUTIVE_SUMMARY.md](11_EXECUTIVE_SUMMARY.md) |
-| PROJECT_SUMMARY | [12_PROJECT_SUMMARY.md](12_PROJECT_SUMMARY.md) |
-| OBSERVATIONS | [13_OBSERVATIONS.md](13_OBSERVATIONS.md) |
-| ANALYTICAL_THINKING | [14_ANALYTICAL_THINKING.md](14_ANALYTICAL_THINKING.md) |
-| PHASE_CHECKLIST | [15_PHASE_CHECKLIST.md](15_PHASE_CHECKLIST.md) |
-| PROJECT README | [PROJECT README](../README.md) |
+➡ **Stakeholder Analysis**
+
+The next phase identifies all project stakeholders, their responsibilities, business objectives and information requirements before gathering detailed business requirements.

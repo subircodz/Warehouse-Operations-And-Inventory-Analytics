@@ -6,137 +6,188 @@
 
 ---
 
-## Purpose
+# Purpose
 
-This document captures analytical ideas, working hypotheses, and engineering decisions throughout the Data Analytics Project Methodology (DAPM).
+The Analytical Thinking Register records the reasoning process followed throughout the project.
 
-The entries recorded here represent the current understanding of the business and help guide subsequent analytical activities. They are exploratory in nature and should not be interpreted as validated findings.
+Unlike the Observation Register, which contains verified facts, this document captures ideas, assumptions, hypotheses, design decisions and lessons learned while solving business problems.
 
-Every assumption documented in this register must be verified using evidence collected during the later phases of the project.
-
----
-
-# Phase 1 – Business Understanding
-
-## Initial Analytical Focus
-
-| Business Problem | Analytical Focus | Potential Data Sources |
-|------------------|------------------|------------------------|
-| Stockouts | Current Stock, Stock Status | Goods Received, Goods Dispatched |
-| Overstock | Inventory Age, Inventory Turnover | Inventory Records, Dispatch Records |
-| Delayed Deliveries | Delivery Delay, On-Time Delivery | Orders, Dispatch, Delivery |
-| Inventory Mismatch | Stock Difference | Physical Count, System Stock |
-| Customer Complaints | Complaint Count, Return Rate | Complaints, Returns |
+Entries in this document represent the current state of thinking and may change as new evidence becomes available.
 
 ---
 
-## Potential Business Dimensions
+# Thinking Guidelines
 
-The following business dimensions are expected to support filtering, grouping, and summarising business information during analysis.
+Every entry should follow these principles.
 
-- Product
-- Category
-- Warehouse
-- Customer
-- Date
-
----
-
-# Phase 2 – Stakeholder Analysis
-
-## Stakeholder Information Requirements
-
-| Stakeholder | Information Required |
-|--------------|----------------------|
-| Inventory Manager | Current Stock, Stock Status, Reorder Alerts |
-| Procurement Team | Reorder Level, Supplier Lead Time, Demand Trends |
-| Warehouse Manager | Storage Utilisation, Inventory Movement |
-| Logistics Team | Dispatch Status, Delivery Performance |
-| Sales Team | Product Availability |
-| Customer Support | Delayed Orders, Incorrect Deliveries |
-| Finance | Inventory Value, Carrying Cost |
+- Explain the reasoning behind a decision.
+- Clearly separate assumptions from verified facts.
+- Record important design choices.
+- Update ideas when new evidence becomes available.
+- Avoid treating assumptions as conclusions.
 
 ---
 
-## Engineering Decisions
+# Phase 02 — Business Understanding
 
-- Different stakeholders require different business views of the same operational data.
-- Business metrics should be calculated once and reused across multiple reports and dashboards.
-- Dashboards should be organised around business functions rather than individual datasets.
-- Business logic should remain independent of the reporting or visualisation layer.
+## Thinking
 
----
+### TH-001
 
-# Phase 3 – Business Requirements
+The business problems should drive the entire analytics project.
 
-## Engineering Decisions
-
-- A common analytics layer should generate reusable business metrics.
-- Shared calculations should minimise duplication across reports and dashboards.
-- Dataset discovery should prioritise the tables and columns required to satisfy business requirements.
-- Business metrics should be defined before dashboard development begins.
-- Reporting requirements should drive data modelling, not the other way around.
+Instead of analysing every available dataset, the analysis should focus only on answering business questions that help improve warehouse operations.
 
 ---
 
-# Phase 4 – Data Discovery
+### TH-002
 
-## Engineering Decisions
+Warehouse operations appear to revolve around inventory movement.
 
-- The SQL database will serve as the primary analytical data source whenever available.
-- Excel reports will be used to verify business calculations where required.
-- CSV exports provide an alternative data source for Spreadsheet and Python validation.
-- Original datasets must remain unchanged throughout the project.
-- Data Validation must be completed before any cleaning or transformation activities.
+This suggests that inventory data may become the central dataset connecting suppliers, warehouses and products.
+
+This assumption will be verified during Data Profiling.
 
 ---
 
-## Engineering Principles
+### TH-003
 
-The following principles should be followed throughout the analytical lifecycle.
+Business understanding should always come before technical implementation.
 
-- Record observations before forming conclusions.
-- Separate assumptions from verified facts.
-- Validate every hypothesis using evidence.
-- Design reusable business metrics.
-- Keep business logic independent of presentation layers.
-- Preserve raw data throughout the project lifecycle.
+Without understanding warehouse operations, it would be difficult to determine which metrics actually matter.
 
 ---
 
-## Validation Reminder
+# Phase 03 — Stakeholder Analysis
 
-Entries in this document represent analytical thinking rather than verified findings.
+## Thinking
 
-Every hypothesis, assumption, and engineering decision should be validated using evidence collected during subsequent DAPM phases before being treated as a business insight or recommendation.
+### TH-004
 
----
+Different departments use the same business data for different purposes.
 
-## Phase Summary
-
-The Analytical Thinking Register documents the reasoning process followed during the project.
-
-Maintaining this document separately from the Observation Register helps distinguish verified facts from analytical assumptions, providing a transparent record of the decision-making process throughout the DAPM lifecycle.
+Instead of building dataset-specific reports, dashboards should be designed around stakeholder responsibilities.
 
 ---
 
-## Navigating Documents
+### TH-005
 
-| Document | Link |
-|----------|------|
-| PROJECT_BRIEF | [01_PROJECT_BRIEF.md](01_PROJECT_BRIEF.md) |
-| BUSINESS_UNDERSTANDING | [02_BUSINESS_UNDERSTANDING.md](02_BUSINESS_UNDERSTANDING.md) |
-| STAKEHOLDER_ANALYSIS | [03_STAKEHOLDER_ANALYSIS.md](03_STAKEHOLDER_ANALYSIS.md) |
-| BUSINESS_REQUIREMENTS | [04_BUSINESS_REQUIREMENTS.md](04_BUSINESS_REQUIREMENTS.md) |
-| DATA_DISCOVERY | [05_DATA_DISCOVERY.md](05_DATA_DISCOVERY.md) |
-| DATA_VALIDATION | [06_DATA_VALIDATION.md](06_DATA_VALIDATION.md) |
-| DATA_PREPARATION | [07_DATA_PREPARATION.md](07_DATA_PREPARATION.md) |
-| EDA_REPORT | [08_EDA_REPORT.md](08_EDA_REPORT.md) |
-| BUSINESS_INSIGHTS | [09_BUSINESS_INSIGHTS.md](09_BUSINESS_INSIGHTS.md) |
-| RECOMMENDATIONS | [10_RECOMMENDATIONS.md](10_RECOMMENDATIONS.md) |
-| EXECUTIVE_SUMMARY | [11_EXECUTIVE_SUMMARY.md](11_EXECUTIVE_SUMMARY.md) |
-| PROJECT_SUMMARY | [12_PROJECT_SUMMARY.md](12_PROJECT_SUMMARY.md) |
-| OBSERVATIONS | [13_OBSERVATIONS.md](13_OBSERVATIONS.md) |
-| ANALYTICAL_THINKING | [14_ANALYTICAL_THINKING.md](14_ANALYTICAL_THINKING.md) |
-| PHASE_CHECKLIST | [15_PHASE_CHECKLIST.md](15_PHASE_CHECKLIST.md) |
-| PROJECT README | [PROJECT README](../README.md) |
+Business metrics should be reusable.
+
+For example, "Current Stock" should be calculated once and reused wherever required instead of creating multiple versions of the same calculation.
+
+---
+
+# Phase 04 — Business Requirements
+
+## Thinking
+
+### TH-006
+
+Business questions should determine which data is required.
+
+The project should avoid collecting unnecessary information simply because it is available.
+
+---
+
+### TH-007
+
+The analytical workflow should remain business-first.
+
+Technology is only a tool used to answer business questions.
+
+---
+
+# Phase 05 — Data Discovery
+
+## Thinking
+
+### TH-008
+
+Data Discovery should focus only on understanding what data is available.
+
+Assessing data quality belongs to a different phase.
+
+This separation keeps the methodology easier to understand.
+
+---
+
+### TH-009
+
+Raw datasets should never be modified.
+
+Keeping an untouched copy allows every cleaning decision to be reproduced and verified later.
+
+---
+
+# Phase 06 — Data Profiling
+
+## Thinking
+
+*Entries will be added during the Data Profiling phase.*
+
+---
+
+# Phase 07 — Data Cleaning
+
+## Thinking
+
+*Entries will be added during the Data Cleaning phase.*
+
+---
+
+# Phase 08 — Data Validation
+
+## Thinking
+
+*Entries will be added during the Data Validation phase.*
+
+---
+
+# Phase 09 — Exploratory Data Analysis
+
+## Thinking
+
+*Entries will be added during the Exploratory Data Analysis phase.*
+
+---
+
+# Phase 10 — Business Insights
+
+## Thinking
+
+*Entries will be added during the Business Insights phase.*
+
+---
+
+# Lessons Learned
+
+This section records important lessons discovered while working on the project.
+
+### LL-001
+
+Business understanding should always come before technical implementation.
+
+---
+
+### LL-002
+
+Observing data and validating data are two different activities.
+
+Separating Data Profiling from Data Validation makes the analytical workflow easier to understand.
+
+---
+
+### LL-003
+
+A well-defined methodology improves consistency, documentation quality and project maintainability.
+
+---
+
+# Phase Summary
+
+The Analytical Thinking Register documents how ideas evolve throughout the project.
+
+Unlike the Observation Register, this document is intentionally exploratory. It records the reasoning behind decisions and captures the evolution of analytical thinking as the project progresses.
+
+As new evidence becomes available, assumptions recorded here may be confirmed, refined or rejected.

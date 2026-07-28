@@ -1,99 +1,133 @@
 # STAKEHOLDER ANALYSIS
 
 > **Case Study:** Warehouse Operations & Inventory Analytics  
-> **Phase:** 2 – Stakeholder Analysis  
+> **Phase:** 03 – Stakeholder Analysis  
 > **Status:** ✅ Completed
 
 ---
 
-## Project Information
+# Project Information
 
 | Field | Details |
 |--------|---------|
 | Date | 15 July 2026 |
 | Phase | Stakeholder Analysis |
-| Version | 1.0 |
+| Version | 2.0 |
 | Status | Completed |
 
 ---
 
-## Purpose
+# Purpose
 
-Warehouse operations involve multiple business functions working together to manage inventory, fulfil customer orders, and maintain day-to-day operations. Identifying the key stakeholders helps define business requirements, reporting needs, and analytical priorities for the project.
+Warehouse operations involve multiple business teams working together to receive products, manage inventory, fulfil customer orders and deliver products on time.
+
+Each department uses the same operational data but for different business decisions.
+
+The purpose of this phase is to identify the key stakeholders, understand their responsibilities and document the information they require for day-to-day business operations.
+
+This understanding will guide the Business Requirements and Data Discovery phases.
 
 ---
 
-## Stakeholder Overview
+# Stakeholder Landscape
 
-| Stakeholder | Primary Responsibility |
-|-------------|------------------------|
-| Inventory Manager | Monitor inventory levels, stock movements, stock availability, and coordinate with procurement and warehouse teams. |
-| Warehouse Manager | Manage receiving, storage, picking, packing, inventory movement, and dispatch operations. |
-| Procurement Team | Create purchase orders based on inventory levels, reorder points, supplier lead times, and expected demand. |
-| Order Fulfilment Team | Process customer orders and coordinate dispatch activities. |
+```text
+                    Management
+                         │
+                         ▼
+                Warehouse Manager
+                         │
+        ┌────────────────┼────────────────┐
+        ▼                ▼                ▼
+Inventory Team     Procurement Team   Order Fulfilment
+        │                │                │
+        └────────────────┼────────────────┘
+                         ▼
+                  Logistics Team
+                         │
+                         ▼
+                  Customer Support
+                         │
+                         ▼
+                    Finance Team
+
+                         │
+                         ▼
+                       IT Team
+```
+
+---
+
+# Stakeholder Responsibilities
+
+| Stakeholder | Business Responsibility |
+|-------------|-------------------------|
+| Inventory Manager | Monitor inventory levels, stock movement, stock availability and warehouse inventory accuracy. |
+| Warehouse Manager | Oversee receiving, storage, picking, packing and dispatch operations. |
+| Procurement Team | Purchase products based on inventory levels, supplier lead times and forecasted demand. |
+| Order Fulfilment Team | Process customer orders and coordinate warehouse dispatch activities. |
 | Logistics Team | Manage product deliveries and monitor delivery performance. |
-| Sales Team | Maintain customer relationships and communicate product availability. |
-| Customer Support Team | Handle customer complaints, returns, and service requests. |
-| Finance Department | Monitor inventory valuation, procurement costs, storage costs, and inventory-related expenses. |
-| IT Team | Maintain the Warehouse Management System (WMS), ERP integration, and operational data availability. |
+| Sales Team | Support customers by providing product availability and order status information. |
+| Customer Support Team | Handle customer complaints, returns and delivery-related issues. |
+| Finance Department | Monitor inventory value, procurement expenses and warehouse operating costs. |
+| IT Team | Maintain the Warehouse Management System (WMS), ERP integration and operational data availability. |
 
 ---
 
-## Stakeholder Information Requirements
+# Information Required by Stakeholders
 
-Each stakeholder relies on different business information to perform daily operations.
+Different stakeholders require different business information to perform their responsibilities.
 
 | Stakeholder | Information Required |
 |-------------|----------------------|
-| Inventory Manager | Current stock levels, stock movements, stock availability, reorder status |
-| Warehouse Manager | Inventory movement, warehouse capacity, receiving and dispatch performance |
-| Procurement Team | Reorder levels, supplier lead times, inventory demand |
-| Order Fulfilment Team | Pending orders, picking status, dispatch status |
-| Logistics Team | Shipment status, delivery performance, delayed deliveries |
-| Sales Team | Product availability, customer order status |
-| Customer Support Team | Customer complaints, return requests, delivery issues |
-| Finance Department | Inventory value, procurement costs, carrying costs |
-| IT Team | Data availability, system integration, operational data quality |
+| Inventory Manager | Current stock levels, stock movements, inventory availability and reorder status. |
+| Warehouse Manager | Warehouse utilisation, receiving performance, dispatch performance and inventory movement. |
+| Procurement Team | Reorder levels, supplier lead times, purchase requirements and inventory demand. |
+| Order Fulfilment Team | Pending orders, picking progress, packing status and dispatch status. |
+| Logistics Team | Shipment status, delivery performance and delayed deliveries. |
+| Sales Team | Product availability and customer order status. |
+| Customer Support Team | Customer complaints, product returns and delivery issues. |
+| Finance Department | Inventory valuation, procurement costs and warehouse operating costs. |
+| IT Team | System availability, data quality and integration status. |
 
 ---
 
-## Key Findings
+# Stakeholder Expectations
 
-The Stakeholder Analysis phase identified the following observations.
+The analysis identified the following expectations across business teams.
 
-- Inventory management requires collaboration across multiple business functions.
-- Different stakeholders depend on the same operational data but require different business insights.
-- Warehouse operations, procurement, logistics, and sales are closely interconnected.
-- Reliable reporting requires consistent and accurate operational data across all departments.
-- Stakeholder requirements will guide the Business Requirements and Data Discovery phases.
-
----
-
-## Phase Summary
-
-The key stakeholders, their responsibilities, and their information requirements have been documented.
-
-This understanding provides the foundation for defining business requirements, identifying required datasets, and designing role-based analytical reports during the subsequent DAPM phases.
+- Reliable and accurate operational data.
+- Faster access to business reports.
+- Better visibility into warehouse operations.
+- Improved inventory monitoring.
+- Better supplier performance tracking.
+- Timely identification of operational issues.
+- Reliable information to support business decisions.
 
 ---
 
-## Navigating Documents
+# Key Findings
 
-| Document | Link |
-|----------|------|
-| PROJECT_BRIEF | [01_PROJECT_BRIEF.md](01_PROJECT_BRIEF.md) |
-| BUSINESS_UNDERSTANDING | [02_BUSINESS_UNDERSTANDING.md](02_BUSINESS_UNDERSTANDING.md) |
-| STAKEHOLDER_ANALYSIS | [03_STAKEHOLDER_ANALYSIS.md](03_STAKEHOLDER_ANALYSIS.md) |
-| BUSINESS_REQUIREMENTS | [04_BUSINESS_REQUIREMENTS.md](04_BUSINESS_REQUIREMENTS.md) |
-| DATA_DISCOVERY | [05_DATA_DISCOVERY.md](05_DATA_DISCOVERY.md) |
-| DATA_VALIDATION | [06_DATA_VALIDATION.md](06_DATA_VALIDATION.md) |
-| DATA_PREPARATION | [07_DATA_PREPARATION.md](07_DATA_PREPARATION.md) |
-| EDA_REPORT | [08_EDA_REPORT.md](08_EDA_REPORT.md) |
-| BUSINESS_INSIGHTS | [09_BUSINESS_INSIGHTS.md](09_BUSINESS_INSIGHTS.md) |
-| RECOMMENDATIONS | [10_RECOMMENDATIONS.md](10_RECOMMENDATIONS.md) |
-| EXECUTIVE_SUMMARY | [11_EXECUTIVE_SUMMARY.md](11_EXECUTIVE_SUMMARY.md) |
-| PROJECT_SUMMARY | [12_PROJECT_SUMMARY.md](12_PROJECT_SUMMARY.md) |
-| OBSERVATIONS | [13_OBSERVATIONS.md](13_OBSERVATIONS.md) |
-| ANALYTICAL_THINKING | [14_ANALYTICAL_THINKING.md](14_ANALYTICAL_THINKING.md) |
-| PHASE_CHECKLIST | [15_PHASE_CHECKLIST.md](15_PHASE_CHECKLIST.md) |
-| PROJECT README | [PROJECT README](../README.md) |
+The Stakeholder Analysis phase established the following observations.
+
+- Warehouse operations depend on collaboration across multiple business departments.
+- Every stakeholder uses operational data differently based on their business responsibilities.
+- Inventory management is the central business function connecting procurement, warehouse operations, logistics and sales.
+- Reliable reporting depends on accurate and consistent operational data across all business systems.
+- Stakeholder requirements will define the business questions that this project must answer.
+
+---
+
+# Phase Summary
+
+The key stakeholders, their business responsibilities and information requirements have been identified and documented.
+
+This understanding provides a clear direction for gathering business requirements and identifying the datasets required during the Data Discovery phase.
+
+---
+
+# Next Phase
+
+➡ **Business Requirements**
+
+The next phase converts stakeholder expectations into measurable business requirements that will guide data discovery, analysis and reporting throughout the project.

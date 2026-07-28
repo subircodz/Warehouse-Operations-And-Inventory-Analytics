@@ -1,111 +1,123 @@
 # DATA DISCOVERY
 
 > **Case Study:** Warehouse Operations & Inventory Analytics  
-> **Phase:** 4 – Data Discovery  
+> **Phase:** 05 – Data Discovery  
 > **Status:** ✅ Completed
 
 ---
 
-## Project Information
+# Project Information
 
 | Field | Details |
 |--------|---------|
 | Phase | Data Discovery |
-| Version | 1.0 |
+| Version | 2.0 |
 | Status | Completed |
 
 ---
 
-## Purpose
+# Purpose
 
-The objective of this phase is to identify the business data sources required to satisfy the reporting and analytical requirements defined during the Business Requirements phase.
+After understanding the business and documenting stakeholder requirements, the next step is to identify the datasets available for analysis.
 
----
+The objective of this phase is to discover every available data source, understand its business purpose and verify that the required information exists before assessing data quality.
 
-## Data Sources
-
-The following operational data sources have been identified for this project.
-
-| Source | Description |
-|---------|-------------|
-| Warehouse Management System (WMS) | Primary warehouse operational data |
-| Enterprise Resource Planning (ERP) | Business transaction and inventory data |
-| CSV Exports | Operational data extracted from business systems |
-| Excel Reports | Existing business reports and manual operational records |
+At this stage, the focus is **understanding the data**, not validating or cleaning it.
 
 ---
 
-## Data Availability
+# Available Data Sources
 
-The required datasets are available in multiple formats to support validation and analysis.
+Warehouse operations rely on data generated from multiple business systems.
 
-| Resource | Status |
-|----------|--------|
+The following data sources have been identified for this project.
+
+| Source | Business Purpose |
+|---------|------------------|
+| Warehouse Management System (WMS) | Stores warehouse operations, inventory movement and storage information. |
+| Enterprise Resource Planning (ERP) | Stores procurement, supplier and inventory transaction data. |
+| CSV Exports | Operational data exported from business systems. |
+| Microsoft Excel Reports | Business reports maintained by operational teams. |
+
+---
+
+# Available Datasets
+
+The following datasets were identified during the discovery process.
+
+| Dataset | Business Purpose |
+|----------|------------------|
+| Warehouses | Stores warehouse information. |
+| Suppliers | Stores supplier details. |
+| Products | Stores product master information. |
+| Inventory | Stores inventory availability across warehouses. |
+
+These datasets provide the foundation for answering the business questions identified during the Business Requirements phase.
+
+---
+
+# Data Availability
+
+The required business data is available in multiple formats.
+
+| Data Source | Status |
+|-------------|--------|
 | SQL Database | ✅ Available |
 | CSV Files | ✅ Available |
-| Excel Reports | ✅ Available |
+| Microsoft Excel Workbook | ✅ Available |
 
 ---
 
-## Data Discovery Outcome
+# Activities Completed
 
-The following activities have been completed during this phase.
+The following activities were completed during the Data Discovery phase.
 
-- Required business datasets have been identified.
-- Available data sources have been documented.
-- Data accessibility has been verified.
-- Data formats required for analysis have been confirmed.
-
----
-
-## Scope of This Phase
-
-This phase focuses only on identifying and collecting available datasets.
-
-The following activities are **not** part of Data Discovery:
-
-- Data quality assessment
-- Missing value analysis
-- Duplicate detection
-- Data type validation
-- Data cleaning
-- Business analysis
-
-These activities will be performed during the Data Validation and Data Preparation phases.
+- Identified all available business datasets.
+- Documented the available data sources.
+- Verified dataset accessibility.
+- Understood the business purpose of each dataset.
+- Confirmed that the required business information is available for analysis.
 
 ---
 
-## Phase Summary
+# Out of Scope
 
-The required datasets have been identified, collected, and organised.
+The following activities are **not performed** during the Data Discovery phase.
 
-The project now has access to operational data through SQL databases, CSV files, and Excel reports. These datasets provide the foundation for the Data Validation phase, where data quality, completeness, consistency, and integrity will be evaluated before analysis begins.
+- Data Profiling
+- Data Quality Assessment
+- Missing Value Analysis
+- Duplicate Detection
+- Data Cleaning
+- Business Rule Validation
+- Referential Integrity Validation
+- Exploratory Data Analysis
+
+These activities will be performed in the subsequent DAPM phases.
 
 ---
 
-## Next Phase
+# Key Findings
 
-**Phase 5 – Data Validation**
+The Data Discovery phase established the following observations.
 
-The next phase focuses on evaluating dataset quality before any data cleaning or business analysis is performed.
+- Business data is available from multiple operational systems.
+- Each dataset supports one or more business functions.
+- The identified datasets are sufficient to answer the business requirements documented earlier.
+- No assumptions were made regarding data quality during this phase.
 
-## Navigating Documents
+---
 
-| Document | Link |
-|----------|------|
-| PROJECT_BRIEF | [01_PROJECT_BRIEF.md](01_PROJECT_BRIEF.md) |
-| BUSINESS_UNDERSTANDING | [02_BUSINESS_UNDERSTANDING.md](02_BUSINESS_UNDERSTANDING.md) |
-| STAKEHOLDER_ANALYSIS | [03_STAKEHOLDER_ANALYSIS.md](03_STAKEHOLDER_ANALYSIS.md) |
-| BUSINESS_REQUIREMENTS | [04_BUSINESS_REQUIREMENTS.md](04_BUSINESS_REQUIREMENTS.md) |
-| DATA_DISCOVERY | [05_DATA_DISCOVERY.md](05_DATA_DISCOVERY.md) |
-| DATA_VALIDATION | [06_DATA_VALIDATION.md](06_DATA_VALIDATION.md) |
-| DATA_PREPARATION | [07_DATA_PREPARATION.md](07_DATA_PREPARATION.md) |
-| EDA_REPORT | [08_EDA_REPORT.md](08_EDA_REPORT.md) |
-| BUSINESS_INSIGHTS | [09_BUSINESS_INSIGHTS.md](09_BUSINESS_INSIGHTS.md) |
-| RECOMMENDATIONS | [10_RECOMMENDATIONS.md](10_RECOMMENDATIONS.md) |
-| EXECUTIVE_SUMMARY | [11_EXECUTIVE_SUMMARY.md](11_EXECUTIVE_SUMMARY.md) |
-| PROJECT_SUMMARY | [12_PROJECT_SUMMARY.md](12_PROJECT_SUMMARY.md) |
-| OBSERVATIONS | [13_OBSERVATIONS.md](13_OBSERVATIONS.md) |
-| ANALYTICAL_THINKING | [14_ANALYTICAL_THINKING.md](14_ANALYTICAL_THINKING.md) |
-| PHASE_CHECKLIST | [15_PHASE_CHECKLIST.md](15_PHASE_CHECKLIST.md) |
-| PROJECT README | [PROJECT README](../README.md) |
+# Phase Summary
+
+The available business datasets have been successfully identified and documented.
+
+The business purpose of each dataset is now understood, providing a clear foundation for the next phase, where the structure and quality of the raw data will be examined.
+
+---
+
+# Next Phase
+
+➡ **Data Profiling**
+
+The next phase focuses on understanding the structure and characteristics of the raw datasets by examining record counts, data types, value distributions and overall data quality before any cleaning or validation activities begin.

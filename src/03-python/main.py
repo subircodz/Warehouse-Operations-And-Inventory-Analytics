@@ -12,8 +12,9 @@ from validators import (
     validate_missing_values,
     validate_duplicates,
     validate_business_identifier,
-    validate_referential_identifier
-)
+    validate_referential_identifier,
+    validate_business_rules
+    )
 from utils.banner import display_banner
 from utils.file_loader import load_data
 from utils.icons import SUCCESS, INFO
@@ -131,6 +132,11 @@ def main() -> None:
             print(f"    - {status:<20} : {result}")
     validation_results.append(referential_validation)
 
+    # =================================
+    # Business rules validation
+    # =================================
+
+    business_validation = validate_business_rules(workbook)
 
 if __name__ == "__main__":
     main()

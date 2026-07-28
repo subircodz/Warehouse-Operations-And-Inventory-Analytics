@@ -1,64 +1,76 @@
 # BUSINESS REQUIREMENTS
 
 > **Case Study:** Warehouse Operations & Inventory Analytics  
-> **Phase:** 3 – Business Requirements  
+> **Phase:** 04 – Business Requirements  
 > **Status:** ✅ Completed
 
 ---
 
-## Project Information
+# Project Information
 
 | Field | Details |
 |--------|---------|
 | Date | 16 July 2026 |
 | Phase | Business Requirements |
-| Version | 1.0 |
+| Version | 2.0 |
 | Status | Completed |
 
 ---
 
-## Purpose
+# Purpose
 
-The organisation captures operational data through its Warehouse Management System (WMS) and ERP. The objective of this phase is to identify the business information required by different stakeholders and define the reporting requirements that will guide data discovery, validation, and analytics.
+After understanding the business and identifying the key stakeholders, the next step is to document what information each stakeholder requires to perform their responsibilities effectively.
 
----
-
-## Business Requirement Overview
-
-Different business functions rely on the same operational data but require different information to support their day-to-day responsibilities. These requirements form the foundation for designing dashboards, reports, and analytical solutions.
+These requirements define the business questions that the project must answer and guide the Data Discovery, Data Profiling, Data Cleaning, Data Validation and Exploratory Data Analysis phases.
 
 ---
 
-## Stakeholder Requirements
+# Business Requirement Overview
 
-### Inventory Manager
+Although different departments work towards a common business objective, each stakeholder requires different information to make operational and strategic decisions.
 
-Required business information:
+These requirements form the foundation for designing dashboards, analytical reports and business recommendations.
+
+---
+
+# Stakeholder Requirements
+
+## Inventory Manager
+
+The Inventory Manager requires visibility into inventory availability and stock movement.
+
+Required information:
 
 - Current Stock
 - Available Stock
-- Low Stock Items
+- Low Stock Products
 - Out-of-Stock Products
 - Overstocked Products
 - Inventory Movement
+- Inventory Accuracy
 
 ---
 
-### Procurement Team
+## Procurement Team
 
-Required business information:
+The Procurement Team requires information that supports purchasing decisions.
+
+Required information:
 
 - Current Inventory Levels
 - Reorder Status
 - Supplier Lead Time
-- Average Product Demand
+- Product Demand
 - Pending Purchase Orders
+- Supplier Performance
 
 ---
 
-### Warehouse Manager
+## Warehouse Manager
 
-Required business information:
+The Warehouse Manager requires complete visibility into warehouse operations.
+
+Required information:
 
 - Warehouse Space Utilisation
 - Goods Received
@@ -66,12 +78,15 @@ Required business information:
 - Pending Orders
 - Inventory Accuracy
 - Order Processing Time
+- Warehouse Performance
 
 ---
 
-### Logistics Team
+## Logistics Team
 
-Required business information:
+The Logistics Team monitors dispatch operations and delivery performance.
+
+Required information:
 
 - Orders Ready for Dispatch
 - Delivery Status
@@ -81,96 +96,135 @@ Required business information:
 
 ---
 
-### Finance Department
+## Finance Department
 
-Required business information:
+The Finance Department monitors inventory-related costs.
+
+Required information:
 
 - Inventory Value
 - Procurement Cost
 - Storage Cost
-- Holding Cost
+- Inventory Holding Cost
 - Slow-Moving Inventory
 - Dead Stock
 
 ---
 
-### Sales and Customer Support
+## Sales Team
 
-Required business information:
+The Sales Team requires information to communicate product availability and fulfil customer commitments.
+
+Required information:
 
 - Product Availability
+- Order Status
 - Delayed Orders
-- Customer Complaints
-- Returned Products
-- Incorrect Shipments
 
 ---
 
-## Management Reporting Requirements
+## Customer Support Team
 
-Management requires dashboards that provide visibility into overall warehouse performance.
+The Customer Support Team requires operational information to resolve customer issues.
+
+Required information:
+
+- Customer Complaints
+- Returned Products
+- Incorrect Shipments
+- Delivery Issues
+
+---
+
+# Management Reporting Requirements
+
+Business management requires high-level reports that provide visibility into overall warehouse performance.
 
 The expected analytical reports include:
 
 - Inventory Health Dashboard
 - Stock Availability Dashboard
+- Warehouse Operations Dashboard
 - Order Fulfilment Dashboard
 - Delivery Performance Dashboard
+- Supplier Performance Dashboard
 - Warehouse Utilisation Dashboard
 - Inventory Cost Dashboard
-- Customer Service Performance Dashboard
+- Customer Service Dashboard
 
 ---
 
-## Reporting Frequency
+# Reporting Frequency
 
-The reporting schedule is expected to support different levels of business decision-making.
+Different reports support different levels of business decision-making.
 
-| Report Type | Frequency |
-|-------------|-----------|
+| Report | Frequency |
+|--------|-----------|
 | Operational Dashboard | Daily |
-| Management Report | Weekly |
-| Executive Report | Monthly |
+| Management Dashboard | Weekly |
+| Executive Dashboard | Monthly |
 
 ---
 
-## Key Findings
+# Key Business Questions
 
-The Business Requirements phase established the following:
+The project should answer the following business questions.
 
-- Different stakeholders require role-specific business information.
-- Most reporting requirements depend on a shared operational dataset.
-- Inventory management is the central focus across multiple departments.
-- Dashboards should be designed around business functions rather than individual data sources.
-- Reporting frequency varies based on operational and management needs.
+### Inventory
+
+- Which products are currently out of stock?
+- Which products require immediate replenishment?
+- Which products are overstocked?
+- Which products are moving slowly?
+
+### Warehouse Operations
+
+- How efficiently is warehouse space being utilised?
+- How many orders are processed every day?
+- Which warehouses handle the highest inventory volume?
+
+### Procurement
+
+- Which suppliers consistently deliver on time?
+- Which suppliers contribute the highest inventory?
+- Which suppliers require performance improvement?
+
+### Logistics
+
+- How many deliveries are delayed?
+- Which delivery routes experience frequent delays?
+- What is the overall delivery performance?
+
+### Customer Service
+
+- Which products receive the highest number of complaints?
+- Which products have the highest return rate?
+- Which customers are affected by delayed deliveries?
 
 ---
 
-## Phase Summary
+# Key Findings
 
-Business requirements have been documented for the primary stakeholders.
+The Business Requirements phase established the following observations.
 
-These requirements define the analytical objectives, reporting expectations, and key business metrics that will guide the Data Discovery, Data Validation, and subsequent analytical phases of the project.
+- Every stakeholder requires different business information.
+- Most business decisions depend on the same operational datasets.
+- Inventory management is the central business function connecting procurement, warehouse operations, logistics and customer service.
+- Reporting should be designed around business functions rather than individual datasets.
+- These requirements define the analytical direction for the remainder of the project.
 
 ---
 
-## Navigating Documents
+# Phase Summary
 
-| Document | Link |
-|----------|------|
-| PROJECT_BRIEF | [01_PROJECT_BRIEF.md](01_PROJECT_BRIEF.md) |
-| BUSINESS_UNDERSTANDING | [02_BUSINESS_UNDERSTANDING.md](02_BUSINESS_UNDERSTANDING.md) |
-| STAKEHOLDER_ANALYSIS | [03_STAKEHOLDER_ANALYSIS.md](03_STAKEHOLDER_ANALYSIS.md) |
-| BUSINESS_REQUIREMENTS | [04_BUSINESS_REQUIREMENTS.md](04_BUSINESS_REQUIREMENTS.md) |
-| DATA_DISCOVERY | [05_DATA_DISCOVERY.md](05_DATA_DISCOVERY.md) |
-| DATA_VALIDATION | [06_DATA_VALIDATION.md](06_DATA_VALIDATION.md) |
-| DATA_PREPARATION | [07_DATA_PREPARATION.md](07_DATA_PREPARATION.md) |
-| EDA_REPORT | [08_EDA_REPORT.md](08_EDA_REPORT.md) |
-| BUSINESS_INSIGHTS | [09_BUSINESS_INSIGHTS.md](09_BUSINESS_INSIGHTS.md) |
-| RECOMMENDATIONS | [10_RECOMMENDATIONS.md](10_RECOMMENDATIONS.md) |
-| EXECUTIVE_SUMMARY | [11_EXECUTIVE_SUMMARY.md](11_EXECUTIVE_SUMMARY.md) |
-| PROJECT_SUMMARY | [12_PROJECT_SUMMARY.md](12_PROJECT_SUMMARY.md) |
-| OBSERVATIONS | [13_OBSERVATIONS.md](13_OBSERVATIONS.md) |
-| ANALYTICAL_THINKING | [14_ANALYTICAL_THINKING.md](14_ANALYTICAL_THINKING.md) |
-| PHASE_CHECKLIST | [15_PHASE_CHECKLIST.md](15_PHASE_CHECKLIST.md) |
-| PROJECT README | [PROJECT README](../README.md) |
+Business requirements have been documented for all major business stakeholders.
+
+These requirements define the business questions that the project must answer and provide a clear direction for identifying the datasets required during the Data Discovery phase.
+
+---
+
+# Next Phase
+
+➡ **Data Discovery**
+
+The next phase identifies every available dataset, understands its business purpose and documents how each dataset supports the business requirements identified in this phase.

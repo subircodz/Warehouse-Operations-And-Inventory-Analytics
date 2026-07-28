@@ -104,3 +104,18 @@ REFERENTIAL_INTEGRITY_RULES = [
         "child_column": "warehouse_id",
     },
 ]
+
+
+# ================================================
+# Business rules
+# ================================================
+
+BUSINESS_RULES = {
+    "inventory": {
+        "column": ["quantity", "reorder", "unit_cost"]
+    },
+
+    "products": {
+        "column": ["unit_price", "status"]
+    }
+}

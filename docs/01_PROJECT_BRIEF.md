@@ -2,123 +2,122 @@
 
 ## Project Overview
 
-This project analyses warehouse operations to identify operational inefficiencies, evaluate data quality, and generate business insights that support better inventory and distribution decisions.
+Warehouse Operations & Inventory Analytics is a production-style Data Analytics capstone project that analyses warehouse operations to identify operational inefficiencies, improve data quality and generate actionable business insights for inventory and distribution management.
 
-The project is developed as a business case study to validate the Data Analytics Project Methodology (DAPM). It simulates a real warehouse environment using operational datasets commonly maintained by warehouse and distribution companies.
-
----
-
-## Business Context
-
-Apex Warehouse & Distribution Pvt. Ltd. is a third-party warehouse and distribution company responsible for receiving products from multiple suppliers, storing inventory, and dispatching goods to retailers and business customers across different regions.
-
-As business operations have expanded, managing inventory and warehouse activities has become increasingly challenging. Operational data is available across multiple systems and departmental reports, making it difficult to obtain a consistent view of warehouse performance.
+The project is developed as a real-world business case study following the **Data Analytics Project Methodology (DAPM) v0.2.1**. It demonstrates how a Data Analyst approaches an enterprise analytics project through a structured, documented and repeatable workflow.
 
 ---
 
-## Business Challenges
+# Business Context
 
-The following operational issues have been identified for further analysis.
+Apex Warehouse & Distribution Pvt. Ltd. is a third-party warehouse and distribution company responsible for receiving products from multiple suppliers, storing inventory and dispatching goods to retailers and business customers across different regions.
+
+As the business expanded, operational data started growing across multiple systems and departmental reports. Although the organisation possesses a large amount of operational data, management lacks a single, reliable view of warehouse performance.
+
+This project aims to convert that operational data into meaningful business information that supports better operational and strategic decisions.
+
+---
+
+# Business Challenges
+
+The business currently faces several operational challenges.
 
 - Frequent stockouts of high-demand products.
-- Slow-moving inventory occupying warehouse space.
+- Slow-moving inventory occupying valuable warehouse space.
 - Increasing number of returned and damaged products.
 - Limited visibility into supplier performance.
-- Delays in identifying products requiring replenishment.
-- Operational reports maintained independently by different departments.
-- Management decisions relying on manual report consolidation.
+- Difficulty identifying products requiring replenishment.
+- Department-wise operational reports maintained independently.
+- Manual consolidation of reports before management review.
+- Limited visibility into overall warehouse operations.
 
 ---
 
-## Business Objectives
+# Project Objectives
 
-The primary objective is to understand the current warehouse operations and identify opportunities to improve operational efficiency through data analysis.
+The primary objective of this project is to understand warehouse operations and transform raw operational data into reliable business information.
 
-Key objectives include:
+The project will:
 
-- Understand inventory movement across the warehouse.
+- Understand warehouse operations and inventory movement.
 - Identify operational bottlenecks.
-- Analyse inventory availability and storage utilisation.
+- Analyse inventory availability and warehouse utilisation.
 - Evaluate supplier performance.
-- Identify products requiring immediate management attention.
-- Assess overall data quality before performing detailed analysis.
-- Build reliable analytical reports to support business decision-making.
+- Discover data sources available for analysis.
+- Profile the quality of the available datasets.
+- Clean data quality issues before analysis.
+- Validate business rules and data relationships.
+- Perform exploratory data analysis.
+- Generate meaningful business insights.
+- Provide evidence-based business recommendations.
 
 ---
 
-## Available Data Sources
+# Available Data Sources
 
-Business information is available from multiple operational systems.
+Business information is expected to be available from multiple operational systems.
 
 Potential data sources include:
 
 - Warehouse Management System (WMS)
-- Inventory reports
-- Purchase records
-- Supplier information
-- Inventory transactions
-- Goods received records
-- Goods dispatched records
-- Return records
-- Employee information
-- Excel reports exported from operational systems
+- Inventory Reports
+- Purchase Records
+- Supplier Information
+- Inventory Transactions
+- Goods Received Records
+- Goods Dispatch Records
+- Return Records
+- Employee Information
+- Excel Reports exported from operational systems
 
-Additional datasets may be incorporated during the Data Discovery phase if required.
-
----
-
-## Project Scope
-
-The project focuses on analysing existing operational data.
-
-The objective is not to replace or redesign the warehouse management system. Instead, the project aims to transform existing operational data into meaningful business information that supports day-to-day and strategic decision-making.
+Additional datasets may be identified during the Data Discovery phase.
 
 ---
 
-## Expected Deliverables
+# Project Scope
 
-- Business understanding
-- Stakeholder analysis
-- Business requirements
-- Data discovery
-- Data validation
-- Data preparation
-- Exploratory data analysis
-- Business insights
-- Recommendations
-- Executive summary
+This project focuses on analysing existing warehouse operational data.
+
+The project does **not** redesign or replace the Warehouse Management System.
+
+Instead, the objective is to understand existing business operations, analyse available data and provide business recommendations that help improve operational efficiency.
 
 ---
 
-## Success Criteria
+# Expected Deliverables
+
+The project will produce the following deliverables.
+
+- Project Brief
+- Business Understanding
+- Stakeholder Analysis
+- Business Requirements
+- Data Discovery
+- Data Profiling
+- Data Cleaning
+- Data Validation
+- Exploratory Data Analysis
+- Business Insights
+- Business Recommendations
+- Executive Summary
+
+---
+
+# Success Criteria
 
 The project will be considered successful if it:
 
-- Identifies major operational issues within warehouse operations.
-- Produces reliable and validated datasets for analysis.
-- Generates actionable business insights.
-- Supports management with meaningful analytical reports.
-- Demonstrates the DAPM workflow through a complete end-to-end analytics project.
+- Identifies key operational challenges.
+- Produces reliable datasets suitable for business analysis.
+- Demonstrates a structured analytics workflow.
+- Generates meaningful business insights.
+- Supports management with actionable recommendations.
+- Successfully implements the Data Analytics Project Methodology (DAPM) through a complete end-to-end analytics project.
 
 ---
 
-## Navigating Documents
+# Next Document
 
-| Document | Link |
-|----------|------|
-| PROJECT_BRIEF | [01_PROJECT_BRIEF.md](01_PROJECT_BRIEF.md) |
-| BUSINESS_UNDERSTANDING | [02_BUSINESS_UNDERSTANDING.md](02_BUSINESS_UNDERSTANDING.md) |
-| STAKEHOLDER_ANALYSIS | [03_STAKEHOLDER_ANALYSIS.md](03_STAKEHOLDER_ANALYSIS.md) |
-| BUSINESS_REQUIREMENTS | [04_BUSINESS_REQUIREMENTS.md](04_BUSINESS_REQUIREMENTS.md) |
-| DATA_DISCOVERY | [05_DATA_DISCOVERY.md](05_DATA_DISCOVERY.md) |
-| DATA_VALIDATION | [06_DATA_VALIDATION.md](06_DATA_VALIDATION.md) |
-| DATA_PREPARATION | [07_DATA_PREPARATION.md](07_DATA_PREPARATION.md) |
-| EDA_REPORT | [08_EDA_REPORT.md](08_EDA_REPORT.md) |
-| BUSINESS_INSIGHTS | [09_BUSINESS_INSIGHTS.md](09_BUSINESS_INSIGHTS.md) |
-| RECOMMENDATIONS | [10_RECOMMENDATIONS.md](10_RECOMMENDATIONS.md) |
-| EXECUTIVE_SUMMARY | [11_EXECUTIVE_SUMMARY.md](11_EXECUTIVE_SUMMARY.md) |
-| PROJECT_SUMMARY | [12_PROJECT_SUMMARY.md](12_PROJECT_SUMMARY.md) |
-| OBSERVATIONS | [13_OBSERVATIONS.md](13_OBSERVATIONS.md) |
-| ANALYTICAL_THINKING | [14_ANALYTICAL_THINKING.md](14_ANALYTICAL_THINKING.md) |
-| PHASE_CHECKLIST | [15_PHASE_CHECKLIST.md](15_PHASE_CHECKLIST.md) |
-| PROJECT README | [PROJECT README](../README.md) |
+➡ **Business Understanding**
+
+The next phase focuses on understanding warehouse operations, business processes and the overall business environment before analysing the available data.
