@@ -8,10 +8,10 @@ Author: Subir Sutradhar
 """
 
 from pandas import DataFrame
-from models.validation_result import ValidationResult
+from models.validation_result import WaveResult
 
 
-def validate_record_count(workbook: dict[str, DataFrame]) -> ValidationResult:
+def profile_record_count(workbook: dict[str, DataFrame]) -> WaveResult:
     """
     Count the total number of records in each worksheet.
 
@@ -31,8 +31,7 @@ def validate_record_count(workbook: dict[str, DataFrame]) -> ValidationResult:
     for worksheet_name, dataframe in workbook.items():
         record_counts[worksheet_name] = len(dataframe)
 
-    return ValidationResult(
+    return WaveResult(
         validation_name="Record Count Validation",
-        status="PASS",
         data=record_counts
     )

@@ -11,11 +11,11 @@ from typing import Any
 
 
 @dataclass
-class ValidationResult:
+class WaveResult:
     """
     Represents the result of a validation.
     """
 
     validation_name: str
-    status: str
     data: Any
+    status: str | None = None

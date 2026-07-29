@@ -7,14 +7,15 @@ Inventory Analytics validation application.
 Author: Subir Sutradhar
 """
 from config import WORKBOOK_PATH
-from validators import (
-    validate_missing_values,
-    validate_duplicates,
-    validate_business_identifier,
-    validate_referential_identifier,
-    validate_business_rules
-    )
+# from validators import (
+#     validate_missing_values,
+#     validate_duplicates,
+#     validate_business_identifier,
+#     validate_referential_identifier,
+#     validate_business_rules
+#     )
 from profiling.worksheet_discovery import worksheet_discovery
+from profiling.record_count import profile_record_count
 from utils.banner import display_banner
 from utils.file_loader import load_data
 from utils.icons import SUCCESS, INFO
@@ -54,30 +55,25 @@ def main() -> None:
     print(f"{INFO}  Total Worksheets : {worksheets['worksheet_count']}")
     print(f"{INFO}  Worksheet Discovery Completed.")
 
+    # =================================
+    # Record Count Profiling
+    # =================================
 
-    # # =================================
-    # # Display worksheet names
-    # # =================================
-    # print("\nAvailable Worksheets")
-
-    # for worksheet in workbook.keys():
-    #     print(f"  • {worksheet}")
-
-    # # =================================
-    # # Validate record count
-    # # =================================
-
-    # print(f"\n{INFO}  Validating record counts...")
-
-    # record_count_result = validate_record_count(workbook)
-
-    # print(f"{SUCCESS} Record count validation completed.\n")
-
+    print("=" * 60)
+    print(f"{INFO}  Record Count Profiling")
+    print("=" * 60)
+    record_count_result = profile_record_count(workbook)
+    print(f"{'Worksheet':<25} {'Records':>12}")
+    print("-" * 60)
+    for worksheet, count in record_count_result.data.items():
+        print(f"{worksheet:<25} {count:>12,}")
+    print("-" * 60)
+    total_records = sum(record_count_result.data.values())
+    print(f"{INFO}  Total Worksheets : {len(record_count_result.data.values())}")
+    print(f"{INFO}  Total Records    : {total_records:,}")
+    print(f"\n{SUCCESS} Record Count Profiling Completed.\n")
     # print(record_count_result.validation_name)
-    # print(record_count_result.status)
 
-    # for worksheet, count in record_count_result.data.items():
-    #     print(f"  • {worksheet:<15} : {count:,}")
 
     # validation_results.append(record_count_result)
 
