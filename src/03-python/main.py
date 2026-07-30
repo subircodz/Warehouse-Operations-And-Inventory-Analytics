@@ -16,6 +16,7 @@ from config import WORKBOOK_PATH
 #     )
 from profiling.worksheet_discovery import worksheet_discovery
 from profiling.record_count import profile_record_count
+from profiling.column_profile import column_discovery
 from utils.banner import display_banner
 from utils.file_loader import load_data
 from utils.icons import SUCCESS, INFO
@@ -74,6 +75,20 @@ def main() -> None:
     print(f"\n{SUCCESS} Record Count Profiling Completed.\n")
     # print(record_count_result.validation_name)
 
+    # =================================
+    # Column Discovery
+    # =================================
+    print("=" * 60)
+    print(f"{INFO}  Column Discovery")
+    print("=" * 60)
+    columns_found = column_discovery(workbook)
+    for worksheet, columns in columns_found.data.items():
+        print(f"► Worksheet : {worksheet}")
+        print("-" * 60)
+        for column in columns:
+            print(f"    ✔ {column}")
+        print("-" * 60)
+    print(f"\n{SUCCESS} Column Discovery complete..\n")
 
     # validation_results.append(record_count_result)
 
