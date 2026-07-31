@@ -1,24 +1,31 @@
 """
-Worksheet discovery module.
+Worksheet Discovery Module
 
-This module takes a workbook and finds out 
-worksheet names and calucaltes the total 
-worksheets present in the workbook
+This module discovers all worksheets available
+in the workbook.
 
-Suthor: Subir Sutradhar
+Author: Subir Sutradhar
 """
+
 from pandas import DataFrame
-def worksheet_discovery(workbook: dict[str, DataFrame]) -> dict[list, int]:
+from models.validation_result import WaveResult
+
+
+def worksheet_discovery(workbook: dict[str, DataFrame]) -> WaveResult:
     """
-    Retuns total worksheet count and worksheet names.
+    Discover all worksheets present in the workbook.
 
     Args:
-        workbook: dict[str, DataFrame]
-    
+        workbook: Dictionary containing worksheet names and DataFrames.
+
     Returns:
-        dict[list, int]
+        WaveResult
     """
-    return {
-    "worksheet_names": list(workbook.keys()),
-    "worksheet_count": len(workbook.keys())
-}
+
+    return WaveResult(
+        validation_name="Worksheet Discovery",
+        data={
+            "worksheet_names": list(workbook.keys()),
+            "worksheet_count": len(workbook)
+        }
+    )
