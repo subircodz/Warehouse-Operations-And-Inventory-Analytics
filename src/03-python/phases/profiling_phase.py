@@ -14,6 +14,7 @@ from profiling.record_count import profile_record_count
 from profiling.column_profile import column_discovery
 from profiling.datatype_profile import profile_datatype
 from profiling.missing_value_profile import profile_missing_value
+from profiling.duplicate_profile import profile_duplicates
 from utils.icons import INFO, SUCCESS
 from pandas import DataFrame
 
@@ -142,5 +143,27 @@ def profiling_phase(workbook: dict[str, DataFrame]) -> list:
     print(f"Total Missing Values : {overall_missing}")
     print("=" * 60)    
     print(f"{SUCCESS} Missing Value Profiling Completed.\n")
+    profiling_results.append(missing_value_result)
+
+    # ==========================================================
+    # Duplicates Profiling
+    # ==========================================================
+
+    duplicate_result = profile_duplicates(workbook)
+    print("=" * 60)
+    print(f"{INFO}  Duplicates Profiling")
+    print("=" * 60)
+    duplicates = 0
+    for worksheet, duplicate_count in duplicate_result.items():
+        print(f"    ✔ {worksheet:<25} : {duplicate_count}")
+        duplicates += duplicate_count
+    print("=" * 60)
+    print(f"{INFO}  Duplicates Profiling Summary")
+    print("-" * 60)
+    print(f"Worksheets checked  : {len(workbook.keys())}")
+    print(f"Total Duplicates    : {duplicates}")
+    print("=" * 60)    
+    print(f"{SUCCESS} Duplicates Profiling Completed.\n")
+    profiling_results.append(duplicate_result)
 
     
