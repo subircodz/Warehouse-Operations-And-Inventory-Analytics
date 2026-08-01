@@ -13,6 +13,7 @@ from profiling.worksheet_discovery import worksheet_discovery
 from profiling.record_count import profile_record_count
 from profiling.column_profile import column_discovery
 from profiling.datatype_profile import profile_datatype
+from profiling.missing_value_profile import profile_missing_value
 from utils.icons import INFO, SUCCESS
 from pandas import DataFrame
 
@@ -104,23 +105,42 @@ def profiling_phase(workbook: dict[str, DataFrame]) -> list:
     # Datatype Profiling
     # ==========================================================
     datatype_result = profile_datatype(workbook)
-
     print("=" * 60)
     print(f"{INFO}  Datatype Profiling")
     print("=" * 60)
-
     for worksheet, datatypes in datatype_result.data.items():
-
         print(f"► Worksheet : {worksheet}")
         print("-" * 60)
-
         for column, dtype in datatypes.items():
             print(f"    ✔ {column:<25} : {dtype}")
-
         print("-" * 60)
-
     print(f"{SUCCESS} Datatype Profiling Completed.\n")
-
     profiling_results.append(datatype_result)
 
-    return profiling_results
+    # ==========================================================
+    # Missing Value Profiling
+    # ==========================================================
+
+    missing_value_result = profile_missing_value(workbook)
+    print("=" * 60)
+    print(f"{INFO}  Missing Value Profiling")
+    overall_missing = 0
+    column_count = 0
+    print("=" * 60)
+    for worksheet, data in missing_value_result.items():
+        print(f"► Worksheet : {worksheet}")
+        print("-" * 60)
+        for column, missing in data.items():
+            print(f"    ✔ {column:<25} : {missing}")
+            overall_missing += int(missing)
+            column_count += 1
+        print("=" * 60)
+    print(f"{INFO}  Missing Value Summary")
+    print("-" * 60)
+    print(f"Worksheets affected  : {len(workbook.keys())}")
+    print(f"Columns affected     : {column_count}")
+    print(f"Total Missing Values : {overall_missing}")
+    print("=" * 60)    
+    print(f"{SUCCESS} Missing Value Profiling Completed.\n")
+
+    
