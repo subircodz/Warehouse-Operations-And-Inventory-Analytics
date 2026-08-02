@@ -9,7 +9,7 @@ Author: Subir Sutradhar
 """
 
 from pandas import DataFrame
-
+from models.validation_result import WaveResult
 
 def profile_duplicates(workbook: dict[str, DataFrame]) -> dict[str, int]:
     """
@@ -29,6 +29,16 @@ def profile_duplicates(workbook: dict[str, DataFrame]) -> dict[str, int]:
     if not isinstance(workbook, dict):
         raise TypeError("Expected workbook to be a dictionary.")
     result: dict[str, int] = {}
+    total_duplicates = 0
     for worksheet, dataframe in workbook.items():
-        result[worksheet] = int(dataframe.duplicated().sum())
-    return result
+        duplicates = int(dataframe.duplicated().sum())
+        total_duplicates += int(duplicates)
+        result[worksheet] = duplicates
+    return WaveResult(
+        validation_name="Duplicate Profiling",
+        data=result,
+        summary={
+        "worksheets_checked": len(workbook),
+        "total_duplicates": total_duplicates
+        }
+    )

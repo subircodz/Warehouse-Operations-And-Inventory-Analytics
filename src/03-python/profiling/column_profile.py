@@ -20,13 +20,16 @@ def column_discovery(workbook: dict[str, DataFrame]) -> WaveResult:
         WaveResult
     """
     result = {}
+    total_columns = 0
     for worksheet, dataframe in workbook.items():
-        # columns = []
-        # for cols in dataframe.keys():
-        #     columns.append(cols)
+        total_columns += len(dataframe.columns)
         columns = list(dataframe.columns)
         result[worksheet] = columns
     return WaveResult(
         validation_name="Column Discovery",
-        data=result
+        data=result,
+        summary={
+            "worksheets_checked" : len(workbook),
+            "columns_profiled" : total_columns
+        }
     )

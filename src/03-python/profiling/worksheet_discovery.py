@@ -26,6 +26,8 @@ def worksheet_discovery(workbook: dict[str, DataFrame]) -> WaveResult:
         validation_name="Worksheet Discovery",
         data={
             "worksheet_names": list(workbook.keys()),
+        },
+        summary={
             "worksheet_count": len(workbook)
         }
     )

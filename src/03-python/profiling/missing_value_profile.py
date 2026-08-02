@@ -7,6 +7,7 @@ in every worksheet of a workbook.
 Author: Subir Sutradhar
 """
 from pandas import DataFrame
+from models.validation_result import WaveResult
 
 def profile_missing_value(workbook: dict[str, DataFrame]) -> dict[str, dict[str, int]]:
     """
@@ -23,15 +24,38 @@ def profile_missing_value(workbook: dict[str, DataFrame]) -> dict[str, dict[str,
     Raises:
         TypeError
     """
+
     if not isinstance(workbook, dict):
         raise TypeError("Expected workbook to be a dictionary.")
+
     overall_result = {}
+
+    total_missing = 0
+    columns_affected = 0
+
     for worksheet, dataframe in workbook.items():
+
         result = {}
+
         for column in dataframe:
-            total_missing = dataframe[column].isna().sum()
-            if total_missing:
-                result[column] = total_missing
+
+            missing = int(dataframe[column].isna().sum())
+
+            if missing > 0:
+                result[column] = missing
+                total_missing += missing
+                columns_affected += 1
+
         overall_result[worksheet] = result
-    return overall_result
-            
+
+    return WaveResult(
+        validation_name="Missing Value Profiling",
+
+        data=overall_result,
+
+        summary={
+            "worksheets_checked": len(workbook),
+            "columns_affected": columns_affected,
+            "total_missing_values": total_missing
+        }
+    )
