@@ -3,3 +3,4 @@
 # from .identifier_validation import validate_business_identifier
 # from .referential_validation import validate_referential_identifier
 # from .business_rule_validation import validate_business_rules
+from .referential_validation import validate_referential_identifier

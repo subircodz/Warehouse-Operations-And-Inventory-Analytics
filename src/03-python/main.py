@@ -8,6 +8,7 @@ Author: Subir Sutradhar
 """
 from config import WORKBOOK_PATH
 from phases.profiling_phase import profiling_phase
+from phases.validation_phase import validation_phase
 from utils.banner import display_banner
 from utils.file_loader import load_data
 from utils.icons import SUCCESS, INFO
@@ -45,7 +46,11 @@ def main() -> None:
 
     wave_results["data_profiling"] = profiling_phase(workbook)
 
-    # print(wave_results.values())
+    # =================================
+    # Validation Phase
+    # =================================
+
+    wave_results["data_validation"] = validation_phase(workbook)
 
     
 

@@ -10,12 +10,12 @@ Author: Subir Sutradhar
 
 from pandas import DataFrame
 from config import REFERENTIAL_INTEGRITY_RULES
-from models.validation_result import ValidationResult
+from models.validation_result import WaveResult
 
 
 def validate_referential_identifier(
     workbook: dict[str, DataFrame]
-) -> ValidationResult:
+) -> WaveResult:
     """
     Function to validate that every foreign key in
     in a child worksheet exist in the parent worksheet.
@@ -92,8 +92,8 @@ def validate_referential_identifier(
         overall_result[relationship_name] = result
 
 
-    return ValidationResult(
+    return WaveResult(
         validation_name="Referential Integrity Validation",
-        status="PASS",
-        data=overall_result
+        data=overall_result,
+        status="PASS"
     )
