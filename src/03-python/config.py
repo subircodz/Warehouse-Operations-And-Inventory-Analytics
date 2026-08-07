@@ -119,3 +119,22 @@ BUSINESS_RULES = {
         "column": ["unit_price", "status"]
     }
 }
+
+# ================================================
+# Text standardization rules
+# ================================================
+TEXT_STANDARDIZATION_RULES = {
+    "city": "title",
+    "state": "title",
+    "supplier_name": "title",
+    "warehouse_name": "title",
+    "product_name": "title",
+    "brand": "title",
+    "category": "title",
+    "status": "upper",
+    "email": "lower",
+    "warehouse_code": None,
+    "supplier_code": None,
+    "sku": None,
+    "gst_number": None,
+}
