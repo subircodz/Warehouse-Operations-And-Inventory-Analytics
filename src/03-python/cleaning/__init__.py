@@ -1,3 +1,4 @@
 from cleaning.fill_missing_values import fill_missing_values
 from cleaning.clean_duplicates import clean_duplicates
 from cleaning.clean_text import clean_text
+from cleaning.numeric_range_cleaning import clean_range

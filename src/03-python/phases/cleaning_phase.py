@@ -14,7 +14,8 @@ from rich.console import Console
 from cleaning import (
     fill_missing_values,
     clean_duplicates,
-    clean_text
+    clean_text,
+    clean_range
 )
 
 console = Console()
@@ -127,6 +128,40 @@ def cleaning_phase(workbook: dict[str, DataFrame]) -> list:
     )
     console.print("[white]=[/]" * 60)
     console.print("[green]✅ Text Standardization Completed.[/]\n")
+
+    # ==========================================================
+    # Numeric Range Cleaning
+    # ==========================================================
+    console.print("[white]=[/]" * 60)
+    console.print("[bright_blue]ℹ️  Numeric Range Cleaning[/]")
+    console.print("[white]=[/]" * 60)
+    clean_numeric_range = clean_range(workbook)
+    for worksheet, result in clean_numeric_range.data.items():
+        console.print(f"[cyan]► Worksheet : {worksheet}[/]")
+        console.print("[white]-[/]" * 60)
+        for column, data in result.items():
+            console.print(
+                 f"    ✔ {column:<25} : {data}"
+            )
+        console.print("[white]=[/]" * 60)
+    summary = clean_numeric_range.summary
+    console.print("[bright_blue]ℹ️  Numeric Range Cleaning Summary[/]")
+    console.print("[white]-[/]" * 60)
+    console.print(
+        f"{'Worksheets Modified':<25}: "
+        f"{summary['worksheets_modified']}"
+    )
+    console.print(
+        f"{'Columns Modified':<25}: "
+        f"{summary['columns_modified']}"
+    )
+    console.print(
+            f"{'Values Corrected':<25}: "
+            f"{summary['values_corrected']}"
+        )
+    console.print("[white]=[/]" * 60)
+    console.print("[green]✅ Numeric Range Cleaning Completed.[/]\n")
+            
 
 
     return cleaning_results

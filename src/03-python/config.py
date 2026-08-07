@@ -138,3 +138,25 @@ TEXT_STANDARDIZATION_RULES = {
     "sku": None,
     "gst_number": None,
 }
+
+# ================================================
+# Nemeric range rules
+# ================================================
+NUMERIC_RANGE_RULES = {
+    "quantity": {
+        "min": 0,
+        "replacement": 0
+    },
+    "reorder_level": {
+        "min": 0,
+        "replacement": 0
+    },
+    "unit_cost": {
+        "min": 0,
+        "replacement": 0
+    },
+    "unit_price": {
+        "min": 0,
+        "replacement": 0
+    }
+}
