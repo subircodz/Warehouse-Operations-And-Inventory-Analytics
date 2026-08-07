@@ -79,4 +79,35 @@ def cleaning_phase(
     console.print("[white]=[/]" * 60)
     console.print("[green]✅ Missing Value Cleaning Completed.[/]\n")
 
+    # ==========================================================
+    # Clean duplicates.
+    # ==========================================================
+
+    console.print("[white]=[/]" * 60)
+    console.print("[bright_blue]ℹ️  Duplicate Cleaning[/]")
+    console.print("[white]=[/]" * 60)
+    duplicates_result = clean_duplicates(workbook)
+    summary = duplicates_result.summary
+    if summary["duplicates_removed"] == 0:
+        console.print("[yellow]No duplicate records found.[/]")
+        console.print("[white]-[/]" * 60)
+    else:
+        for worksheet, count in duplicates_result.data.items():
+            console.print(f"[cyan]► Worksheet : {worksheet}[/]")
+            console.print("[white]-[/]" * 60)
+            console.print(f"{'Duplicates Removed':<25}: {count}")
+    console.print("[bright_blue]ℹ️  Duplicates Cleaning Summary[/]")
+    console.print("[white]-[/]" * 60)
+    console.print(
+            f"{'Worksheets Modified':<25}: "
+            f"{summary['worksheets_modified']}"
+        )
+    console.print(
+            f"{'Duplicates removed':<25}: "
+            f"{summary['duplicates_removed']}"
+        )
+    console.print("[white]=[/]" * 60)
+    console.print("[green]✅ Duplicates Cleaning Completed.[/]\n")
+
+
     return cleaning_results
