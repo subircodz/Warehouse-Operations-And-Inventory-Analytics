@@ -26,6 +26,41 @@ def cleaning_phase(workbook: dict[str, DataFrame]) -> list:
     cleaning_results = []
 
     # ==========================================================
+    # Text Standardization
+    # ==========================================================
+
+    console.print("[white]=[/]" * 60)
+    console.print("[bright_blue]ℹ️  Text Standardization[/]")
+    console.print("[white]=[/]" * 60)
+    clean_text_result = clean_text(workbook)
+    cleaning_results.append(clean_text_result)
+    summary = clean_text_result.summary
+    if not clean_text_result.data:
+        console.print("[yellow]No text standardization required.[/]")
+        console.print("[white]-[/]" * 60)
+    else:
+        for worksheet, worksheet_result in clean_text_result.data.items():
+            console.print(f"[cyan]► Worksheet : {worksheet}[/]")
+            console.print("[white]-[/]" * 60)
+            for column, action in worksheet_result.items():
+                console.print(
+                    f"    ✔ {column:<25} : {action}"
+                )
+            console.print("[white]=[/]" * 60)
+    console.print("[bright_blue]ℹ️  Text Standardization Summary[/]")
+    console.print("[white]-[/]" * 60)
+    console.print(
+        f"{'Worksheets Modified':<25}: "
+        f"{summary['worksheets_modified']}"
+    )
+    console.print(
+        f"{'Columns Modified':<25}: "
+        f"{summary['columns_modified']}"
+    )
+    console.print("[white]=[/]" * 60)
+    console.print("[green]✅ Text Standardization Completed.[/]\n")
+
+    # ==========================================================
     # Missing Value Cleaning
     # ==========================================================
 
@@ -73,6 +108,7 @@ def cleaning_phase(workbook: dict[str, DataFrame]) -> list:
     console.print("[bright_blue]ℹ️  Duplicate Cleaning[/]")
     console.print("[white]=[/]" * 60)
     duplicates_result = clean_duplicates(workbook)
+    cleaning_results.append(duplicates_result)
     summary = duplicates_result.summary
     if summary["duplicates_removed"] == 0:
         console.print("[yellow]No duplicate records found.[/]")
@@ -95,39 +131,7 @@ def cleaning_phase(workbook: dict[str, DataFrame]) -> list:
     console.print("[white]=[/]" * 60)
     console.print("[green]✅ Duplicates Cleaning Completed.[/]\n")
 
-    # ==========================================================
-    # Text Standardization
-    # ==========================================================
-
-    console.print("[white]=[/]" * 60)
-    console.print("[bright_blue]ℹ️  Text Standardization[/]")
-    console.print("[white]=[/]" * 60)
-    clean_text_result = clean_text(workbook)
-    summary = clean_text_result.summary
-    if not clean_text_result.data:
-        console.print("[yellow]No text standardization required.[/]")
-        console.print("[white]-[/]" * 60)
-    else:
-        for worksheet, worksheet_result in clean_text_result.data.items():
-            console.print(f"[cyan]► Worksheet : {worksheet}[/]")
-            console.print("[white]-[/]" * 60)
-            for column, action in worksheet_result.items():
-                console.print(
-                    f"    ✔ {column:<25} : {action}"
-                )
-            console.print("[white]=[/]" * 60)
-    console.print("[bright_blue]ℹ️  Text Standardization Summary[/]")
-    console.print("[white]-[/]" * 60)
-    console.print(
-        f"{'Worksheets Modified':<25}: "
-        f"{summary['worksheets_modified']}"
-    )
-    console.print(
-        f"{'Columns Modified':<25}: "
-        f"{summary['columns_modified']}"
-    )
-    console.print("[white]=[/]" * 60)
-    console.print("[green]✅ Text Standardization Completed.[/]\n")
+    
 
     # ==========================================================
     # Numeric Range Cleaning
@@ -136,6 +140,7 @@ def cleaning_phase(workbook: dict[str, DataFrame]) -> list:
     console.print("[bright_blue]ℹ️  Numeric Range Cleaning[/]")
     console.print("[white]=[/]" * 60)
     clean_numeric_range = clean_range(workbook)
+    cleaning_results.append(clean_numeric_range)
     for worksheet, result in clean_numeric_range.data.items():
         console.print(f"[cyan]► Worksheet : {worksheet}[/]")
         console.print("[white]-[/]" * 60)
