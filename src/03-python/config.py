@@ -124,6 +124,8 @@ BUSINESS_RULES = {
 # Text standardization rules
 # ================================================
 TEXT_STANDARDIZATION_RULES = {
+    "warehouse_type" : "title",
+    "unit" : "title",
     "city": "title",
     "state": "title",
     "supplier_name": "title",
@@ -158,5 +160,18 @@ NUMERIC_RANGE_RULES = {
     "unit_price": {
         "min": 0,
         "replacement": 0
+    }
+}
+
+# ================================================
+# Text replacement rules
+# ================================================
+
+TEXT_REPLACEMENT_RULES = {
+    "unit": {
+        "Kgs": "Kg"
+    },
+    "brand": {
+        "Nestlé": "Nestle"
     }
 }

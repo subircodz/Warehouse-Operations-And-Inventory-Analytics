@@ -10,6 +10,7 @@ from config import WORKBOOK_PATH
 from phases.profiling_phase import profiling_phase
 from phases.cleaning_phase import cleaning_phase
 from phases.validation_phase import validation_phase
+from output.workbook_writer import save_workbook
 from utils.banner import display_banner
 from utils.file_loader import load_data
 from utils.icons import SUCCESS, INFO
@@ -52,13 +53,19 @@ def main() -> None:
     # =================================
     
     wave_results["data_cleaning"] = cleaning_phase(workbook)
-    # print(wave_results["data_cleaning"])
+
 
     # =================================
     # Validation Phase
     # =================================
 
-    # wave_results["data_validation"] = validation_phase(workbook)
+    wave_results["data_validation"] = validation_phase(workbook)
+
+    # =================================
+    # Save the workbook
+    # =================================
+
+    save_workbook(workbook, "Warehouse_Reports_Cleaned.xlsx")
 
     
 

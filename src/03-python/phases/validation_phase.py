@@ -12,10 +12,12 @@ Author: Subir Sutradhar
 
 from pandas import DataFrame
 from rich.console import Console
+from rich.table import Table
 
 from validators import (
     validate_referential_identifier,
-    validate_business_identifier
+    validate_business_identifier,
+    extract_referential_exceptions
 )
 
 console = Console()
@@ -114,6 +116,20 @@ def validation_phase(
 
     console.print("[white]=[/]" * 60)
     console.print("[green]✅ Referential Integrity Validation Completed.[/]\n")
+
+    # ==========================================================
+    # Extract invalid rows
+    # ==========================================================
+    extract_referential_rows_result = extract_referential_exceptions(workbook, referential_result)
+    table = Table(title="Referential Integrity Exceptions")
+
+    for column in extract_referential_rows_result.columns:
+        table.add_column(column)
+
+    for row in extract_referential_rows_result.itertuples(index=False):
+        table.add_row(*[str(value) for value in row])
+
+    console.print(table)
 
     # ==========================================================
     # Business Identifier Validation
