@@ -10,6 +10,7 @@ from config import WORKBOOK_PATH
 from phases.profiling_phase import profiling_phase
 from phases.cleaning_phase import cleaning_phase
 from phases.validation_phase import validation_phase
+from phases.eda_phase import eda_phase
 from output.workbook_writer import save_workbook
 from utils.banner import display_banner
 from utils.file_loader import load_data
@@ -65,7 +66,12 @@ def main() -> None:
     # Save the workbook
     # =================================
 
-    save_workbook(workbook, "Warehouse_Reports_Cleaned.xlsx")
+    # save_workbook(workbook, "Warehouse_Reports_Cleaned.xlsx")
+
+    # =================================
+    # EDA phase
+    # =================================
+    wave_results["inventory_analysis"] = eda_phase(workbook)
 
     
 
