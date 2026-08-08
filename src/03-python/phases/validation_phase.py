@@ -15,6 +15,7 @@ from rich.console import Console
 
 from validators import (
     validate_referential_identifier,
+    validate_business_identifier
 )
 
 console = Console()
@@ -113,5 +114,34 @@ def validation_phase(
 
     console.print("[white]=[/]" * 60)
     console.print("[green]✅ Referential Integrity Validation Completed.[/]\n")
+
+    # ==========================================================
+    # Business Identifier Validation
+    # ==========================================================
+
+    console.print("[white]=[/]" * 60)
+    console.print("[bright_blue]ℹ️  Business Identifier Validation[/]")
+    console.print("[white]=[/]" * 60)
+    business_identifier_result = validate_business_identifier(workbook)
+    validation_results.append(business_identifier_result)
+    worksheet_count = 0
+    for worksheet, result in business_identifier_result.data.items():
+        worksheet_count+=1
+        console.print(f"[cyan]► {worksheet}[/]")
+        console.print("[white]-[/]" * 60)
+        for status, counts in result.items():
+            console.print(
+                            f"    ✔ {status:<25} : "
+                            f"{counts}"
+                        )
+    console.print("[white]=[/]" * 60)
+    console.print("[bright_blue]ℹ️  Business Identifier Validation Summary[/]")
+    console.print("[white]-[/]" * 60)
+
+    console.print(f"{'Worksheets validated':<28}: {worksheet_count}")
+
+
+    console.print("[white]=[/]" * 60)
+    console.print("[green]✅ Business Identifier Validation Completed.[/]\n")
 
     return validation_results

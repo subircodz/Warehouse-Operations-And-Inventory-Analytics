@@ -9,9 +9,9 @@ Author: Subir Sutradhar
 
 from pandas import DataFrame
 from config import IDENTIFIER_PATTERNS
-from models.validation_result import ValidationResult
+from models.validation_result import WaveResult
 
-def validate_business_identifier(workbook: dict[str, DataFrame]) -> ValidationResult:
+def validate_business_identifier(workbook: dict[str, DataFrame]) -> WaveResult:
     """
     Counts the total records validated in each worksheet
     and returns the total valid, invalid and list of row 
@@ -23,7 +23,7 @@ def validate_business_identifier(workbook: dict[str, DataFrame]) -> ValidationRe
         pandas DataFrame.
 
     Returns:
-        ValidationResult
+        WaveResult
         An object containing name, rows and a dictionary of 
         dictionary.
     """
@@ -55,7 +55,7 @@ def validate_business_identifier(workbook: dict[str, DataFrame]) -> ValidationRe
             records_checked[worksheet] = result
 
 
-    return ValidationResult(
+    return WaveResult(
             validation_name="Business identifier validation",
             status="PASS",
             data=records_checked

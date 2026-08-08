@@ -11,5 +11,9 @@ Author: Subir Sutradhar
 from pandas import DataFrame
 
 def validate_business_rules(workbook: dict[str, DataFrame]):
+    """
+    Since no business rule has been identified
+    Keeping this module for future projects.
+    """
     
     pass
