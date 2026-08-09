@@ -10,8 +10,9 @@ Author: Subir Sutradhar
 from rich.console import Console
 from rich.table import Table
 
-from analysis.inventory_analysis import (
-    analyze_inventory
+from analysis import (
+    analyze_inventory,
+    analyze_product
 )
 
 
@@ -19,6 +20,7 @@ console = Console()
 
 
 def eda_phase(workbook):
+    result = []
 
     # ==========================================================
     # Run Inventory Analysis
@@ -27,6 +29,8 @@ def eda_phase(workbook):
     inventory_result = analyze_inventory(
         workbook
     )
+
+    result.append(inventory_result)
 
     # ==========================================================
     # EDA Header
@@ -287,4 +291,107 @@ def eda_phase(workbook):
         "[white]=[/]" * 60
     )
 
-    return inventory_result
+
+    # =======================================================
+    # Product analyze header
+    # =======================================================
+
+    console.print(
+        "[white]=[/]" * 60
+    )
+    console.print(
+        "[bright_blue]ℹ️  Product EDA[/]"
+    )
+    console.print(
+        "[white]=[/]" * 60
+    )
+    product_result = analyze_product(workbook)
+    result.append(product_result)
+    product_catalogue_table = Table(
+        title="Product Catalogue Summary",
+        border_style="blue"
+    )
+    product_catalogue_table.add_column("Metric")
+    product_catalogue_table.add_column("Value")
+    product_catalogue_table.add_row(
+        "Total Products",
+        f"{product_result.data["total_products"]}"
+    )
+    product_catalogue_table.add_row(
+            "Active Products",
+            f"{product_result.data["active_products"]}"
+        )
+    product_catalogue_table.add_row(
+                "Inactive Products",
+                f"{product_result.data["inactive_products"]}"
+            )
+    console.print(product_catalogue_table)
+
+    # ===============================================
+    # Product Price Analysis
+    # ===============================================
+
+    product_price_analysis = Table(
+            title="Product Price Analysis",
+            border_style="blue"
+        )
+    product_price_analysis.add_column("Metric")
+    product_price_analysis.add_column("Value")
+    product_price_analysis.add_row(
+        "Minimum Price",
+        f"Rs. {(product_result.data["price_analysis"]["minimum_price"]):,.2f}"
+    )
+    product_price_analysis.add_row(
+            "Maximum Price",
+            f"Rs. {(product_result.data["price_analysis"]["maximum_price"]):,.2f}"
+        )
+    product_price_analysis.add_row(
+            "Average Price",
+            f"Rs. {(product_result.data["price_analysis"]["average_price"]):,.2f}"
+        )
+    product_price_analysis.add_row(
+            "Median Price",
+            f"Rs. {(product_result.data["price_analysis"]["median_price"]):,.2f}"
+        )
+    product_price_analysis.add_row(
+            "Price Range",
+            f"Rs. {(product_result.data["price_analysis"]["price_range"]):,.2f}"
+        )
+    product_price_analysis.add_row(
+        "Standard Deviation",
+        f"Rs. {(product_result.data["price_analysis"]["standard_deviation"]):,.2f}"
+    )
+ 
+    console.print(product_price_analysis)
+
+    # ============================================
+    # Extreme Price
+    # ============================================
+
+    extreme_price_analysis = Table(
+        title="Extreme Price Observations",
+        border_style="blue"
+    )
+    extreme_price_analysis.add_column("Metric")
+    extreme_price_analysis.add_column("Count")
+    extreme_price_analysis.add_row(
+        "Minimum Price (Rs. 0)",
+        str(product_result.data["extreme_prices"]["minimum_price_count"])
+    )
+    extreme_price_analysis.add_row(
+            "Maximum Price",
+            str(product_result.data["extreme_prices"]["maximum_price_count"])
+        )
+    console.print(extreme_price_analysis)
+
+    # ============================================
+    # Findings
+    # ============================================
+
+    console.print("[underline yellow]Findings[/]")
+    console.print()
+    findings = product_result.data["findings"]
+    for idx, finding in enumerate(findings, start=1):
+        console.print(f"    {idx}. {finding}")
+    console.print()
+    return result

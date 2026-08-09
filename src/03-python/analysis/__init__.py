@@ -1,1 +1,2 @@
 from analysis.inventory_analysis import analyze_inventory
+from analysis.product_analysis import analyze_product
