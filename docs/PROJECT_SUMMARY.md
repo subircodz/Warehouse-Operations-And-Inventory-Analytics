@@ -2,56 +2,58 @@
 
 > **Case Study:** Warehouse Operations & Inventory Analytics  
 > **Methodology:** Data Analytics Project Methodology (DAPM) v0.2.1  
-> **Status:** 🚧 In Progress
+> **Status:** ✅ EDA Complete — Business Reporting Pending
 
 ---
 
 # Purpose
 
-This document provides a high-level overview of the Warehouse Operations & Inventory Analytics project.
+This document provides a high-level overview of the Warehouse Operations & Inventory Analytics project and its verified current state.
 
-It summarises the business problem, project objectives, current progress and expected outcomes without going into technical implementation details.
-
-Readers should be able to understand the purpose and current state of the project by reading this document alone.
+The repository has progressed substantially beyond the original Data Profiling checkpoint. The implementation now covers data profiling, cleaning, validation and exploratory analysis.
 
 ---
 
 # Project Overview
 
-Warehouse Operations & Inventory Analytics is an end-to-end business analytics case study that demonstrates how operational data can be transformed into meaningful business insights.
+Warehouse Operations & Inventory Analytics is an end-to-end business analytics case study demonstrating how operational data can be transformed into reliable analytical evidence.
 
-The project follows the Data Analytics Project Methodology (DAPM) and covers the complete analytics lifecycle, starting from business understanding and ending with business recommendations and executive reporting.
-
-The primary objective is to improve inventory visibility, warehouse operations and business decision-making using a structured, evidence-based analytical approach.
+The project follows DAPM and currently reaches the Exploratory Data Analysis phase. The remaining business-facing phases are Business Insights, Recommendations and Executive Summary.
 
 ---
 
 # Business Objectives
 
-The project aims to help the organisation answer business questions such as:
+The project aims to help the organisation answer questions such as:
 
 - Is inventory available when customers need it?
-- Which products require replenishment?
-- Which warehouses perform better than others?
-- Which suppliers require attention?
-- How efficiently are customer orders being fulfilled?
-- What operational improvements can be recommended to the business?
+- Which products require attention?
+- Which warehouses hold the most inventory and inventory value?
+- Which products have significant inventory exposure?
+- Are inactive products still holding inventory?
+- Which product pricing and estimated-margin observations require investigation?
 
 ---
 
-# Current Progress
+# Verified Progress
 
-The project has successfully completed the business planning stages.
-
-Completed phases include:
+Completed phases:
 
 - ✅ Project Brief
 - ✅ Business Understanding
 - ✅ Stakeholder Analysis
 - ✅ Business Requirements
 - ✅ Data Discovery
+- ✅ Data Profiling
+- ✅ Data Cleaning
+- ✅ Data Validation
+- ✅ Exploratory Data Analysis
 
-The project is currently progressing through the Data Profiling phase before data cleaning and validation begin.
+Pending business-reporting phases:
+
+- ⏳ Business Insights
+- ⏳ Recommendations
+- ⏳ Executive Summary
 
 ---
 
@@ -64,10 +66,10 @@ The project is currently progressing through the Data Profiling phase before dat
 | 03 — Stakeholder Analysis | ✅ |
 | 04 — Business Requirements | ✅ |
 | 05 — Data Discovery | ✅ |
-| 06 — Data Profiling | 🚧 |
-| 07 — Data Cleaning | ⏳ |
-| 08 — Data Validation | ⏳ |
-| 09 — Exploratory Data Analysis | ⏳ |
+| 06 — Data Profiling | ✅ |
+| 07 — Data Cleaning | ✅ |
+| 08 — Data Validation | ✅ |
+| 09 — Exploratory Data Analysis | ✅ |
 | 10 — Business Insights | ⏳ |
 | 11 — Recommendations | ⏳ |
 | 12 — Executive Summary | ⏳ |
@@ -76,31 +78,36 @@ The project is currently progressing through the Data Profiling phase before dat
 
 # Technology Stack
 
-The project demonstrates practical data analytics using multiple technologies.
-
 - Microsoft Excel
 - SQL
+- MariaDB
 - Python
 - Pandas
+- Git
+- GitHub
 - Data Analytics Project Methodology (DAPM)
-
-Additional technologies will be introduced as the project progresses.
 
 ---
 
-# Expected Deliverables
+# Current Analytical Implementation
 
-By the end of the project, the repository will include:
+The Python analysis layer includes inventory and product analysis modules.
 
-- Business Documentation
-- Data Profiling Reports
-- Data Cleaning Documentation
-- Data Validation Reports
-- Exploratory Data Analysis
+Inventory analysis covers inventory quantity, warehouse distribution, inventory monetary value, inventory value by warehouse and product, and inventory held against inactive products.
+
+Product analysis covers catalogue size, active/inactive status, price characteristics, weighted average inventory cost, estimated margins and products requiring further investigation.
+
+---
+
+# Remaining Deliverables
+
+The following artifacts are not currently marked complete because dedicated business-facing documentation has not yet been established in the repository:
+
 - Business Insights
 - Business Recommendations
 - Executive Summary
-- Reusable Python Validation Framework (WAVE)
+
+These should be derived from the completed analytical evidence rather than written as unsupported conclusions.
 
 ---
 
@@ -109,24 +116,23 @@ By the end of the project, the repository will include:
 This project demonstrates:
 
 - Business-first analytical thinking
-- End-to-end analytics workflow
-- Professional project documentation
-- Structured analytical methodology
+- End-to-end data-quality workflow
 - Spreadsheet, SQL and Python implementations
-- Evidence-based business decision making
+- Modular Python architecture
+- Automated validation through WAVE
+- Structured exploratory analysis
+- Professional project documentation
 
 ---
 
 # Current Status
 
-The project is actively being developed.
+The project is **not stuck at Data Profiling**. The previous documentation was stale and understated the actual implementation progress.
 
-Documentation is completed phase by phase following DAPM. Each phase is reviewed before progressing to the next stage to ensure the project remains structured, reproducible and business-focused.
+The latest verified analytical phase is **EDA**. The repository is now correctly documented as EDA-complete, with business reporting still pending.
 
 ---
 
 # Project Vision
 
-The goal of this project is not only to analyse warehouse operations but also to demonstrate how a real-world analytics project should be planned, documented and executed using a repeatable methodology.
-
-The completed repository will serve as both a business case study and a professional portfolio project demonstrating technical implementation, analytical thinking and structured project management.
+The goal is to demonstrate how a real-world analytics project should be planned, documented, validated and analysed using a repeatable methodology.
