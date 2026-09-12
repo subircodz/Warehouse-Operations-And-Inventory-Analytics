@@ -2,7 +2,7 @@
 
 > **Case Study:** Warehouse Operations & Inventory Analytics  
 > **Document:** DAPM Phase Checklist  
-> **Status:** ✅ EDA Complete — Business Reporting Pending
+> **Status:** 🚧 Business Reporting In Progress
 
 ---
 
@@ -27,9 +27,10 @@ A phase is marked complete only when the implementation and required evidence fo
 | 07 — Data Cleaning | ✅ |
 | 08 — Data Validation | ✅ |
 | 09 — Exploratory Data Analysis | ✅ |
-| 10 — Business Insights | ⏳ |
-| 11 — Recommendations | ⏳ |
-| 12 — Executive Summary | ⏳ |
+| 10 — Visualization | ✅ |
+| 11 — Business Insights | ⏳ |
+| 12 — Recommendations | ⏳ |
+| 13 — Executive Summary | ⏳ |
 
 ---
 
@@ -87,23 +88,38 @@ Spreadsheet, SQL and Python/WAVE validation activities were completed before ana
 
 Inventory and product analysis modules are implemented. The analysis covers inventory distribution and value, product catalogue and price characteristics, weighted average inventory cost, estimated margins and related observations.
 
-# Phase 10 — Business Insights
+# Phase 10 — Visualization
+
+**Status:** ✅ Completed
+
+A reusable Matplotlib visualization layer is implemented and connected to the Python application. Six business-focused charts are generated from the validated workbook:
+
+- Inventory quantity by warehouse
+- Inventory value by warehouse
+- Top products by inventory value
+- Inactive inventory exposure
+- Product price distribution
+- Estimated margin distribution
+
+The visualization implementation is documented in [10_VISUALIZATION.md](10_VISUALIZATION.md).
+
+# Phase 11 — Business Insights
 
 **Status:** ⏳ Planned
 
-A dedicated business-facing insights artifact has not yet been established in the repository.
+The next phase will interpret the analytical and visual evidence against the original business requirements.
 
-# Phase 11 — Recommendations
-
-**Status:** ⏳ Planned
-
-Evidence-based recommendations have not yet been documented as a dedicated final phase artifact.
-
-# Phase 12 — Executive Summary
+# Phase 12 — Recommendations
 
 **Status:** ⏳ Planned
 
-A final executive summary has not yet been documented as a dedicated artifact.
+Evidence-based operational recommendations will be documented after the Business Insights phase.
+
+# Phase 13 — Executive Summary
+
+**Status:** ⏳ Planned
+
+A final management-facing summary will be documented after insights and recommendations are completed.
 
 ---
 
@@ -121,12 +137,12 @@ A DAPM phase is considered complete only when:
 
 # Current Focus
 
-The implementation is currently **EDA complete**.
+The implementation is currently **Visualization complete**.
 
-The next work is business interpretation: converting the completed analytical evidence into Business Insights, Recommendations and an Executive Summary.
+The next work is Business Insights: converting the completed analytical and visual evidence into verified business findings.
 
 ---
 
 # Phase Summary
 
-The previous version of this checklist was stale and stopped at Data Profiling. It has now been reconciled with the verified implementation state.
+Phases 01–10 are now verified in the repository. The remaining work is business interpretation and final reporting: Business Insights, Recommendations and Executive Summary.
