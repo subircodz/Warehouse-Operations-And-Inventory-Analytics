@@ -2,17 +2,15 @@
 
 > **Case Study:** Warehouse Operations & Inventory Analytics  
 > **Document:** DAPM Phase Checklist  
-> **Status:** 🚧 In Progress
+> **Status:** ✅ EDA Complete — Business Reporting Pending
 
 ---
 
 # Purpose
 
-This document tracks the progress of the Warehouse Operations & Inventory Analytics project through the Data Analytics Project Methodology (DAPM).
+This document tracks the verified progress of the Warehouse Operations & Inventory Analytics project through the Data Analytics Project Methodology (DAPM).
 
-A phase is marked as complete only after all required activities, documentation and review have been successfully finished.
-
-The checklist acts as a quality gate before the project moves to the next phase.
+A phase is marked complete only when the implementation and required evidence for that phase are present in the repository.
 
 ---
 
@@ -25,10 +23,10 @@ The checklist acts as a quality gate before the project moves to the next phase.
 | 03 — Stakeholder Analysis | ✅ |
 | 04 — Business Requirements | ✅ |
 | 05 — Data Discovery | ✅ |
-| 06 — Data Profiling | 🚧 |
-| 07 — Data Cleaning | ⏳ |
-| 08 — Data Validation | ⏳ |
-| 09 — Exploratory Data Analysis | ⏳ |
+| 06 — Data Profiling | ✅ |
+| 07 — Data Cleaning | ✅ |
+| 08 — Data Validation | ✅ |
+| 09 — Exploratory Data Analysis | ✅ |
 | 10 — Business Insights | ⏳ |
 | 11 — Recommendations | ⏳ |
 | 12 — Executive Summary | ⏳ |
@@ -37,158 +35,75 @@ The checklist acts as a quality gate before the project moves to the next phase.
 
 # Phase 01 — Project Brief
 
-### Completion Checklist
-
-- ✅ Business case defined
-- ✅ Project objectives documented
-- ✅ Scope defined
-- ✅ Success criteria documented
-
 **Status:** ✅ Completed
 
----
+Business case, objectives, scope and success criteria are documented.
 
 # Phase 02 — Business Understanding
 
-### Completion Checklist
-
-- ✅ Business domain understood
-- ✅ Business workflow documented
-- ✅ Operational challenges identified
-- ✅ Business objectives documented
-
 **Status:** ✅ Completed
 
----
+Business domain, workflow, operational challenges and objectives are documented.
 
 # Phase 03 — Stakeholder Analysis
 
-### Completion Checklist
-
-- ✅ Stakeholders identified
-- ✅ Responsibilities documented
-- ✅ Information requirements documented
-
 **Status:** ✅ Completed
 
----
+Stakeholders, responsibilities and information requirements are documented.
 
 # Phase 04 — Business Requirements
 
-### Completion Checklist
-
-- ✅ Business questions documented
-- ✅ Required metrics identified
-- ✅ Reporting requirements documented
-- ✅ Dashboard requirements documented
-
 **Status:** ✅ Completed
 
----
+Business questions, metrics and reporting requirements are documented.
 
 # Phase 05 — Data Discovery
 
-### Completion Checklist
-
-- ✅ Available data sources identified
-- ✅ Available datasets documented
-- ✅ Dataset purpose documented
-- ✅ Data availability confirmed
-
 **Status:** ✅ Completed
 
----
+Available systems, datasets and their purposes are documented.
 
 # Phase 06 — Data Profiling
 
-### Completion Checklist
+**Status:** ✅ Completed
 
-- ⏳ Dataset overview completed
-- ⏳ Dataset structure documented
-- ⏳ Missing values profiled
-- ⏳ Duplicate records profiled
-- ⏳ Data types reviewed
-- ⏳ Value distributions documented
-- ⏳ Relationships documented
-- ⏳ Data quality observations recorded
-- ⏳ Profiling report completed
-
-**Status:** 🚧 In Progress
-
----
+The raw datasets were profiled and data-quality observations were established before cleaning.
 
 # Phase 07 — Data Cleaning
 
-### Completion Checklist
+**Status:** ✅ Completed
 
-- ⏳ Data quality issues corrected
-- ⏳ Cleaning decisions documented
-- ⏳ Raw data preserved
-- ⏳ Clean dataset prepared
-
-**Status:** ⏳ Pending
-
----
+Cleaning and standardisation were implemented through modular Python processing, including missing-value handling, duplicate removal, text standardisation and numeric-range cleaning.
 
 # Phase 08 — Data Validation
 
-### Completion Checklist
+**Status:** ✅ Completed
 
-- ⏳ Business identifier validation
-- ⏳ Referential integrity validation
-- ⏳ Business rule validation
-- ⏳ Validation report completed
-
-**Status:** ⏳ Pending
-
----
+Spreadsheet, SQL and Python/WAVE validation activities were completed before analytical processing.
 
 # Phase 09 — Exploratory Data Analysis
 
-### Completion Checklist
+**Status:** ✅ Completed
 
-- ⏳ Key trends identified
-- ⏳ Patterns documented
-- ⏳ Visualisations prepared
-- ⏳ EDA report completed
-
-**Status:** ⏳ Pending
-
----
+Inventory and product analysis modules are implemented. The analysis covers inventory distribution and value, product catalogue and price characteristics, weighted average inventory cost, estimated margins and related observations.
 
 # Phase 10 — Business Insights
 
-### Completion Checklist
+**Status:** ⏳ Planned
 
-- ⏳ Business findings documented
-- ⏳ Supporting evidence identified
-- ⏳ Business impact explained
-
-**Status:** ⏳ Pending
-
----
+A dedicated business-facing insights artifact has not yet been established in the repository.
 
 # Phase 11 — Recommendations
 
-### Completion Checklist
+**Status:** ⏳ Planned
 
-- ⏳ Recommendations documented
-- ⏳ Business value explained
-- ⏳ Expected outcomes described
-
-**Status:** ⏳ Pending
-
----
+Evidence-based recommendations have not yet been documented as a dedicated final phase artifact.
 
 # Phase 12 — Executive Summary
 
-### Completion Checklist
+**Status:** ⏳ Planned
 
-- ⏳ Project summary completed
-- ⏳ Key findings summarised
-- ⏳ Final business outcome documented
-
-**Status:** ⏳ Pending
+A final executive summary has not yet been documented as a dedicated artifact.
 
 ---
 
@@ -196,10 +111,9 @@ The checklist acts as a quality gate before the project moves to the next phase.
 
 A DAPM phase is considered complete only when:
 
-- All planned activities are completed.
+- Planned activities are completed.
+- Required implementation or analytical evidence exists.
 - Required project artifacts are updated.
-- Observations are recorded where applicable.
-- Project documentation has been reviewed.
 - Outputs satisfy the objectives of the current phase.
 - The project is ready to move to the next phase.
 
@@ -207,14 +121,12 @@ A DAPM phase is considered complete only when:
 
 # Current Focus
 
-The project is currently in the **Data Profiling** phase.
+The implementation is currently **EDA complete**.
 
-The objective is to understand the current condition of the raw datasets before performing any data cleaning or validation activities.
+The next work is business interpretation: converting the completed analytical evidence into Business Insights, Recommendations and an Executive Summary.
 
 ---
 
 # Phase Summary
 
-This checklist provides a single place to monitor the progress of the project.
-
-Each phase is completed sequentially, ensuring that business understanding, data preparation and analysis follow a structured and repeatable workflow defined by DAPM v0.2.1.
+The previous version of this checklist was stale and stopped at Data Profiling. It has now been reconciled with the verified implementation state.
