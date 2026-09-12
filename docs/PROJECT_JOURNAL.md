@@ -2,7 +2,7 @@
 
 > **Case Study:** Warehouse Operations & Inventory Analytics  
 > **Document:** Project Case Journal  
-> **Status:** 🚧 In Progress
+> **Status:** 🚧 Business Reporting Pending
 
 ---
 
@@ -10,9 +10,7 @@
 
 The Project Case Journal records the journey of the Warehouse Operations & Inventory Analytics project from start to finish.
 
-Unlike the individual DAPM phase documents, this journal provides a chronological record of the work completed, important decisions taken, challenges encountered and lessons learned during the project.
-
-It serves as the project's engineering diary and provides context for how the solution evolved over time.
+Unlike the individual DAPM phase documents, this journal provides a chronological record of important decisions, implementation progress, challenges and lessons learned.
 
 ---
 
@@ -25,156 +23,133 @@ It serves as the project's engineering diary and provides context for how the so
 | 03 — Stakeholder Analysis | ✅ Completed |
 | 04 — Business Requirements | ✅ Completed |
 | 05 — Data Discovery | ✅ Completed |
-| 06 — Data Profiling | 🚧 In Progress |
+| 06 — Data Profiling | ✅ Completed |
+| 07 — Data Cleaning | ✅ Completed |
+| 08 — Data Validation | ✅ Completed |
+| 09 — Exploratory Data Analysis | ✅ Completed |
+| 10 — Business Insights | ⏳ Pending |
+| 11 — Recommendations | ⏳ Pending |
+| 12 — Executive Summary | ⏳ Pending |
 
 ---
 
 # Journal Entries
 
----
-
-## 13 July 2026
-
-### Phase
-
-Business Understanding
-
-### Work Completed
+## 13 July 2026 — Business Understanding
 
 - Studied the warehouse business scenario.
 - Understood the end-to-end warehouse workflow.
-- Identified the major operational challenges.
-- Documented the business objectives.
-- Established the analytical scope of the project.
+- Identified major operational challenges.
+- Documented business objectives and analytical scope.
 
-### Decisions Taken
+**Outcome:** Business context established successfully.
 
-- The project will focus on warehouse operations and inventory analytics.
-- The project will follow the Data Analytics Project Methodology (DAPM).
-- Business understanding must be completed before analysing any data.
+## 15 July 2026 — Stakeholder Analysis
 
-### Outcome
+- Identified key business stakeholders.
+- Documented responsibilities and information requirements.
+- Considered reporting needs by business function.
 
-The business context was established successfully and the project was ready to move to Stakeholder Analysis.
+**Outcome:** Stakeholder expectations were established before reporting requirements were defined.
 
----
-
-## 15 July 2026
-
-### Phase
-
-Stakeholder Analysis
-
-### Work Completed
-
-- Identified the key business stakeholders.
-- Documented stakeholder responsibilities.
-- Recorded the information required by each department.
-- Identified how different teams use operational data.
-
-### Decisions Taken
-
-- Business requirements will be gathered separately for each stakeholder.
-- Dashboards will be designed around business functions instead of datasets.
-
-### Outcome
-
-A clear understanding of stakeholder expectations was established before defining reporting requirements.
-
----
-
-## 16 July 2026
-
-### Phase
-
-Business Requirements
-
-### Work Completed
+## 16 July 2026 — Business Requirements
 
 - Documented reporting requirements.
 - Identified business metrics.
-- Listed management dashboards required by the organisation.
-- Documented reporting frequency.
+- Listed management dashboard requirements.
+- Defined reporting expectations.
 
-### Decisions Taken
+**Outcome:** Business objectives were converted into measurable analytical requirements.
 
-- Business questions will drive the analytical process.
-- Data discovery will focus only on datasets required to answer these questions.
+## 17 July 2026 — Data Discovery
 
-### Outcome
-
-Business objectives were successfully converted into measurable analytical requirements.
-
----
-
-## 17 July 2026
-
-### Phase
-
-Data Discovery
-
-### Work Completed
-
-- Identified available business systems.
-- Documented available datasets.
+- Identified available business systems and datasets.
 - Verified data availability.
 - Mapped datasets to business requirements.
 
-### Decisions Taken
+**Outcome:** Required source datasets were identified.
 
-- No data profiling, cleaning or validation will be performed during Data Discovery.
-- Data Discovery is limited to identifying and understanding available datasets.
+## 28 July 2026 — DAPM Refactoring
 
-### Outcome
+The Data Analytics Project Methodology was redesigned based on practical experience gained while developing WAVE.
 
-All datasets required for the project were identified and documented.
+Key changes included:
+
+- Separating Data Discovery from Data Profiling.
+- Introducing Data Profiling before Data Cleaning.
+- Positioning Data Validation after Data Cleaning.
+- Reorganising project artifacts for maintainability.
+
+**Outcome:** DAPM v0.2.1 became the reference methodology for the project.
+
+## Late July / Early August 2026 — Data Profiling and Cleaning
+
+The project progressed beyond the original documentation checkpoint.
+
+Completed implementation work included:
+
+- Data profiling and summary reporting.
+- Missing-value handling.
+- Duplicate cleaning.
+- Text standardisation.
+- Numeric-range cleaning.
+- Cleaning-order refactoring.
+- Allowed-value and referential-integrity handling.
+
+**Outcome:** Data Cleaning was completed and the project moved to validation.
+
+## Early August 2026 — Data Validation
+
+Validation was completed across Spreadsheet, SQL and Python/WAVE implementations.
+
+**Outcome:** The data was ready for analytical processing.
+
+## 10 August 2026 — Exploratory Data Analysis
+
+The EDA phase was completed.
+
+The Python analysis layer now includes:
+
+- Inventory quantity and warehouse distribution analysis.
+- Inventory monetary value analysis.
+- Inventory value by warehouse and product.
+- Inactive-product inventory exposure analysis.
+- Product catalogue and active/inactive status analysis.
+- Product price analysis.
+- Weighted average inventory cost analysis.
+- Estimated margin analysis.
+- Identification of products requiring further investigation.
+
+**Outcome:** The latest verified implementation phase is EDA.
 
 ---
 
-## 28 July 2026
+# Current State
 
-### Phase
+The previous documentation stopped at Data Profiling even though the implementation had already progressed through Data Cleaning, Data Validation and EDA.
 
-DAPM Refactoring
+The documentation has now been reconciled with the implementation.
 
-### Work Completed
+The remaining work is business-facing reporting:
 
-The Data Analytics Project Methodology (DAPM) was redesigned based on practical experience gained while developing WAVE.
+1. Business Insights
+2. Recommendations
+3. Executive Summary
 
-The following improvements were introduced:
-
-- Data Discovery was simplified to focus only on identifying available datasets.
-- A dedicated Data Profiling phase was introduced before Data Cleaning.
-- Data Validation was repositioned after Data Cleaning.
-- Project documentation was rewritten using simple Indian English.
-- Project artifacts were reorganised to improve readability and maintainability.
-
-### Decisions Taken
-
-- WAVE will become the reference implementation of DAPM v0.2.1.
-- Every future project will follow the updated methodology.
-- Validation scripts will be developed only after profiling and cleaning activities.
-
-### Outcome
-
-DAPM v0.2.1 became the official methodology for the Warehouse Operations & Inventory Analytics project.
+These phases should be based on the completed analytical evidence.
 
 ---
 
 # Lessons Learned
 
-The project has already provided several valuable lessons.
-
-- Understanding the business before analysing data significantly improves analytical decisions.
-- Data Discovery and Data Profiling are separate activities and should not be combined.
-- Cleaning should always precede validation.
-- A structured methodology improves project quality and documentation consistency.
-- Technical implementation should always follow business understanding.
-
-This section will continue to grow throughout the project.
+- Understanding the business before analysing data improves analytical decisions.
+- Data Discovery and Data Profiling are separate activities.
+- Cleaning should precede validation.
+- Modular engineering makes analytical processing easier to maintain.
+- Analytical findings should be converted into business decisions only after the evidence is understood.
 
 ---
 
 # Next Entry
 
-The next journal entry will document the completion of the **Data Profiling** phase.
+The next journal entry should document the creation and review of the **Business Insights** phase.
