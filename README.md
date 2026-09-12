@@ -8,7 +8,7 @@
 
 This repository showcases a Warehouse Operations & Inventory Analytics case study developed using the **Data Analytics Project Methodology (DAPM) v0.2.1**.
 
-The verified implementation currently reaches **Exploratory Data Analysis (EDA)**. Business Insights, Recommendations and Executive Summary remain separate reporting phases and are not marked complete until their corresponding artifacts exist.
+The verified implementation currently reaches **Matplotlib-based Visualization**. Business Insights, Recommendations and Executive Summary remain separate reporting phases and are not marked complete until their corresponding artifacts exist.
 
 ---
 
@@ -23,6 +23,7 @@ The verified implementation currently reaches **Exploratory Data Analysis (EDA)*
 - Data Cleaning
 - Data Validation
 - Exploratory Data Analysis
+- Business-focused Visualization with Matplotlib
 
 ---
 
@@ -67,12 +68,14 @@ WAVE is the Python validation engine developed specifically for this project. It
 - Data Cleaning
 - Data Validation
 - Exploratory Data Analysis
+- Business Visualization
 - Structured analytical reporting
 
 ## Software Engineering
 
 - Python
 - Pandas
+- Matplotlib
 - SQL
 - MariaDB
 - Microsoft Excel
@@ -118,6 +121,9 @@ Data Validation
 Exploratory Data Analysis
         │
         ▼
+Visualization
+        │
+        ▼
 Business Insights       ⏳
         │
         ▼
@@ -160,9 +166,10 @@ Executive Summary       ⏳
 | 07 · Data Cleaning | ✅ | [07_DATA_CLEANING.md](docs/07_DATA_CLEANING.md) |
 | 08 · Data Validation | ✅ | [08_DATA_VALIDATION.md](docs/08_DATA_VALIDATION.md) |
 | 09 · Exploratory Data Analysis | ✅ | [09_EDA_REPORT.md](docs/09_EDA_REPORT.md) |
-| 10 · Business Insights | ⏳ | Dedicated business-insight artifact not yet present. |
-| 11 · Recommendations | ⏳ | Dedicated recommendation artifact not yet present. |
-| 12 · Executive Summary | ⏳ | Dedicated executive-summary artifact not yet present. |
+| 10 · Visualization | ✅ | [10_VISUALIZATION.md](docs/10_VISUALIZATION.md) |
+| 11 · Business Insights | ⏳ | Dedicated business-insight artifact not yet present. |
+| 12 · Recommendations | ⏳ | Dedicated recommendation artifact not yet present. |
+| 13 · Executive Summary | ⏳ | Dedicated executive-summary artifact not yet present. |
 
 ---
 
@@ -170,10 +177,10 @@ Executive Summary       ⏳
 
 | Document | Status | Purpose |
 |----------|:------:|---------|
-| [Project Summary](docs/PROJECT_SUMMARY.md) | ✅ | High-level overview of the verified project state. |
+| [Project Summary](docs/PROJECT_SUMMARY.md) | 🚧 | High-level overview of the verified project state. |
 | [Observations Register](docs/OBSERVATIONS.md) | 🚧 | Records verified observations throughout the project lifecycle. |
 | [Analytical Thinking Register](docs/14_ANALYTICAL_THINKING.md) | 🚧 | Records assumptions, hypotheses and analytical decisions. |
-| [Phase Checklist](docs/15_PHASE_CHECKLIST.md) | ✅ | Tracks the verified DAPM phase status. |
+| [Phase Checklist](docs/15_PHASE_CHECKLIST.md) | 🚧 | Tracks the verified DAPM phase status. |
 | [Project Journal](docs/PROJECT_JOURNAL.md) | 🚧 | Records the chronological engineering and analytical journey. |
 
 ---
@@ -198,18 +205,21 @@ Executive Summary       ⏳
                   Exploratory Analysis
                            │
                            ▼
-              Business Reporting       ⏳
+                 Matplotlib Visualization
+                           │
+                           ▼
+                    Business Reporting
 ```
 
 ---
 
 # Current Phase
 
-## **EDA Complete — Business Reporting Pending**
+## **Visualization Complete — Business Insights Pending**
 
-The verified analytical implementation currently reaches the **Exploratory Data Analysis** phase. Inventory and product analysis modules are implemented and return structured analytical results.
+Phase 10 now contains a reproducible Matplotlib visualization layer. The application generates six business-focused charts from the validated workbook: warehouse inventory quantity, warehouse inventory value, top products by inventory value, inactive inventory exposure, product price distribution and estimated margin distribution.
 
-The next phases are Business Insights, Recommendations and Executive Summary. These should only be marked complete after the corresponding business-facing artifacts are created and reviewed.
+The next phase is **Business Insights**, where the visual and analytical evidence will be interpreted against the original business requirements.
 
 ---
 
@@ -249,7 +259,7 @@ Warehouse-Operations-And-Inventory-Analytics/
 
 # About this Repository
 
-This repository is designed as a flagship portfolio project. It demonstrates more than technical implementation: it shows how a Data Analyst approaches a real business problem through business understanding, data preparation, validation and structured analysis.
+This repository is designed as a flagship portfolio project. It demonstrates more than technical implementation: it shows how a Data Analyst approaches a real business problem through business understanding, data preparation, validation, analysis and business-focused visualization.
 
 The project combines business analysis, analytical thinking and software engineering into a single case study.
 
