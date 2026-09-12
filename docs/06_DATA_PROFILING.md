@@ -2,27 +2,15 @@
 
 > **Case Study:** Warehouse Operations & Inventory Analytics  
 > **Phase:** 06 – Data Profiling  
-> **Status:** 🚧 In Progress
-
----
-
-# Project Information
-
-| Field | Details |
-|--------|---------|
-| Phase | Data Profiling |
-| Version | 1.0 |
-| Status | In Progress |
+> **Status:** ✅ Completed
 
 ---
 
 # Purpose
 
-The purpose of the Data Profiling phase is to understand the structure, characteristics and overall quality of the available datasets before making any changes.
+The Data Profiling phase establishes the observed condition of the raw datasets before cleaning or validation.
 
-No data is cleaned, corrected or validated during this phase.
-
-The objective is to observe and document the current condition of the data.
+No data is corrected during profiling. The observations provide the evidence used to design the subsequent cleaning and validation work.
 
 ---
 
@@ -30,143 +18,38 @@ The objective is to observe and document the current condition of the data.
 
 | Dataset | Status |
 |----------|:------:|
-| Warehouses | ⏳ |
-| Suppliers | ⏳ |
-| Products | ⏳ |
-| Inventory | ⏳ |
+| Warehouses | ✅ |
+| Suppliers | ✅ |
+| Products | ✅ |
+| Inventory | ✅ |
 
 ---
 
-# Profiling Metrics
+# Profiling Scope
 
-The following observations will be collected for every dataset.
+The profiling work covered:
 
-## Dataset Overview
+- Dataset structure and dimensions
+- Column names and data types
+- Missing and blank values
+- Duplicate records and business identifiers
+- Distinct and frequent values
+- Business identifier characteristics
+- Dataset relationships
+- Data-quality observations
 
-- Number of records
-- Number of columns
-- Column names
-- Data types
-- Memory usage
-
----
-
-## Data Completeness
-
-- Missing values
-- Blank values
-- Null percentage
+Relationships identified during profiling included supplier-to-product, product-to-inventory and warehouse-to-inventory relationships. These relationships were subsequently addressed during validation.
 
 ---
 
-## Data Uniqueness
+# Phase Outcome
 
-- Duplicate records
-- Duplicate business identifiers
-- Duplicate combinations (if applicable)
+Data Profiling was completed and its observations were used to guide the Data Cleaning phase.
 
----
-
-## Value Distribution
-
-- Distinct values
-- Most frequent values
-- Least frequent values
-- Frequency distribution (where applicable)
-
----
-
-## Business Identifier Overview
-
-- Identifier format
-- Prefix used
-- Numeric length
-- Identifier uniqueness
-
-> Business identifiers are **observed only** during profiling. They are validated later during the Data Validation phase.
-
----
-
-## Relationship Discovery
-
-Identify how datasets are related.
-
-Examples:
-
-| Parent Dataset | Child Dataset | Relationship |
-|---------------|---------------|--------------|
-| Suppliers | Products | supplier_id |
-| Products | Inventory | product_id |
-| Warehouses | Inventory | warehouse_id |
-
-Relationships are documented during profiling but validated later.
-
----
-
-## Data Quality Observations
-
-Record any observations without correcting them.
-
-Example observations:
-
-- Mixed letter casing
-- Unexpected values
-- Blank cells
-- Duplicate records
-- Suspicious identifiers
-- Inconsistent spellings
-- Unexpected data types
-
----
-
-# Profiling Summary
-
-After profiling every dataset, summarise:
-
-- Overall dataset health
-- Major observations
-- Potential risks
-- Areas requiring cleaning
-- Areas requiring validation
-
----
-
-# Deliverables
-
-This phase produces:
-
-- Dataset Profile
-- Data Quality Observations
-- Relationship Map
-- Profiling Summary
-
-These deliverables become the input for the Data Cleaning phase.
-
----
-
-# Out of Scope
-
-The following activities are **not performed** during Data Profiling.
-
-- Data Cleaning
-- Data Validation
-- Business Rule Validation
-- Referential Integrity Validation
-- Exploratory Data Analysis
-- Business Insights
-
----
-
-# Phase Summary
-
-The Data Profiling phase documents the current condition of the raw datasets.
-
-The observations collected during this phase will guide the Data Cleaning phase by identifying data quality issues that require correction before validation and analysis.
+The project has since progressed through Data Cleaning, Data Validation and Exploratory Data Analysis.
 
 ---
 
 # Next Phase
 
-➡ **Data Cleaning**
-
-The next phase focuses on correcting the data quality issues identified during Data Profiling while preserving business meaning and data integrity.
+➡ **[Data Cleaning](07_DATA_CLEANING.md)**
